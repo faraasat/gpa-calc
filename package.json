@@ -1,7 +1,24 @@
 {
   "name": "gpa-calc",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": "https://github.com/faraasat/gpa-calc",
+  "description": "You can calculate you GPA and CGPA with a lot of flexibility using this app!",
+  "keywords": [
+    "gpa",
+    "cgpa",
+    "university",
+    "react",
+    "next",
+    "js",
+    "uni"
+  ],
+  "license": "UNLICENSED",
+  "person": {
+    "name": "Farasat Ali",
+    "email": "farasat.dev@gmail.com",
+    "url": ""
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +28,8 @@
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-tsparticles": "^1.41.6"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
