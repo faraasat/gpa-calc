@@ -15,9 +15,15 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
-          <Main />
+          <main>
+            <Main />
+          </main>
           <NextScript />
         </body>
       </Html>

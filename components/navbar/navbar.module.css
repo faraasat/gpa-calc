@@ -1,11 +1,13 @@
 .navbar {
+  cursor: pointer;
   min-height: 60px;
   display: flex;
   align-items: center;
   padding-left: 80px;
   padding-right: 80px;
   justify-content: space-between;
-  background-color: aquamarine;
+  /* background-image: linear-gradient(to top, rgb(8, 91, 245), rgb(0, 183, 255)); */
+  background-color: rgb(255, 194, 61);
 }
 
 .navbar_brand {
@@ -13,16 +15,90 @@
   font-weight: bolder;
   font-size: 22px;
   margin-block: 0 !important;
+  color: rgb(255, 255, 255);
 }
 
 .navbar_links {
   display: flex;
 }
 
-.navbar_links > a {
+.navbar_links > span {
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Potta One", cursive;
   font-weight: lighter;
   font-size: 20px;
+  color: white;
+}
+
+.navbar_link_active {
+  font-weight: bold !important;
+  text-shadow: 0.7px 0.7px rgb(0, 0, 0);
+}
+
+.subnavbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.subnavbar_top {
+  min-height: 60px;
+  background-color: rgb(255, 194, 61);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between !important;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.subnavbar_brand {
+  font-family: "Potta One", cursive;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-block: 0 !important;
+  color: rgb(255, 255, 255);
+}
+
+.subnavbar_menu {
+  font-family: "Potta One", cursive;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-block: 0 !important;
+  color: rgb(255, 255, 255);
+}
+
+.subnavbar_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 194, 61, 0.6);
+}
+
+.subnavbar_links span {
+  width: 100%;
+  text-align: center;
+}
+
+.subnavbar_links span > a {
+  font-size: 22px;
+  margin-block: 0 !important;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.subnavbar_links hr {
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.display_none {
+  display: none;
 }

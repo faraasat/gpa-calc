@@ -1,0 +1,21 @@
+.gpa {
+  padding: 50px 70px;
+  min-height: calc(100vh - 62px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gpa_calc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 47%;
+}
+
+.gpa_result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47%;
+}

@@ -1,0 +1,19 @@
+.inputs {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputs span {
+  width: 10px;
+}
+
+.inputs input {
+  min-width: 110px;
+  min-height: 35px;
+}
+
+.inputs select {
+  min-height: 35px;
+}

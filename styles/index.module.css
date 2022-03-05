@@ -1,0 +1,218 @@
+.home {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  min-height: 661px;
+  height: calc(100vh - 62px);
+  align-items: center;
+  justify-content: center;
+}
+
+.home_items {
+  z-index: 5;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.home_item_image {
+  z-index: 20;
+  width: 53%;
+  height: 100%;
+  z-index: 20;
+
+  @media screen only {
+  }
+}
+
+.home_item_text {
+  border-radius: 15px;
+  box-shadow: 3px 3px 1px 2px rgba(255, 194, 61, 0.9);
+  background-color: rgba(255, 194, 61, 0.781);
+  width: 80%;
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_item_text > * {
+  margin-block: 0;
+}
+
+.home_item_btn > button {
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  padding: 20px 30px 20px 30px;
+  font-family: "Cabin", sans-serif;
+}
+
+.home_item_btn > button > a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home_item_btn > button:nth-child(1) {
+  background-color: rgb(42, 132, 250);
+  color: #fff;
+}
+
+.home_item_btn > button:nth-child(3) {
+  color: rgb(42, 132, 250);
+  background-color: #fff;
+}
+
+.home_item_btn > span {
+  width: 25px;
+  display: inline-block;
+}
+
+.home_item_text > h1 {
+  font-family: "Potta One", cursive !important;
+  font-weight: bolder;
+  /* color: rgb(255, 106, 46); */
+  color: rgb(42, 132, 250);
+  padding-bottom: 5px;
+}
+
+.home_item_text > p {
+  font-family: "Cabin", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home_items {
+    flex-direction: column;
+    position: relative;
+    width: 85%;
+  }
+  .home_item_image {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    transform: translateY(-60px);
+  }
+  .home_item_text {
+    position: absolute;
+    transform: translateY(330px);
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home_item_image {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home_item_image {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .home_items {
+    width: 95%;
+  }
+  .home_item_image {
+    width: 85%;
+  }
+  .home_item_text {
+    width: 90%;
+    height: 60%;
+    padding: 15px;
+    padding-top: 120px;
+  }
+  .home_item_text > h1 {
+    font-size: 30px;
+  }
+  .home_item_text > p {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .home_items {
+    width: 95%;
+  }
+  .home_item_image {
+    width: 95%;
+    transform: translateY(-30px) !important;
+  }
+  .home_item_text {
+    position: absolute;
+    transform: translateY(330px);
+    width: 95%;
+  }
+  .home_item_text > h1 {
+    font-size: 26px;
+  }
+  .home_item_text > p {
+    font-size: 17px;
+  }
+  .home_item_btn > span {
+    width: 10px;
+  }
+  .home_item_btn > button {
+    padding: 15px 20px 15px 20px;
+    font-family: "Cabin", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .home_items {
+    background-color: rgba(42, 132, 250, 0.781);
+    width: 100%;
+    height: 100%;
+  }
+  .home_item_image {
+      position: relative;
+    width: 95%;
+    transform: translateY(65px) !important;
+  }
+  .home_item_text {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateY(-65px) !important;
+    width: 95%;
+    padding: 15px;
+  }
+  .home_item_text > h1 {
+    font-size: 23px;
+    color: rgb(255, 194, 61);
+    padding-bottom: 20px;
+  }
+  .home_item_text > p {
+    font-size: 15px;
+  }
+  .home_item_btn > span {
+    width: 10px;
+  }
+  .home_item_btn > button {
+    padding: 15px 17px 15px 17px;
+  }
+  .home_item_btn > button:nth-child(1) {
+    background-color: rgb(255, 194, 61);
+  }
+  .home_item_btn > button:nth-child(3) {
+    color: rgb(255, 194, 61);
+  }
+  .home_item_btn > button > a {
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
