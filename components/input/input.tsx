@@ -6,7 +6,7 @@ import { InputType } from "./input.d";
 
 const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
   return (
-    <div className={classes.inputs}>
+    <div className={classes.inputs} id={props.id}>
       <input type="number" min={0} max={4} placeholder="Credit Hours" />
       <span />
       <select>
@@ -34,6 +34,8 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
           !props.isDelete ? classes.disable_delete : classes.enable_delete
         }`}
         disabled={!props.isDelete}
+        onClick={() => props.setDelete(props.id)}
+        title="delete"
       >
         <XCircle size={30} color="#fff" />
       </button>

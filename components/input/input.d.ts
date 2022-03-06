@@ -1,7 +1,7 @@
-import { ReactChildren } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export interface InputType {
   isDelete: boolean;
   id: string;
-  setDelete?: (id: string) => {};
+  setDelete: Dispatch<SetStateAction<string>>;
 }

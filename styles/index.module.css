@@ -51,9 +51,7 @@
   border: none;
   padding: 20px 30px 20px 30px;
   font-family: "Cabin", sans-serif;
-}
-
-.home_item_btn > button > a {
+  cursor: pointer;
   font-size: 20px;
   font-weight: 500;
 }
@@ -204,15 +202,13 @@
   }
   .home_item_btn > button {
     padding: 15px 17px 15px 17px;
+    font-size: 17px;
+    font-weight: 500;
   }
   .home_item_btn > button:nth-child(1) {
     background-color: rgb(255, 194, 61);
   }
   .home_item_btn > button:nth-child(3) {
     color: rgb(255, 194, 61);
-  }
-  .home_item_btn > button > a {
-    font-size: 17px;
-    font-weight: 500;
   }
 }

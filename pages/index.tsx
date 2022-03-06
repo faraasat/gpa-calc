@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import ParticlesComponent from "../components/particles/particles";
 
 import classes from "../styles/index.module.css";
@@ -9,6 +9,8 @@ import classes from "../styles/index.module.css";
 // }: InferGetStaticPropsType<typeof getStaticProps>)
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
   return (
     <section className={classes.home}>
       <ParticlesComponent />
@@ -21,12 +23,12 @@ const Home: NextPage = () => {
             CGPA with great flexibility...
           </p>
           <div className={classes.home_item_btn}>
-            <button>
-              <Link href="/calc-gpa">Calculate GPA</Link>
+            <button onClick={() => router.push("/calc-gpa")}>
+              Calculate GPA
             </button>
             <span />
-            <button>
-              <Link href="/calc-cgpa">Calculate CGPA</Link>
+            <button onClick={() => router.push("/calc-cgpa")}>
+              Calculate CGPA
             </button>
           </div>
         </div>

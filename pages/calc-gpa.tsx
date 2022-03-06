@@ -6,29 +6,46 @@ import InputComponent from "./../components/input/input";
 import classes from "../styles/calc-gpa.module.css";
 
 const CalcGPA: NextPage = () => {
-  const [inputFields, setInputFields] = useState<Array<number>>([0, 1, 2]);
-  const [isDelete, setIsDelete] = useState<number>(-1);
+  const [inputFields, setInputFields] = useState<Array<number | undefined>>([
+    0, 1, 2,
+  ]);
+  const [isDelete, setIsDelete] = useState<string>("");
 
-  const handleAdd = (_event: any) => {
-    const inps: Array<number> = [...inputFields, inputFields.length];
+  const handleAdd = () => {
+    const inps: Array<number | undefined> = [
+      ...inputFields,
+      inputFields.length,
+    ];
     setInputFields(inps);
   };
+
+  if (isDelete && isDelete.length >= 5) {
+    let inps: Array<number | undefined> = inputFields.map((x) => {
+      if (Number(x) !== Number(isDelete.split("_")[1])) {
+        return x;
+      }
+    });
+    console.log("hello");
+    setInputFields(inps);
+    setIsDelete("");
+  }
 
   return (
     <section className={classes.gpa}>
       <div className={classes.gpa_calc}>
-        <div>
+        <div className={classes.gpa_calc_details}>
           <h1>Your Details</h1>
         </div>
         <div>
-          <InputComponent id="inp_1" isDelete={false} />
-          <InputComponent id="inp_4" isDelete={false} />
-          <InputComponent id="inp_3" isDelete={false} />
+          <InputComponent setDelete={setIsDelete} id="inp_0" isDelete={false} />
+          <InputComponent setDelete={setIsDelete} id="inp_1" isDelete={false} />
+          <InputComponent setDelete={setIsDelete} id="inp_2" isDelete={false} />
           {inputFields.length > 3 &&
             inputFields.map((infs, index) => {
-              if (infs >= 3) {
+              if (infs! >= 3) {
                 return (
                   <InputComponent
+                    setDelete={setIsDelete}
                     id={`inp_${infs}`}
                     key={index}
                     isDelete={true}
@@ -36,9 +53,9 @@ const CalcGPA: NextPage = () => {
                 );
               }
             })}
-          <InputModelComponent />
+          <InputModelComponent handleAdd={handleAdd} />
         </div>
-        <button onClick={handleAdd}>Add Input</button>
+        <button>Get Result</button>
       </div>
       <div className={classes.gpa_result}>Result</div>
     </section>
