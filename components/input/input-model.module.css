@@ -1,24 +1,25 @@
-.inputs {
+.input_model {
   display: flex;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.inputs span {
+.input_model span {
   width: 10px;
 }
 
-.inputs input {
-  min-width: 110px;
+.input_model input {
+  width: 110px;
+  height: 35px;
+}
+
+.input_model select {
+  width: 100px;
   min-height: 35px;
 }
 
-.inputs select {
-  min-height: 35px;
-}
-
-.input_delete_button {
+.input_model button {
   border-radius: 100%;
   height: 30px;
   width: 30px;
@@ -26,12 +27,5 @@
   outline: none;
   border: none;
   padding: 0;
-}
-
-.disable_delete {
-  background-color: rgb(218, 147, 147);
-}
-
-.enable_delete {
-  background-color: rgb(255, 59, 59);
+  background-color: rgb(75, 255, 59);
 }

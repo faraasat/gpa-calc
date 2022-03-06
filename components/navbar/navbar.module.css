@@ -62,9 +62,8 @@
 }
 
 .subnavbar_menu {
-  font-family: "Potta One", cursive;
-  font-weight: bolder;
-  font-size: 22px;
+  transform: translateY(3.5px);
+  cursor: pointer;
   margin-block: 0 !important;
   color: rgb(255, 255, 255);
 }

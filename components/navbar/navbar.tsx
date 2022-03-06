@@ -2,6 +2,7 @@ import { NextComponentType } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
+import { Menu } from "react-feather";
 
 import classes from "./navbar.module.css";
 
@@ -85,7 +86,7 @@ const NavbarComponent: NextComponentType = () => {
               className={classes.subnavbar_menu}
               onClick={() => setIsOpen(!isOpen)}
             >
-              Menu
+              <Menu size={40} fontFamily="Potta One" />
             </h2>
           </div>
           <div
