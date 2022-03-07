@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Navbar />
       </nav>
       <Component {...pageProps} />
+      <div id="grading-window"></div>
     </Fragment>
   );
 }

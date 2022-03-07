@@ -1,6 +1,28 @@
 .gpa {
   padding: 50px 70px;
   min-height: calc(100vh - 62px);
+}
+
+.gpa_align_top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gpa_align_top input {
+  margin-right: 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(133, 133, 133);
+  min-width: 150px;
+}
+
+.gpa_align_middle {
+  margin-bottom: 20px;
+}
+
+.gpa_align_bottom {
   display: flex;
   justify-content: space-between;
   width: 100%;

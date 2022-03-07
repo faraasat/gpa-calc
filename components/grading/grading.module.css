@@ -1,0 +1,45 @@
+.grading {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 20px 15px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.grading_list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.grading_item {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.grading_item span {
+  margin-block: 0;
+}
+
+.grading_item :nth-child(1) {
+  font-weight: bold;
+}
+
+.grading_item :nth-child(4) {
+  font-weight: bold;
+}
+
+.grading_btn {
+  margin-top: 10px;
+}

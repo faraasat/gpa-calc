@@ -5,16 +5,12 @@
   transition: all 0.2s ease-in;
 }
 
-.btn:hover {
-  transform: scale(1.01);
-  background-color: rgb(42, 132, 225);
-}
-
 .btn_original {
   outline: none;
   border: none;
   background-color: rgb(42, 132, 250);
   color: white;
+  border: 1px solid rgb(42, 132, 250);
 }
 
 .btn_inverted {
@@ -22,4 +18,23 @@
   border: none;
   color: rgb(42, 132, 250);
   background-color: white;
+  border: 1px solid rgb(42, 132, 250);
+}
+
+.btn_original:hover {
+  transform: scale(1.01);
+  outline: none;
+  border: none;
+  color: rgb(42, 132, 250);
+  background-color: white;
+  border: 1px solid rgb(42, 132, 250);
+}
+
+.btn_inverted:hover {
+  transform: scale(1.01);
+  outline: none;
+  border: none;
+  background-color: rgb(42, 132, 250);
+  color: white;
+  border: 1px solid rgb(42, 132, 250);
 }
