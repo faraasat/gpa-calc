@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useState } from "react";
 import InputModelComponent from "../components/input/input-model";
 import InputComponent from "./../components/input/input";
+import ButtonComponent from "./../components/button/button";
 
 import classes from "../styles/calc-gpa.module.css";
 
@@ -11,12 +12,26 @@ const CalcGPA: NextPage = () => {
   ]);
   const [isDelete, setIsDelete] = useState<string>("");
 
+  console.log("hello");
+
   const handleAdd = () => {
     const inps: Array<number | undefined> = [
       ...inputFields,
       inputFields.length,
     ];
     setInputFields(inps);
+  };
+
+  const handleCheckResult = () => {
+    const data = [];
+    for (let i in inputFields) {
+      const inp_values = document.getElementById(`inp_${i}`)!;
+      data.push({
+        marks: (inp_values.childNodes[0] as HTMLInputElement).value,
+        grade: (inp_values.childNodes[2] as HTMLSelectElement).value,
+      });
+    }
+    console.log(data);
   };
 
   if (isDelete && isDelete.length >= 5) {
@@ -55,7 +70,13 @@ const CalcGPA: NextPage = () => {
             })}
           <InputModelComponent handleAdd={handleAdd} />
         </div>
-        <button>Get Result</button>
+        <ButtonComponent
+          text="Caclulate Result"
+          inverted={false}
+          onClick={handleCheckResult}
+        >
+          Get Result
+        </ButtonComponent>
       </div>
       <div className={classes.gpa_result}>Result</div>
     </section>

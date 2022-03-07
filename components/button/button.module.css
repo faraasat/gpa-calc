@@ -1,0 +1,25 @@
+.btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  background-color: rgb(42, 132, 225);
+}
+
+.btn_original {
+  outline: none;
+  border: none;
+  background-color: rgb(42, 132, 250);
+  color: white;
+}
+
+.btn_inverted {
+  outline: none;
+  border: none;
+  color: rgb(42, 132, 250);
+  background-color: white;
+}

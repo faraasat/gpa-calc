@@ -15,7 +15,7 @@ const InputModelComponent: FC<IInputModel> = (props) => {
       <span />
       <input type="number" disabled={true} />
       <span />
-      <button onClick={props.handleAdd} title="delete">
+      <button onClick={props.handleAdd} title="Add Row">
         <PlusCircle size={30} color="#fff" />
       </button>
     </div>

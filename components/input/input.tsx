@@ -10,7 +10,7 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
       <input type="number" min={0} max={4} placeholder="Credit Hours" />
       <span />
       <select>
-        <option>Select Grade</option>
+        <option value={-1}>Select Grade</option>
       </select>
       <span />
       <input
@@ -35,7 +35,7 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
         }`}
         disabled={!props.isDelete}
         onClick={() => props.setDelete(props.id)}
-        title="delete"
+        title="Delete Row"
       >
         <XCircle size={30} color="#fff" />
       </button>
