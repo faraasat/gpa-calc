@@ -1,33 +1,41 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { X } from "react-feather";
 
+import AppContext from "../../context/app-context";
 import ButtonComponent from "../button/button";
 import GradeSettingInputComponent from "../grade-setting-input/grade-setting-input";
 
-import { IGradeSetting } from "./grade-setting.d";
-
 import classes from "./grade-setting.module.css";
+import { IGrade } from "./../grading/grading.d";
 
-const GradeSettingComponent: FC<IGradeSetting> = (props: IGradeSetting) => {
+const GradeSettingComponent: FC = () => {
   const handleCancel = () => {
     document.getElementById("grading-window")!.style.display = "none";
   };
 
+  const { grades, setGradeSetting } = useContext(AppContext);
+
   const handleApply = () => {
-    const gradings = props.gradings.map((_grading, index) => {
+    const gradings: Array<IGrade> = grades.map((_grading, index) => {
       const elmes = (
         document.getElementById(`grading_input_${index}`) as HTMLElement
       ).children;
-      const min = elmes[1].getElementsByTagName("input")[0].value;
-      const max = elmes[1].getElementsByTagName("input")[1].value;
-      return {
-        grade: elmes[0].getElementsByTagName("input")[0].value,
+      const min: number = Number(
+        elmes[1].getElementsByTagName("input")[0].value
+      );
+      const max: number = Number(
+        elmes[1].getElementsByTagName("input")[1].value
+      );
+      const result: IGrade = {
+        text: elmes[0].getElementsByTagName("input")[0].value,
         min: min,
         max: max,
-        grade_points: elmes[2].getElementsByTagName("input")[0].value,
+        value: Number(elmes[2].getElementsByTagName("input")[0].value),
       };
+      return result;
     });
-    console.log(gradings);
+    setGradeSetting(gradings);
+    handleCancel();
   };
 
   return (
@@ -39,7 +47,7 @@ const GradeSettingComponent: FC<IGradeSetting> = (props: IGradeSetting) => {
         </div>
         <hr />
         <div className={classes.grade_setting_body}>
-          {props.gradings.map((grading, index) => (
+          {grades.map((grading, index) => (
             <GradeSettingInputComponent
               id={`grading_input_${index}`}
               grade={grading}
