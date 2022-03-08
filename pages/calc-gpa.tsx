@@ -46,64 +46,66 @@ const CalcGPA: NextPage = () => {
 
   return (
     <section className={classes.gpa}>
-      <div className={classes.gpa_align_top}>
-        <input
-          type="number"
-          min={4}
-          max={100}
-          defaultValue="4"
-          placeholder="Grade Threshold"
-        />
-        <ButtonComponent inverted={false} text={"Set Grade Threshold"} />
-      </div>
-      <div className={classes.gpa_align_middle}>
-        <GradingComponent />
-      </div>
-      <div className={classes.gpa_align_bottom}>
-        <div className={classes.gpa_calc}>
-          <div className={classes.gpa_calc_details}>
-            <h1>Your Details</h1>
-          </div>
-          <div>
-            <InputComponent
-              setDelete={setIsDelete}
-              id="inp_0"
-              isDelete={false}
-            />
-            <InputComponent
-              setDelete={setIsDelete}
-              id="inp_1"
-              isDelete={false}
-            />
-            <InputComponent
-              setDelete={setIsDelete}
-              id="inp_2"
-              isDelete={false}
-            />
-            {inputFields.length > 3 &&
-              inputFields.map((infs, index) => {
-                if (infs! >= 3) {
-                  return (
-                    <InputComponent
-                      setDelete={setIsDelete}
-                      id={`inp_${infs}`}
-                      key={index}
-                      isDelete={true}
-                    />
-                  );
-                }
-              })}
-            <InputModelComponent handleAdd={handleAdd} />
-          </div>
-          <ButtonComponent
-            text="Caclulate Result"
-            inverted={false}
-            onClick={handleCheckResult}
-          >
-            Get Result
-          </ButtonComponent>
+      <div className={classes.gpa_align}>
+        <div className={classes.gpa_align_top}>
+          <input
+            type="number"
+            min={4}
+            max={100}
+            defaultValue="4"
+            placeholder="Grade Threshold"
+          />
+          <ButtonComponent inverted={false} text={"Set Grade Threshold"} />
         </div>
-        <div className={classes.gpa_result}>Result</div>
+        <div className={classes.gpa_align_middle}>
+          <GradingComponent />
+        </div>
+        <div className={classes.gpa_align_bottom}>
+          <div className={classes.gpa_calc}>
+            <div className={classes.gpa_calc_details}>
+              <h1>Your Details</h1>
+            </div>
+            <div>
+              <InputComponent
+                setDelete={setIsDelete}
+                id="inp_0"
+                isDelete={false}
+              />
+              <InputComponent
+                setDelete={setIsDelete}
+                id="inp_1"
+                isDelete={false}
+              />
+              <InputComponent
+                setDelete={setIsDelete}
+                id="inp_2"
+                isDelete={false}
+              />
+              {inputFields.length > 3 &&
+                inputFields.map((infs, index) => {
+                  if (infs! >= 3) {
+                    return (
+                      <InputComponent
+                        setDelete={setIsDelete}
+                        id={`inp_${infs}`}
+                        key={index}
+                        isDelete={true}
+                      />
+                    );
+                  }
+                })}
+              <InputModelComponent handleAdd={handleAdd} />
+            </div>
+            <ButtonComponent
+              text="Caclulate Result"
+              inverted={false}
+              onClick={handleCheckResult}
+            >
+              Get Result
+            </ButtonComponent>
+          </div>
+          <div className={classes.gpa_result}>Result</div>
+        </div>
       </div>
     </section>
   );

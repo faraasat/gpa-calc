@@ -1,6 +1,9 @@
 .gpa {
-  padding: 50px 70px;
   min-height: calc(100vh - 62px);
+}
+
+.gpa_align {
+  padding: 50px 70px;
 }
 
 .gpa_align_top {

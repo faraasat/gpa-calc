@@ -1,0 +1,78 @@
+.grade_setting_input {
+  display: flex;
+  align-items: center;
+}
+
+.hr {
+  display: none;
+}
+
+.grade_setting_input input {
+  max-width: 70px;
+  height: 25px;
+  outline: none;
+  border: 1px solid rgb(118, 118, 118);
+}
+
+.grade_setting_input p {
+  margin-left: 13px;
+  margin-right: 5px;
+  color: black !important;
+}
+
+.grade_setting_inputs {
+  display: flex;
+  align-items: center;
+}
+
+.grade_setting_inputs div {
+  display: flex;
+  align-items: center;
+}
+
+.grade_setting_unstrike {
+  color: transparent;
+}
+
+.grade_setting_strike {
+  color: rgb(85, 85, 85);
+}
+
+@media only screen and (max-width: 920px) {
+  .grade_setting_input input {
+    max-width: 40px;
+    height: 25px;
+  }
+
+  .grade_setting_input p {
+    margin-left: 13px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .grade_setting_input {
+    display: flex;
+  }
+
+  .grade_setting_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0 5px 10px;
+  }
+
+  .grade_setting_checkbox {
+    padding-left: 10px;
+  }
+
+  .hr {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .grade_setting_inputs {
+    padding: 5px 0 5px 0;
+  }
+}

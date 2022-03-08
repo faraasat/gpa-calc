@@ -1,8 +1,6 @@
-import { FC } from "react";
-import ReactDOM from "react-dom";
+import { FC, Fragment } from "react";
 
 import ButtonComponent from "./../button/button";
-import OverlayComponent from "./../overlay/overlay";
 
 import { IGrade } from "./grading.d";
 
@@ -10,10 +8,7 @@ import classes from "./grading.module.css";
 
 const GradingComponent: FC = () => {
   const handleGradingWindow = () => {
-    ReactDOM.render(
-      <OverlayComponent />,
-      document.getElementById("grading-window")
-    );
+    document.getElementById("grading-window")!.style.display = "block";
   };
 
   const grade_list: Array<IGrade> = [

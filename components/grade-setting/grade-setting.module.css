@@ -1,0 +1,64 @@
+.grade_setting {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  z-index: 60;
+}
+
+.grade_setting_alignment {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grade_setting_alignment hr {
+  width: 100%;
+  margin-block: 0;
+}
+
+.grade_setting_header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+  height: 60px;
+  font-family: "Cabin", sans-serif;
+  color: rgb(42, 132, 250);
+  transform: translateY(5px);
+}
+
+.grade_setting_header svg {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.grade_setting_body {
+  height: 500px;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.grade_setting_footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 50px;
+}
+
+.grade_setting_footer button {
+  margin-left: 10px;
+}

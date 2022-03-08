@@ -24,3 +24,7 @@ nav {
   z-index: 50;
   position: relative;
 }
+
+#grading-window {
+  display: none;
+}
