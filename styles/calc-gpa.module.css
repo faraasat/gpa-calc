@@ -10,11 +10,18 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  align-items: center;
+}
+
+.gpa_align_top div {
+  margin-right: 10px;
+  font-family: "Potta One", cursive;
+  color: rgb(42, 132, 250);
+  font-size: 1.5em;
 }
 
 .gpa_align_top input {
-  margin-right: 5px;
-  padding: 0 5px;
+  padding: 15px 8px;
   border-radius: 5px;
   outline: none;
   border: 1px solid rgb(133, 133, 133);
@@ -41,12 +48,33 @@
 .gpa_result {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
   width: 47%;
+}
+
+.gpa_result_details {
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px 10px;
 }
 
 .gpa_calc_details {
   font-family: "Potta One", cursive;
   font-weight: bolder;
   color: rgba(42, 132, 250, 0.781);
+}
+
+.gpa_result_details {
+  color: rgb(255, 194, 61);
+  font-size: 1.5em;
+  font-family: "Potta One", cursive;
+}
+
+.gpa_result_details > div {
+  margin-bottom: 10px;
 }

@@ -14,10 +14,17 @@ const GradingComponent: FC = () => {
 
   const { grades } = useContext(AppContext);
 
+  let filteredGrades: Array<IGrade> = [];
+  grades.map((grade) => {
+    if (grade.checked) {
+      filteredGrades.push(grade);
+    }
+  });
+
   return (
     <div className={classes.grading}>
       <div className={classes.grading_list}>
-        {grades.map((grades: IGrade) => (
+        {filteredGrades.map((grades: IGrade) => (
           <div key={grades.value} className={classes.grading_item}>
             <span>{grades.text}&nbsp;&#x0003A;&nbsp;</span>
             <span>{grades.min}&nbsp;&minus;&nbsp;</span>

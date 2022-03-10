@@ -19,6 +19,13 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
     setCredit(e.target.value);
   };
 
+  let filteredGrades: Array<IGrade> = [];
+  grades.map((grade) => {
+    if (grade.checked) {
+      filteredGrades.push(grade);
+    }
+  });
+
   return (
     <div className={classes.inputs} id={props.id}>
       <input
@@ -32,7 +39,7 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
       <span />
       <select onChange={handleGrades}>
         <option value={-1}>Select Grade</option>
-        {grades.map((grade: IGrade, index: number) => (
+        {filteredGrades.map((grade: IGrade, index: number) => (
           <option value={index} key={index}>
             {grade.text}
           </option>

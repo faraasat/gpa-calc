@@ -15,7 +15,7 @@ const GradeSettingInputComponent: FC<IGradeSettingInput> = (
 
   return (
     <Fragment>
-      <div className={classes.grade_setting_input}>
+      <div className={classes.grade_setting_input} id={props.id}>
         <div className={classes.grade_setting_checkbox}>
           <input
             type="checkbox"
@@ -24,7 +24,7 @@ const GradeSettingInputComponent: FC<IGradeSettingInput> = (
           />
           &nbsp;
         </div>
-        <div className={classes.grade_setting_inputs} id={props.id}>
+        <div className={classes.grade_setting_inputs}>
           <div>
             <del
               className={

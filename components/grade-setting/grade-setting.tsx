@@ -20,17 +20,24 @@ const GradeSettingComponent: FC = () => {
       const elmes = (
         document.getElementById(`grading_input_${index}`) as HTMLElement
       ).children;
-      const min: number = Number(
-        elmes[1].getElementsByTagName("input")[0].value
+      const isChecked = (elmes[0].children[0] as HTMLInputElement).checked;
+
+      const text = (elmes[1].children[0].children[1] as HTMLInputElement).value;
+      const min = Number(
+        (elmes[1].children[1].children[1] as HTMLInputElement).value
       );
-      const max: number = Number(
-        elmes[1].getElementsByTagName("input")[1].value
+      const max = Number(
+        (elmes[1].children[1].children[2] as HTMLInputElement).value
+      );
+      const value = Number(
+        (elmes[1].children[2].children[1] as HTMLInputElement).value
       );
       const result: IGrade = {
-        text: elmes[0].getElementsByTagName("input")[0].value,
-        min: min,
-        max: max,
-        value: Number(elmes[2].getElementsByTagName("input")[0].value),
+        checked: isChecked,
+        text,
+        min,
+        max,
+        value,
       };
       return result;
     });
