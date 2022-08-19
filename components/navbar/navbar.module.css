@@ -10,12 +10,13 @@
   background-color: rgb(255, 194, 61);
 }
 
-.navbar_brand {
+.navbar_brand > a {
   font-family: "Potta One", cursive;
   font-weight: bolder;
   font-size: 22px;
   margin-block: 0 !important;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none !important;
 }
 
 .navbar_links {
@@ -31,7 +32,14 @@
   color: white;
 }
 
-.navbar_link_active {
+.navbar_links > span > a {
+  font-family: "Potta One", cursive;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none !important;
+}
+
+.navbar_link_active > a {
   font-weight: bold !important;
   text-shadow: 0.7px 0.7px rgb(0, 0, 0);
 }
@@ -53,12 +61,13 @@
   padding-right: 30px;
 }
 
-.subnavbar_brand {
+.subnavbar_brand > a {
   font-family: "Potta One", cursive;
   font-weight: bolder;
   font-size: 22px;
   margin-block: 0 !important;
   color: rgb(255, 255, 255);
+  text-decoration: none !important;
 }
 
 .subnavbar_menu {
@@ -66,6 +75,11 @@
   cursor: pointer;
   margin-block: 0 !important;
   color: rgb(255, 255, 255);
+}
+
+.subnavbar_menu > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none !important;
 }
 
 .subnavbar_links {
@@ -91,6 +105,7 @@
   height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-decoration: none !important;
 }
 
 .subnavbar_links hr {

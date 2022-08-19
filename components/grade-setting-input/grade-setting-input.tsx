@@ -7,7 +7,7 @@ import classes from "./grade-setting-input.module.css";
 const GradeSettingInputComponent: FC<IGradeSettingInput> = (
   props: IGradeSettingInput
 ) => {
-  const [checked, setChecked] = useState<boolean>(true);
+  const [checked, setChecked] = useState<boolean>(props.grade.checked);
 
   const handleChange = (e: boolean) => {
     setChecked(e);
@@ -19,7 +19,7 @@ const GradeSettingInputComponent: FC<IGradeSettingInput> = (
         <div className={classes.grade_setting_checkbox}>
           <input
             type="checkbox"
-            defaultChecked={true}
+            defaultChecked={checked}
             onChange={(e) => handleChange(e.target.checked)}
           />
           &nbsp;

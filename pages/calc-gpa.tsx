@@ -7,6 +7,7 @@ import ButtonComponent from "./../components/button/button";
 import GradingComponent from "../components/grading/grading";
 
 import classes from "../styles/calc-gpa.module.css";
+import Head from "next/head";
 
 const CalcGPA: NextPage = () => {
   const [inputFields, setInputFields] = useState<Array<number | undefined>>([
@@ -42,19 +43,23 @@ const CalcGPA: NextPage = () => {
   const calculateGPA = (data: Array<{ credits: string; grade: string }>) => {
     const resArr = data.map((totObt: { credits: string; grade: string }) => {
       const obtained = Number(totObt.credits) * Number(totObt.grade);
-      const total = Number(totObt.credits) * 4;
+      const total = Number(totObt.credits);
       return { obtained, total };
     });
+
     let obtained = 0;
     let total = 0;
     resArr.map((r: { obtained: number; total: number }) => {
       obtained += r.obtained;
       total += r.total;
     });
+
+    total = total * gradeThreshold;
     setDetails({ obtained, total });
   };
 
   if (isDelete && isDelete.length >= 5) {
+    console.log(isDelete)
     let inps: Array<number> = [];
     inputFields.map((x) => {
       if (Number(x) !== Number(isDelete.split("_")[1]))
@@ -65,109 +70,115 @@ const CalcGPA: NextPage = () => {
   }
 
   return (
-    <section className={classes.gpa}>
-      <div className={classes.gpa_align}>
-        <div className={classes.gpa_align_top}>
-          <div>GPA Threshold</div>
-          <input
-            type="number"
-            min={4}
-            max={100}
-            value={gradeThreshold}
-            onChange={(e) => setGradeThreshold(Number(e.target.value))}
-            placeholder="Grade Threshold"
-          />
-          {/* <ButtonComponent
-            inverted={false}
-            text={"Set Grade Threshold"}
-          /> */}
-        </div>
-        <div className={classes.gpa_align_middle}>
-          <GradingComponent />
-        </div>
-        <div className={classes.gpa_align_bottom}>
-          <div className={classes.gpa_calc}>
-            <div className={classes.gpa_calc_details}>
-              <h1>Your Details</h1>
-            </div>
-            <div className={classes.gpa_calc_inps}>
-              <InputComponent
-                setDelete={setIsDelete}
-                id="inp_0"
-                isDelete={false}
-              />
-              <InputComponent
-                setDelete={setIsDelete}
-                id="inp_1"
-                isDelete={false}
-              />
-              <InputComponent
-                setDelete={setIsDelete}
-                id="inp_2"
-                isDelete={false}
-              />
-              {inputFields.length > 3 &&
-                inputFields.map((infs, index) => {
-                  if (infs! >= 3) {
-                    return (
-                      <InputComponent
-                        setDelete={setIsDelete}
-                        id={`inp_${infs}`}
-                        key={index}
-                        isDelete={true}
-                      />
-                    );
-                  }
-                })}
-              <InputModelComponent handleAdd={handleAdd} />
-            </div>
-            <span style={{ marginTop: 15 }} />
-            <ButtonComponent
-              text="Calculate Result"
-              inverted={false}
-              onClick={handleCheckResult}
-            >
-              Get Result
-            </ButtonComponent>
+    <>
+      <Head>
+        <title>Calculate Your GPA</title>
+      </Head>
+      <section className={classes.gpa}>
+        <div className={classes.gpa_align}>
+          <div className={classes.gpa_align_top}>
+            <div>GPA Threshold</div>
+            <input
+              type="number"
+              min={4}
+              max={100}
+              value={gradeThreshold}
+              onChange={(e) => setGradeThreshold(Number(e.target.value))}
+              placeholder="Grade Threshold"
+            />
           </div>
-          <div className={classes.gpa_result}>
-            <div className={classes.gpa_calc_details}>
-              <h1>Your GPA</h1>
+          <div className={classes.gpa_align_middle}>
+            <GradingComponent />
+          </div>
+          <div className={classes.gpa_align_bottom}>
+            <div className={classes.gpa_calc}>
+              <div className={classes.gpa_calc_details}>
+                <h1>Your Details</h1>
+              </div>
+              <div className={classes.gpa_calc_inps}>
+                <InputComponent
+                  setDelete={setIsDelete}
+                  id="inp_0"
+                  isDelete={false}
+                />
+                <InputComponent
+                  setDelete={setIsDelete}
+                  id="inp_1"
+                  isDelete={false}
+                />
+                <InputComponent
+                  setDelete={setIsDelete}
+                  id="inp_2"
+                  isDelete={false}
+                />
+                {inputFields.length > 3 &&
+                  inputFields.map((infs, index) => {
+                    if (infs! >= 3) {
+                      return (
+                        <InputComponent
+                          setDelete={setIsDelete}
+                          id={`inp_${infs}`}
+                          key={index}
+                          isDelete={true}
+                        />
+                      );
+                    }
+                  })}
+                <InputModelComponent handleAdd={handleAdd} />
+              </div>
+              <span style={{ marginTop: 15 }} />
+              <ButtonComponent
+                text="Calculate Result"
+                inverted={false}
+                onClick={handleCheckResult}
+              >
+                Get Result
+              </ButtonComponent>
             </div>
-            <div className={classes.gpa_result_details}>
-              <div className={classes.gpa_result_detail_1}>
-                {parseFloat(`${details.obtained}`).toFixed(3)} / {details.total}{" "}
-                =&nbsp;
-                {details.obtained !== 0
-                  ? parseFloat(`${details.obtained / details.total}`).toFixed(3)
-                  : 0}
+            <div className={classes.gpa_result}>
+              <div className={classes.gpa_calc_details}>
+                <h1>Your GPA</h1>
               </div>
-              <div className={classes.gpa_result_detail_2}>
-                {details.obtained !== 0
-                  ? parseFloat(`${details.obtained / details.total}`).toFixed(3)
-                  : 0}{" "}
-                * {gradeThreshold} ={" "}
-                {details.obtained !== 0
-                  ? parseFloat(
-                      `${(details.obtained / details.total) * gradeThreshold}`
-                    ).toFixed(3)
-                  : 0}
-              </div>
-              <div className={classes.gpa_result_detail_3}>
-                <span>Your GPA:&nbsp;</span>
-                <span>
+              <div className={classes.gpa_result_details}>
+                <div className={classes.gpa_result_detail_1}>
+                  {`${details.obtained}`} / {details.total} =&nbsp;
+                  {details.obtained !== 0
+                    ? parseFloat(`${details.obtained / details.total}`).toFixed(
+                        3
+                      )
+                    : 0}
+                </div>
+                <div className={classes.gpa_result_detail_2}>
+                  {details.obtained !== 0
+                    ? parseFloat(`${details.obtained / details.total}`).toFixed(
+                        3
+                      )
+                    : 0}{" "}
+                  * {gradeThreshold} ={" "}
                   {details.obtained !== 0
                     ? parseFloat(
                         `${(details.obtained / details.total) * gradeThreshold}`
-                      ).toFixed(3)
+                      ).toFixed(2)
                     : 0}
-                </span>
+                </div>
+                <div className={classes.gpa_result_detail_3}>
+                  <span>Your GPA:&nbsp;</span>
+                  <span>
+                    {details.obtained !== 0
+                      ? parseFloat(
+                          `${
+                            (details.obtained / details.total) * gradeThreshold
+                          }`
+                        ).toFixed(2)
+                      : 0}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

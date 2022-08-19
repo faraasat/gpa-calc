@@ -1,4 +1,4 @@
-import { NextComponentType } from "next";
+import { FC } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
@@ -6,13 +6,11 @@ import { Menu } from "react-feather";
 
 import classes from "./navbar.module.css";
 
-type WindowSize = {
-  width: undefined | number;
-  height: undefined | number;
-};
+import { INavbar } from "./navbar.d";
+import { NextComponentType } from "next";
 
 function useWindowSize() {
-  const [windowSize, setWindowSize] = useState<WindowSize>({
+  const [windowSize, setWindowSize] = useState<INavbar>({
     width: undefined,
     height: undefined,
   });
@@ -49,14 +47,16 @@ const NavbarComponent: NextComponentType = () => {
           <div className={classes.navbar_links}>
             <span
               className={
-                router.pathname == "/" ? `${classes.navbar_link_active}` : ""
+                router && router?.pathname == "/"
+                  ? `${classes.navbar_link_active}`
+                  : ""
               }
             >
               <Link href="/">Home</Link>
             </span>
             <span
               className={
-                router.pathname == "/calc-gpa"
+                router && router?.pathname == "/calc-gpa"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
@@ -66,7 +66,7 @@ const NavbarComponent: NextComponentType = () => {
             </span>
             <span
               className={
-                router.pathname == "/calc-cgpa"
+                router && router?.pathname == "/calc-cgpa"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
@@ -96,7 +96,9 @@ const NavbarComponent: NextComponentType = () => {
           >
             <span
               className={
-                router.pathname == "/" ? `${classes.navbar_link_active}` : ""
+                router && router.pathname == "/"
+                  ? `${classes.navbar_link_active}`
+                  : ""
               }
             >
               <Link href="/">
@@ -106,7 +108,7 @@ const NavbarComponent: NextComponentType = () => {
             <hr />
             <span
               className={
-                router.pathname == "/calc-gpa"
+                router && router.pathname == "/calc-gpa"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
@@ -118,7 +120,7 @@ const NavbarComponent: NextComponentType = () => {
             <hr />
             <span
               className={
-                router.pathname == "/calc-cgpa"
+                router && router.pathname == "/calc-cgpa"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
