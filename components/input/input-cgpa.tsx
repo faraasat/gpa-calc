@@ -23,14 +23,12 @@ const InputCGPAComponent: FC<InputType> = (props: InputType): JSX.Element => {
         defaultValue={undefined}
         onChange={handleCredit}
       />
-      <span />
       <input
         type="number"
         placeholder="Grade Marks"
         defaultValue={undefined}
         onChange={handleGrades}
       />
-      <span />
       <input
         type="number"
         disabled
@@ -41,7 +39,6 @@ const InputCGPAComponent: FC<InputType> = (props: InputType): JSX.Element => {
             : 0
         }
       />
-      <span />
       <button
         className={`${classes.input_delete_button} ${
           !props.isDelete ? classes.disable_delete : classes.enable_delete

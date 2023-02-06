@@ -4,6 +4,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   gap: 10px;
+  width: 100%;
 }
 
 .inputs span {
@@ -37,7 +38,7 @@
   background-color: rgb(255, 59, 59);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1000px) {
   .inputs {
     width: 100%;
   }

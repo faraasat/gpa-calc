@@ -41,6 +41,10 @@
   width: 47%;
 }
 
+.cgpa_calc_inps {
+  width: 100%;
+}
+
 .cgpa_calc_details {
   font-family: "Potta One", cursive;
   font-weight: bolder;
@@ -73,4 +77,27 @@
 
 .cgpa_result_details > div {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 970px) {
+  .cgpa_align_bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cgpa_calc {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cgpa_result {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+.cgpa_align_top {
+  flex-direction: column;
+}
 }

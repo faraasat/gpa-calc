@@ -71,6 +71,14 @@ const CalcCGPA: NextPage = () => {
     <>
       <Head>
         <title>Calculate Your CGPA</title>
+        <meta
+          name="description"
+          content="Calculate your CGPA easily using dynamic gpa calculator."
+        />
+        <meta
+          name="keywords"
+          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education"
+        />
       </Head>
       <section className={classes.cgpa}>
         <div className={classes.cgpa_align}>

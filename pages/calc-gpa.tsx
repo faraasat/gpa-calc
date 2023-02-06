@@ -59,7 +59,7 @@ const CalcGPA: NextPage = () => {
   };
 
   if (isDelete && isDelete.length >= 5) {
-    console.log(isDelete)
+    console.log(isDelete);
     let inps: Array<number> = [];
     inputFields.map((x) => {
       if (Number(x) !== Number(isDelete.split("_")[1]))
@@ -73,6 +73,14 @@ const CalcGPA: NextPage = () => {
     <>
       <Head>
         <title>Calculate Your GPA</title>
+        <meta
+          name="description"
+          content="Calculate your GPA easily using dynamic gpa calculator."
+        />
+        <meta
+          name="keywords"
+          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education"
+        />
       </Head>
       <section className={classes.gpa}>
         <div className={classes.gpa_align}>

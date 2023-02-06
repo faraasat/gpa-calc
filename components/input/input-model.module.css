@@ -31,7 +31,7 @@
   background-color: rgb(75, 255, 59);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1000px) {
   .input_model {
     width: 100%;
   }

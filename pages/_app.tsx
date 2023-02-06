@@ -16,6 +16,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Head>
           <title>GPA and CGPA Calculator</title>
           <meta
+            name="google-site-verification"
+            content="bX4q7B0hfSZmMZ694hNi-AeZT8GanwWo5zxZI289dec"
+          />
+          <meta
             name="description"
             content="In this app you can calculate your GPA and CGPA with great flexibility"
           />
