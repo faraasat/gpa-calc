@@ -3,6 +3,7 @@
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 .inputs span {
@@ -34,4 +35,17 @@
 
 .enable_delete {
   background-color: rgb(255, 59, 59);
+}
+
+@media screen and (max-width: 560px) {
+  .inputs {
+    width: 100%;
+  }
+
+  .inputs > input,
+  .inputs > select {
+    flex: 1;
+    width: 100% !important;
+    min-width: auto !important;
+  }
 }

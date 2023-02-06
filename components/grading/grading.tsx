@@ -27,9 +27,12 @@ const GradingComponent: FC = () => {
         {filteredGrades.map((grades: IGrade) => (
           <div key={grades.value} className={classes.grading_item}>
             <span>{grades.text}&nbsp;&#x0003A;&nbsp;</span>
-            <span>{grades.min}&nbsp;&minus;&nbsp;</span>
-            <span>{grades.max}&nbsp;&rarr;&nbsp;</span>
-            <span>{grades.value}</span>
+            <span>
+              {grades.min}&nbsp;&minus;&nbsp;{grades.max}&nbsp;
+            </span>
+            <span>
+              <b>&rarr;&nbsp;{grades.value}</b>
+            </span>
           </div>
         ))}
       </div>

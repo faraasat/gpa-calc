@@ -10,6 +10,8 @@
 
 .grading_list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -42,4 +44,25 @@
 
 .grading_btn {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  .grading_list {
+    gap: 8px;
+  }
+
+  .grading_item {
+    width: 150px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .grading_item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
 }

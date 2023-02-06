@@ -3,6 +3,7 @@
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 .input_model span {
@@ -28,4 +29,17 @@
   border: none;
   padding: 0;
   background-color: rgb(75, 255, 59);
+}
+
+@media screen and (max-width: 560px) {
+  .input_model {
+    width: 100%;
+  }
+
+  .input_model > input,
+  .input_model > select {
+    flex: 1;
+    width: 100% !important;
+    min-width: auto !important;
+  }
 }
