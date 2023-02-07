@@ -32,7 +32,7 @@ const CalcCGPA: NextPage = () => {
       const inp_values: HTMLElement = document.getElementById(`cgpa_inp_${i}`)!;
       data.push({
         credits: (inp_values.childNodes[0] as HTMLInputElement).value,
-        grade: (inp_values.childNodes[2] as HTMLInputElement).value,
+        grade: (inp_values.childNodes[1] as HTMLInputElement).value,
       });
     }
     calculateCGPA(data);
@@ -57,7 +57,6 @@ const CalcCGPA: NextPage = () => {
   };
 
   if (isDelete && isDelete.length >= 5) {
-    console.log(isDelete);
     let inps: Array<number> = [];
     inputFields.map((x) => {
       if (Number(x) !== Number(isDelete.split("_")[2]))
@@ -77,7 +76,7 @@ const CalcCGPA: NextPage = () => {
         />
         <meta
           name="keywords"
-          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education"
+          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation"
         />
       </Head>
       <section className={classes.cgpa}>

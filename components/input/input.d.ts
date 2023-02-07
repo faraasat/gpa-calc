@@ -4,4 +4,5 @@ export interface InputType {
   isDelete: boolean;
   id: string;
   setDelete: Dispatch<SetStateAction<string>>;
+  className?: string;
 }

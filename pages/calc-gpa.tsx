@@ -34,7 +34,7 @@ const CalcGPA: NextPage = () => {
       const inp_values: HTMLElement = document.getElementById(`inp_${i}`)!;
       data.push({
         credits: (inp_values.childNodes[0] as HTMLInputElement).value,
-        grade: (inp_values.childNodes[4] as HTMLInputElement).value,
+        grade: (inp_values.childNodes[2] as HTMLInputElement).value,
       });
     }
     calculateGPA(data);
@@ -59,7 +59,6 @@ const CalcGPA: NextPage = () => {
   };
 
   if (isDelete && isDelete.length >= 5) {
-    console.log(isDelete);
     let inps: Array<number> = [];
     inputFields.map((x) => {
       if (Number(x) !== Number(isDelete.split("_")[1]))
@@ -79,7 +78,7 @@ const CalcGPA: NextPage = () => {
         />
         <meta
           name="keywords"
-          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education"
+          content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation"
         />
       </Head>
       <section className={classes.gpa}>
@@ -108,16 +107,19 @@ const CalcGPA: NextPage = () => {
                   setDelete={setIsDelete}
                   id="inp_0"
                   isDelete={false}
+                  className="gpa-inps-grade"
                 />
                 <InputComponent
                   setDelete={setIsDelete}
                   id="inp_1"
                   isDelete={false}
+                  className="gpa-inps-grade"
                 />
                 <InputComponent
                   setDelete={setIsDelete}
                   id="inp_2"
                   isDelete={false}
+                  className="gpa-inps-grade"
                 />
                 {inputFields.length > 3 &&
                   inputFields.map((infs, index) => {
@@ -152,21 +154,21 @@ const CalcGPA: NextPage = () => {
                   {`${details.obtained}`} / {details.total} =&nbsp;
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        7
                       )
                     : 0}
                 </div>
                 <div className={classes.gpa_result_detail_2}>
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        7
                       )
                     : 0}{" "}
                   * {gradeThreshold} ={" "}
                   {details.obtained !== 0
                     ? parseFloat(
                         `${(details.obtained / details.total) * gradeThreshold}`
-                      ).toFixed(2)
+                      ).toFixed(5)
                     : 0}
                 </div>
                 <div className={classes.gpa_result_detail_3}>

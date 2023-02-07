@@ -27,7 +27,7 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
   });
 
   return (
-    <div className={classes.inputs} id={props.id}>
+    <div className={`${props.className} ${classes.inputs}`} id={props.id}>
       <input
         type="number"
         min={0}
@@ -36,7 +36,6 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
         defaultValue={undefined}
         onChange={handleCredit}
       />
-      {/* <span /> */}
       <select onChange={handleGrades}>
         <option value={-1}>Select Grade</option>
         {filteredGrades.map((grade: IGrade, index: number) => (
@@ -45,7 +44,6 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
           </option>
         ))}
       </select>
-      {/* <span /> */}
       <input
         type="number"
         min={0}
@@ -54,7 +52,6 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
         placeholder="Grade Marks"
         value={optionGrades >= 0 ? grades[optionGrades].value : ""}
       />
-      {/* <span /> */}
       <input
         type="number"
         min={0}
@@ -67,7 +64,6 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
             : 0
         }
       />
-      {/* <span /> */}
       <button
         className={`${classes.input_delete_button} ${
           !props.isDelete ? classes.disable_delete : classes.enable_delete

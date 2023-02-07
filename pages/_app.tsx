@@ -21,7 +21,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
           <meta
             name="description"
-            content="In this app you can calculate your GPA and CGPA with great flexibility"
+            content="Calculate your GPA and CGPA effortlessly with our online tool. Quick, reliable and accurate results guaranteed. Simply input your grades and let us do the rest. Our user-friendly interface ensures quick and hassle-free results, making it the ideal solution for students and educators alike. Give it a try today and stay on top of your academic progress!"
+          />
+          <meta
+            name="keywords"
+            content="gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation"
           />
           <meta
             name="viewport"
