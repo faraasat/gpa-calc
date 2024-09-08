@@ -1,6 +1,7 @@
 # 👨‍💻 GPA/CGPA Calculator.
 #### Dynamic GPA and CGPA Calculator for Students and Educators.
-> ### <a href="https://www.farasat.me" rel="sponsored">😇 Visit My Portfolio - Farasat Ali</a>
+> ### <a href="https://www.farasat.me">😇 Visit My Portfolio - https://www.farasat.me</a>
+> ### <a href="https://linktr.ee/faraasat">😇 Visit My Socials - https://linktr.ee/faraasat</a>
 
 ---
 
