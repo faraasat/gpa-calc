@@ -1,7 +1,6 @@
 {
   "name": "gpa-calc",
   "version": "0.1.0",
-  "private": false,
   "repository": "https://github.com/faraasat/gpa-calc",
   "description": "You can calculate you GPA and CGPA with a lot of flexibility using this app!",
   "keywords": [
@@ -13,11 +12,10 @@
     "js",
     "uni"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "person": {
     "name": "Farasat Ali",
-    "email": "farasat.dev@gmail.com",
-    "url": ""
+    "url": "https://www.farasat.me"
   },
   "scripts": {
     "dev": "next dev",

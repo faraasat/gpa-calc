@@ -1,4 +1,4 @@
-import { createContext, FC, useState } from "react";
+import { createContext, FC, ReactNode, useState } from "react";
 import { IGrade } from "./../components/grading/grading.d";
 
 interface IAppContext {
@@ -25,7 +25,9 @@ const default_app_context: IAppContext = {
 
 const AppContext = createContext<IAppContext>(default_app_context);
 
-export const AppContextProvider: FC = ({ children }) => {
+export const AppContextProvider: FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [grades, setGrades] = useState<Array<IGrade>>(
     default_app_context.grades
   );
