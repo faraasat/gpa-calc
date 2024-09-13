@@ -1,6 +1,7 @@
 :root {
   --orange: "rgb(255, 194, 61)";
 }
+
 html,
 body {
   padding: 0;
@@ -18,6 +19,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
 }
 
 nav {
@@ -27,4 +29,10 @@ nav {
 
 #grading-window {
   display: none;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0px auto;
 }

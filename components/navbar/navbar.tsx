@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
@@ -74,6 +74,13 @@ const NavbarComponent: NextComponentType = () => {
             >
               <Link href="/calc-cgpa">Calculate CGPA</Link>
             </span>
+            <Link
+              href={"https://github.com/faraasat/gpa-calc"}
+              className={classes.navbar_github}
+              target="_blank"
+            >
+              <FaGithub />
+            </Link>
           </div>
         </section>
       ) : (
@@ -101,9 +108,7 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/">
-                <a onClick={() => setIsOpen(false)}>Home</a>
-              </Link>
+              <Link href="/">Home</Link>
             </span>
             <hr />
             <span
@@ -113,9 +118,7 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/calc-gpa">
-                <a onClick={() => setIsOpen(false)}>Calculate GPA</a>
-              </Link>
+              <Link href="/calc-gpa">Calculate GPA</Link>
             </span>
             <hr />
             <span
@@ -125,9 +128,7 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/calc-cgpa">
-                <a onClick={() => setIsOpen(false)}>Calculate CGPA</a>
-              </Link>
+              <Link href="/calc-cgpa">Calculate CGPA</Link>
             </span>
             <hr />
           </div>
