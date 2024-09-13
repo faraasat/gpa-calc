@@ -26,28 +26,30 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-feather": "^2.0.9",
-    "react-tsparticles": "^1.41.6"
+    "@aptabase/react": "^0.3.4",
+    "next": "14.2.11",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-feather": "^2.0.10",
+    "react-tsparticles": "^1.43.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.10",
-    "@storybook/addon-actions": "^6.5.10",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-interactions": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
-    "@storybook/builder-webpack5": "^6.5.10",
-    "@storybook/manager-webpack5": "^6.5.10",
-    "@storybook/react": "^6.5.10",
+    "@babel/core": "^7.25.2",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
-    "@types/react-dom": "^17.0.13",
-    "babel-loader": "^8.2.5",
+    "@types/react-dom": "^17.0.25",
+    "babel-loader": "^8.3.0",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "typescript": "4.6.2"
-  }
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
 }

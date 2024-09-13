@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
 import { Fragment } from "react";
-
+import { AptabaseProvider } from "@aptabase/react";
 import Head from "next/head";
+
 import Navbar from "../components/navbar/navbar";
 import OverlayComponent from "../components/overlay/overlay";
 import GradeSettingComponent from "../components/grade-setting/grade-setting";
@@ -36,7 +37,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <nav>
           <Navbar />
         </nav>
-        <Component {...pageProps} />
+        <AptabaseProvider appKey="A-EU-2731344304">
+          <Component {...pageProps} />
+        </AptabaseProvider>
         <div id="grading-window">
           <OverlayComponent />
           <GradeSettingComponent />

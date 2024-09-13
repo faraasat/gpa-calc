@@ -1,5 +1,7 @@
 import { NextPage } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import { useAptabase } from "@aptabase/react";
 
 import InputModelComponent from "../components/input/input-model";
 import InputComponent from "./../components/input/input";
@@ -7,7 +9,6 @@ import ButtonComponent from "./../components/button/button";
 import GradingComponent from "../components/grading/grading";
 
 import classes from "../styles/calc-gpa.module.css";
-import Head from "next/head";
 
 const CalcGPA: NextPage = () => {
   const [inputFields, setInputFields] = useState<Array<number | undefined>>([
@@ -19,6 +20,11 @@ const CalcGPA: NextPage = () => {
     obtained: 0,
     total: 0,
   });
+  const { trackEvent } = useAptabase();
+
+  useEffect(() => {
+    trackEvent("PAGE_VIEW", { page: "calc-gpa" });
+  }, []);
 
   const handleAdd = () => {
     const inps: Array<number | undefined> = [
