@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import ParticleComponent from "@/components/particles/particles";
+import ParticleComponent from "@/components/ui/particles/particles";
 
 export default {
   title: "Particles",

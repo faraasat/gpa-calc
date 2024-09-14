@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import NavbarComponent from "@/components/navbar/navbar";
+import NavbarComponent from "@/components/ui/navbar/navbar";
 
 export default {
   title: "Navbar",
