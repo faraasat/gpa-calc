@@ -26,7 +26,7 @@ const CalcCGPA: NextPage = () => {
   const { trackEvent } = useAptabase();
 
   useEffect(() => {
-    trackEvent("PAGE_VIEW", { page: "calc-gpa" });
+    if (window) trackEvent("PAGE_VIEW", { page: "calc-gpa" });
   }, [trackEvent]);
 
   const handleAdd = () => {

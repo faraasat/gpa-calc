@@ -17,8 +17,8 @@ const Home: NextPage = () => {
   const { trackEvent } = useAptabase();
 
   useEffect(() => {
-    trackEvent("PAGE_VIEW", { page: "Home" });
-  }, []);
+    if (window) trackEvent("PAGE_VIEW", { page: "Home" });
+  }, [trackEvent]);
 
   return (
     <>
