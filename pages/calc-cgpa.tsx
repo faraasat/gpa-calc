@@ -27,7 +27,7 @@ const CalcCGPA: NextPage = () => {
 
   useEffect(() => {
     trackEvent("PAGE_VIEW", { page: "calc-gpa" });
-  }, []);
+  }, [trackEvent]);
 
   const handleAdd = () => {
     const inps: Array<number | undefined> = [
