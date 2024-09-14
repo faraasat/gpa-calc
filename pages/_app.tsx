@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <nav>
           <Navbar />
         </nav>
-        <AptabaseProvider appKey="A-EU-2731344304">
+        <AptabaseProvider appKey={process.env.NEXT_PUBLIC_APTABASE_APP_ID!}>
           <Component {...pageProps} />
         </AptabaseProvider>
         <div id="grading-window">
