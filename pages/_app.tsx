@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { AptabaseProvider } from "@aptabase/react";
 import Head from "next/head";
 import { AppContextProvider } from "@/context/app-context";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
@@ -50,8 +50,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
         <Footer />
       </AppContextProvider>
-      <GoogleTagManager
-        gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
       />
     </Fragment>
   );
