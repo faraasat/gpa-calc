@@ -103,10 +103,13 @@ const CalcGPA: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Calculate Your GPA</title>
+        <title>
+          CGPA Calculator with Custom Grading System | Adjust GPA Criteria for
+          US, India, Europe | Easily Export Reports in CSV & JSON
+        </title>
         <meta
           name="description"
-          content="Calculate your GPA easily using dynamic gpa calculator."
+          content="Accurately calculate your CGPA using our advanced CGPA calculator with a fully customizable grading system tailored for the US, India, Europe, and other regions. Dynamically adjust GPA thresholds, grading scales, and letter grade ranges to fit your unique requirements. Generate detailed reports in both CSV and JSON formats with just a click, making it perfect for students, educators, and institutions. Whether you're adapting to a new grading system or exporting results for academic purposes, our tool simplifies the process with user-friendly features and flexible grading criteria. Try it now to streamline your CGPA calculations!"
         />
         <meta
           name="keywords"

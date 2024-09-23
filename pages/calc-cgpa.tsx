@@ -97,10 +97,13 @@ const CalcCGPA: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Calculate Your CGPA</title>
+        <title>
+          Easily Calculate Overall CGPA with Semester GPA & Credits | Quick
+          Export to CSV & JSON Reports
+        </title>
         <meta
           name="description"
-          content="Calculate your CGPA easily using dynamic gpa calculator."
+          content="Easily calculate your overall CGPA by entering GPA and credit hours for each semester. Customize GPA thresholds, and quickly generate detailed reports in CSV or JSON formats. Perfect for students and educators looking for a fast, user-friendly solution to track academic performance across semesters."
         />
         <meta
           name="keywords"

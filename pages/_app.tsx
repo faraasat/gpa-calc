@@ -18,14 +18,17 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Fragment>
       <AppContextProvider>
         <Head>
-          <title>GPA and CGPA Calculator</title>
+          <title>
+            Best GPA, CGPA, and ECTS Calculator | Quick GPA to ECTS Conversion |
+            Ideal for Students & Educators
+          </title>
           <meta
             name="google-site-verification"
             content="bX4q7B0hfSZmMZ694hNi-AeZT8GanwWo5zxZI289dec"
           />
           <meta
             name="description"
-            content="Calculate your GPA and CGPA effortlessly with our online tool. Quick, reliable and accurate results guaranteed. Simply input your grades and let us do the rest. Our user-friendly interface ensures quick and hassle-free results, making it the ideal solution for students and educators alike. Give it a try today and stay on top of your academic progress!"
+            content="Calculate your GPA, CGPA, and ECTS quickly and accurately with our powerful online tool. Simply input your grades for instant, reliable results, including seamless GPA to ECTS conversion. Designed for students, teachers, and educators, our user-friendly platform guarantees fast, hassle-free calculations to help you track academic progress with ease. Try it now and stay ahead in your studies!"
           />
           <meta
             name="keywords"
