@@ -12,6 +12,84 @@ import AppContext from "@/context/app-context";
 
 import classes from "@/styles/calc-gpa.module.css";
 
+const qns = [
+  {
+    question: "What is this page about?",
+    answer:
+      "This page provides an advanced CGPA calculator that allows users to calculate their CGPA (Cumulative Grade Point Average) with a fully customizable grading system. The tool is designed to accommodate various grading systems used in the US, India, Europe, and other regions.",
+  },
+  {
+    question: "What makes this CGPA calculator unique?",
+    answer:
+      "This calculator is unique because it allows users to customize the grading scales, GPA thresholds, and letter grade ranges according to their specific grading system, making it adaptable for different countries and institutions.",
+  },
+  {
+    question: "Who can benefit from this CGPA calculator?",
+    answer:
+      "Students, educators, academic institutions, and anyone needing to calculate or convert CGPAs across different grading systems can benefit from this tool. It's especially useful for those transitioning between different educational systems.",
+  },
+  {
+    question: "How does the calculator support different grading systems?",
+    answer:
+      "The calculator allows users to dynamically adjust grading scales, GPA thresholds, and letter grade ranges to match various grading systems such as the 4.0 scale in the US, percentage-based systems in India, and European systems like ECTS.",
+  },
+  {
+    question: "Can users export their CGPA calculations?",
+    answer:
+      "Yes, users can easily export their CGPA calculations and reports in both CSV and JSON formats, making it convenient for record-keeping and academic submissions.",
+  },
+  {
+    question: "Is this calculator user-friendly?",
+    answer:
+      "Absolutely! The tool is designed with simplicity and ease of use in mind, offering a user-friendly interface where users can input their grades, adjust settings, and get instant results with minimal effort.",
+  },
+  {
+    question: "Does the calculator offer preset grading systems?",
+    answer:
+      "Yes, the tool offers preset grading systems for regions like the US, India, and Europe. Users can either choose these presets or fully customize the settings to fit their unique requirements.",
+  },
+  {
+    question: "How does this tool handle letter grades?",
+    answer:
+      "The calculator allows users to define or adjust the letter grade ranges (A, B, C, etc.) and their corresponding GPA values, ensuring flexibility across different grading systems.",
+  },
+  {
+    question: "Can this tool be used for multiple semesters or subjects?",
+    answer:
+      "Yes, users can input grades for multiple subjects and semesters to calculate an accurate cumulative CGPA, which is useful for tracking academic progress over time.",
+  },
+  {
+    question: "Is it possible to adjust GPA thresholds?",
+    answer:
+      "Yes, users can adjust the GPA thresholds to match the requirements of their educational institution or country. This flexibility ensures accurate CGPA results regardless of the grading scale.",
+  },
+  {
+    question: "How does the tool handle percentage-based grading systems?",
+    answer:
+      "For percentage-based systems like those used in India, the calculator allows users to convert percentage scores into GPA, using custom or preset conversion scales.",
+  },
+  {
+    question: "Is there an option to reset or clear the data entered?",
+    answer:
+      "Yes, the tool provides an option to reset or clear entered data, allowing users to start fresh with a new set of grades without any hassle.",
+  },
+  {
+    question: "How can users access the exported reports?",
+    answer:
+      "After calculating the CGPA, users can export their results directly into CSV or JSON formats with just one click, making it easy to download and share.",
+  },
+  {
+    question: "What are the benefits of exporting reports in CSV or JSON?",
+    answer:
+      "Exporting reports in CSV or JSON formats allows for easy data manipulation, storage, and integration with other systems, making it ideal for academic reporting, analysis, and record-keeping.",
+  },
+  {
+    question: "Is this CGPA calculator free to use?",
+    answer:
+      "Yes, this CGPA calculator is completely free to use, offering all its features without any cost, making it accessible for students and educators worldwide.",
+  },
+];
+
 const CalcGPA: NextPage = () => {
   const [inputFields, setInputFields] = useState<Array<number | undefined>>([
     0, 1, 2,
@@ -29,8 +107,8 @@ const CalcGPA: NextPage = () => {
   const { grades } = useContext(AppContext);
 
   useEffect(() => {
-    if (window) trackEvent("PAGE_VIEW", { page: "calc-gpa" });
-  }, [trackEvent]);
+    trackEvent("PAGE_VIEW", { page: "calc-gpa", name: "Calculate GPA" });
+  }, []);
 
   const handleAdd = () => {
     const inps: Array<number | undefined> = [

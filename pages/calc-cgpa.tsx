@@ -10,6 +10,80 @@ import ExportButtons from "@/components/ui/export-buttons";
 
 import classes from "@/styles/calc-cgpa.module.css";
 
+const qna = [
+  {
+    question: "What is the purpose of this page?",
+    answer:
+      "The page allows users to easily calculate their overall CGPA by entering GPA and credit hours for each semester.",
+  },
+  {
+    question: "How does this page help users?",
+    answer:
+      "It helps users calculate their cumulative CGPA over multiple semesters and provides export options for detailed reports in CSV and JSON formats.",
+  },
+  {
+    question: "Who is the target audience of this page?",
+    answer:
+      "The target audience includes students and educators who need a quick and efficient way to track academic performance across semesters.",
+  },
+  {
+    question: "What inputs are required from the user?",
+    answer:
+      "Users need to input their GPA and the corresponding credit hours for each semester.",
+  },
+  {
+    question: "Can users customize GPA thresholds on this page?",
+    answer:
+      "Yes, users can customize GPA thresholds according to their academic institution's requirements.",
+  },
+  {
+    question: "What types of reports can users generate?",
+    answer: "Users can generate detailed reports in CSV or JSON formats.",
+  },
+  {
+    question: "Is the page designed for fast calculations?",
+    answer:
+      "Yes, the page is designed to offer a fast and user-friendly solution for CGPA calculations.",
+  },
+  {
+    question: "What formats can users export their CGPA reports in?",
+    answer: "Users can export their CGPA reports in CSV and JSON formats.",
+  },
+  {
+    question: "Can the page handle multiple semester entries?",
+    answer:
+      "Yes, users can input GPA and credit hours for multiple semesters to get an overall CGPA calculation.",
+  },
+  {
+    question: "What does CGPA stand for?",
+    answer: "CGPA stands for Cumulative Grade Point Average.",
+  },
+  {
+    question: "Is this page only useful for students?",
+    answer:
+      "No, the page is useful for both students and educators who need to track academic performance.",
+  },
+  {
+    question: "Does the page provide any downloadable reports?",
+    answer:
+      "Yes, the page allows users to download CGPA reports in CSV or JSON format.",
+  },
+  {
+    question: "What is the primary function of this page?",
+    answer:
+      "The primary function is to calculate and track CGPA based on the inputted GPA and credit hours from different semesters.",
+  },
+  {
+    question: "Is there any mention of how quickly calculations are processed?",
+    answer: "Yes, the page promises fast and easy CGPA calculations.",
+  },
+  {
+    question: "Is this tool limited to specific educational systems?",
+    answer:
+      "No, the tool is customizable, allowing users to set GPA thresholds, making it adaptable to various educational systems.",
+  },
+];
+
 const CalcCGPA: NextPage = () => {
   const [gradeThreshold, setGradeThreshold] = useState<number>(4);
   const [isDelete, setIsDelete] = useState<string>("");
@@ -26,8 +100,8 @@ const CalcCGPA: NextPage = () => {
   const { trackEvent } = useAptabase();
 
   useEffect(() => {
-    if (window) trackEvent("PAGE_VIEW", { page: "calc-gpa" });
-  }, [trackEvent]);
+    trackEvent("PAGE_VIEW", { page: "calc-cgpa", name: "Calculate CGPA" });
+  }, []);
 
   const handleAdd = () => {
     const inps: Array<number | undefined> = [
