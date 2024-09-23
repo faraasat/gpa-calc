@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@aptabase/react':
-        specifier: ^0.3.4
-        version: 0.3.4(react@18.3.1)
+        specifier: ^0.3.5
+        version: 0.3.5(react@18.3.1)
       '@next/third-parties':
         specifier: ^14.2.12
         version: 14.2.12(next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -94,8 +94,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@aptabase/react@0.3.4':
-    resolution: {integrity: sha512-+amGIo3cUD4FjVY4pJi+fcxiZ7iJff8LYKiv11ESYC2pxLAqPWmz6vZe6xfgxc0aMdMyRQ669B+wTvD46Wp79w==}
+  '@aptabase/react@0.3.5':
+    resolution: {integrity: sha512-uG4OaAv44XqjEhwhvODo56HFmxF4bHj32Ifx6OQvAR8CW3dSasT/6wMYG6pqsayxqPMtuVRaYwsF9zgKzWXNhw==}
     peerDependencies:
       react: ^18.0.0
 
@@ -6073,7 +6073,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@aptabase/react@0.3.4(react@18.3.1)':
+  '@aptabase/react@0.3.5(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
