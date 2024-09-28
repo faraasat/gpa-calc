@@ -1,8 +1,10 @@
 # 👨‍💻 GPA/CGPA Calculator.
-#### Dynamic GPA and CGPA Calculator for Students and Educators.
-> #### Visit Me At:
+#### Dynamic GPA, CGPA, and ETCS Calculator for Students and Educators.
+
+> #### Relevant Project Links:
 > <a href="https://www.farasat.me">😇 My Portfolio - https://www.farasat.me</a><br />
-> <a href="https://linktr.ee/faraasat">😇 My Socials - https://linktr.ee/faraasat</a>
+> <a href="https://linktr.ee/faraasat">😇 My Socials - https://linktr.ee/faraasat</a><br />
+> <a href="https://www.farasat.me/portfolio/gpa-calculator">😇 Project Details Page - https://www.farasat.me/portfolio/gpa-calculator</a>
 
 ---
 
@@ -20,58 +22,56 @@ Experience the project in action by visiting our live demo: [GPA/CGPA Calculator
 ---
 
 ### 📚 Role: Software Developer
-> As the software engineer for this project, I was responsible for the comprehensive development of the GPA and CGPA calculator. This included designing the system architecture, implementing core features, and ensuring the application's overall functionality. My responsibilities involved creating a responsive user interface with React, incorporating TypeScript for added type safety, and utilizing Next.js to boost performance and scalability. I also ensured that the application could accommodate various grading systems and deliver precise results to users.
+> In my role as a software engineer for this project, I was responsible for the complete development of the GPA and CGPA calculator. This included designing the architecture, implementing features, and ensuring the overall functionality of the web application. I created a dynamic user interface using React, integrated TypeScript for type safety, and leveraged Next.js to enhance performance and scalability. I also ensured the application could handle various grading scales, providing accurate results for users.
 
 ---
 
 ### 💎 Client: Personal Project
-> This GPA and CGPA calculator is a personal initiative that I developed and made available to the public. The goal was to create a tool that simplifies academic performance tracking by automating GPA and CGPA calculations. By sharing it publicly, I aimed to provide a valuable resource to a wide audience and encourage community involvement to further enhance its features and usability.
+> This GPA and CGPA calculator is a personal project I developed and shared as an open-source resource. The aim was to simplify academic tracking for students by automating GPA and CGPA calculations. By open-sourcing the project, I intended to make it accessible to a broader audience and invite contributions from developers to enhance its functionality.
 
 ---
 
 ### 💻 Project About:
 
-The GPA and CGPA calculator is a sophisticated web application designed to help students effortlessly calculate and monitor their academic performance. Utilizing the latest web technologies like React, TypeScript, and Next.js, the tool offers a dynamic and intuitive user experience. It addresses the common challenge of manually calculating GPA and CGPA, a task that can be both time-consuming and error-prone.
+The GPA and CGPA calculator is a sophisticated web application designed to assist students in calculating and tracking their academic performance effortlessly. It offers a dynamic and user-friendly interface built using modern technologies like React, TypeScript, and Next.js. The tool addresses the common challenge of manually calculating GPA and CGPA, which can be time-consuming and error-prone.
 
-Manual GPA and CGPA calculations often involve complex formulas and various grading scales, which can lead to inaccuracies and frustration. Students are required to track their grades, credits, and apply specific formulas, which can be cumbersome and prone to mistakes. The variability in grading systems among institutions further complicates this process.
+Traditional methods involve complex formulas and various grading scales, leading to inaccuracies and frustration. This manual process requires students to track their grades and credits while applying specific formulas, making it cumbersome and prone to mistakes. With different grading systems across institutions, the process becomes even more challenging.
 
-To tackle these issues, I developed a web-based solution that automates GPA and CGPA calculations, providing instant results and accommodating multiple grading systems. The application is designed to be user-friendly, allowing students to input their grades and credits with ease. It computes GPA and CGPA automatically, streamlining the process and ensuring accuracy.
+To tackle these issues, I created a web-based solution that automates these calculations, provides instant results, and accommodates various grading systems. The application allows users to seamlessly input their grades and course credits, automatically computing the GPA and CGPA, thus making academic tracking straightforward and reliable.
 
-The use of React and Next.js ensures a responsive, high-performance application, while TypeScript enhances reliability by enforcing type safety. This technological stack not only improves user experience but also provides a robust foundation for future upgrades. The project aims to be a valuable asset for students, offering a straightforward tool for academic performance tracking that is accessible online.
+The integration of React and Next.js ensures a responsive and high-performance application, while TypeScript adds robustness through type safety. This technology combination enhances user experience and provides a solid foundation for future improvements. The project aims to be a valuable student resource by simplifying a complex process and being readily accessible online.
 
 ---
 
 ### 📌 Problem:
 
-Calculating GPA and CGPA manually presents several challenges for students. Traditional methods involve tracking multiple grades and credits, applying various formulas, and often adjusting for different grading systems across institutions. This process is time-consuming and susceptible to errors, which can significantly impact academic and career outcomes.
+Manually calculating GPA and CGPA presents significant challenges for students. Traditional methods require tracking multiple grades and credits, applying various formulas, and adjusting for different grading scales, which can be time-consuming and error-prone. Given the importance of GPA and CGPA in academic and career prospects, inaccuracies can have serious repercussions.
 
-A major challenge is the diversity of grading systems used by different educational institutions. Schools and universities may utilize letter grades, percentage scores, or point systems, complicating the application of a uniform calculation formula. The manual calculation process requires meticulous attention to detail and often necessitates multiple recalculations to ensure precision.
+One major issue is the diversity in grading systems. Different institutions may use various grading scales (letter grades, percentage scores, or point systems), making it difficult to apply a universal formula. Additionally, the manual calculation process can be tedious and requires careful attention, often leading to multiple recalculations for accuracy.
 
-Students also struggle with managing their academic records, especially when dealing with grades from multiple courses over several semesters. Constant updates and verifications of calculations can lead to mistakes and inconsistencies. Furthermore, students with limited familiarity with mathematical formulas or who lack strong quantitative skills may find the process particularly challenging.
-
-These difficulties highlight the need for a more efficient and user-friendly solution capable of handling diverse grading systems and delivering accurate results quickly. A web-based tool that automates these calculations can greatly ease the burden on students and help them maintain precise academic records.
+Students managing academic records, especially those handling grades from multiple courses over several semesters, may find it difficult to maintain consistent calculations. This highlights the need for an efficient, user-friendly solution that can handle various grading systems and deliver accurate results quickly. A web-based tool that automates these calculations can significantly reduce student burden and help them maintain accurate academic records.
 
 ---
 
 ### ⚡ Solution:
 
-The GPA and CGPA calculator offers an automated, user-friendly solution for calculating academic performance metrics. By employing modern web technologies like React, TypeScript, and Next.js, the application is designed to deliver a seamless and efficient user experience.
+The GPA and CGPA calculator offers an automated, user-friendly solution for calculating academic performance metrics. By leveraging modern web technologies like React, TypeScript, and Next.js, the application ensures a seamless experience for users.
 
-The web-based tool allows users to input their grades and course credits through an easy-to-navigate interface. It processes this data in real-time, automatically calculating GPA and CGPA based on the provided information. This automation removes the need for manual calculations, reducing errors and saving students valuable time.
+The solution features a web-based application where users can input grades and course credits through an intuitive interface. The application processes this input in real-time, calculating GPA and CGPA instantly. This automation eliminates manual calculations, reducing errors and saving time for students.
 
-A key feature of the application is its support for various grading systems. Users can select from different grading scales, ensuring that the calculations are accurate regardless of their institution’s grading system. This flexibility provides a versatile solution for students from diverse educational backgrounds.
+A key feature is its ability to handle different grading systems. Users can choose from various grading scales, ensuring accurate calculations regardless of their institution's grading system. This flexibility addresses the issue of varying grading scales and provides a versatile solution for users from diverse educational backgrounds.
 
-The application also includes data validation and error handling to ensure accurate input and calculations. By offering instant feedback, the tool helps students track their academic performance more effectively and confidently.
+The application also incorporates data validation and error handling to ensure correct input and calculations. By providing instant feedback and results, the tool helps students track their academic performance more effectively and with confidence.
 
-Overall, the solution simplifies the GPA and CGPA calculation process, making it more accessible and less prone to errors. The use of advanced web technologies ensures that the application is not only functional but also scalable and maintainable, allowing for future enhancements.
+Overall, the solution simplifies GPA and CGPA calculations, making it more accessible and less error-prone. The use of modern web technologies ensures that the application is not only functional but also scalable and maintainable for future enhancements.
 
 ---
 
 ### ✅ Key Features List:
 
-- **Dynamic Grading System Support:** Supports various grading scales including letter grades, percentage scores, and point systems.
-- **Real-Time Calculations:** Delivers instant GPA and CGPA results as users input their data.
-- **User-Friendly Interface:** Features an intuitive design for easy data entry and navigation.
+- **Dynamic Grading System Support:** Accommodates various grading scales, including letter grades, percentage scores, and point systems.
+- **Real-Time Calculations:** Provides instant GPA and CGPA results as users input their data.
+- **User-Friendly Interface:** Designed for ease of use with intuitive data entry and navigation.
 - **Error Handling:** Includes validation checks to ensure accurate input and calculations.
 - **Performance Optimization:** Built with React and Next.js for a responsive and efficient user experience.
 
@@ -79,13 +79,19 @@ Overall, the solution simplifies the GPA and CGPA calculation process, making it
 
 ### 🚀 Result:
 
-The GPA and CGPA calculator have effectively provided a useful tool for students to manage and track their academic performance. By automating the calculation process, the application has significantly reduced the time and effort involved in GPA and CGPA computations, while also minimizing errors.
+The GPA and CGPA calculator has successfully provided a valuable tool for students managing their academic performance. By automating calculations, the application significantly reduces the time and effort needed for GPA and CGPA assessments, while minimizing the risk of errors.
 
-Users benefit from a streamlined method of monitoring their academic progress. The tool’s ability to accommodate various grading systems makes it versatile and applicable across different educational contexts. This flexibility is particularly valuable for students in institutions with diverse grading scales or studying internationally.
+Users benefit from a streamlined and efficient method to track their academic progress. The ability to handle different grading systems ensures versatility across various educational contexts, particularly useful for students in institutions with varying grading scales.
 
-The real-time calculation feature enhances usability by offering immediate feedback, allowing students to quickly assess their academic standing and make informed decisions. The user-friendly interface ensures accessibility even for those who may not be adept with mathematical calculations.
+The application’s real-time calculation feature enhances usability by providing immediate feedback, enabling students to assess their academic standing and make informed decisions. The user-friendly interface contributes to a positive experience, making the tool accessible even to those less familiar with mathematical calculations.
 
-By providing this tool as a public resource, I have created a valuable asset that can be freely accessed, modified, and shared. This approach fosters collaboration and contributions from the community, leading to potential improvements and enhancements. Overall, the project has achieved its goal of simplifying GPA and CGPA calculations, making it a beneficial resource for students and educational institutions.
+By offering this tool as an open-source project, I have created a resource that can be freely used, modified, and distributed. This open-source approach invites community collaboration, leading to further improvements and enhancements. Overall, the project achieves its goal of simplifying GPA and CGPA calculations, making it a valuable asset for students and educational institutions alike.
+
+---
+
+## 🎯 Technologies Used:
+- **Programming Languages:** JavaScript, TypeScript
+- **Frontend:** React, Next.js, HTML, CSS
 
 ---
 
@@ -117,13 +123,13 @@ We would like to acknowledge the following contributor for their valuable contri
 
 ### 📄 License
 
-The GPA and CGPA calculator is distributed under the MIT License, allowing for unrestricted use, modification, and distribution. This permissive license enables users to freely access the source code, make modifications, and integrate the tool into other projects with minimal restrictions. The MIT License fosters an open and collaborative environment, encouraging contributions and adaptations while providing users with the flexibility to tailor the tool to their needs.
+The GPA and CGPA calculator is licensed under the MIT License, allowing free use, modification, and distribution of the software. This permissive license ensures users can access the source code, make changes, and incorporate the tool into other projects without significant restrictions. The MIT License fosters an open and collaborative environment, encouraging community contributions while providing flexibility for users to adapt the tool to their needs.
 
 ---
 
 ### 💼 How to Use
 
-To use the GPA and CGPA calculator, clone or download the repository from GitHub. Install the necessary dependencies by running npm install in your terminal, then start the application with npm run dev. Access the application at http://localhost:3000, where you can input your academic data to receive instant GPA and CGPA calculations. For more information and contributions, check the project's GitHub page.
+To use the open-source GPA and CGPA calculator from GitHub, first clone or download the repository from the link. Install project dependencies by running `npm install` in your terminal. Start the application with `npm run dev`, and it will be available at [http://localhost:3000](http://localhost:3000). Input your grades and credits to calculate your GPA and CGPA. For contributions, fork the repository, make changes, and submit a pull request. Report any issues by creating a new issue on the GitHub repository page.
 
 ---
 
