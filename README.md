@@ -147,4 +147,10 @@ Take a glimpse into the Project:
   <a href="https://gpacalculate.vercel.app/">
     <img width='85%' src="/github-imgs/cgpa.png"/>
   </a>
+  <a href="https://gpacalculate.vercel.app/">
+    <img width='85%' src="/github-imgs/ects.png"/>
+  </a>
+  <a href="https://gpacalculate.vercel.app/">
+    <img width='85%' src="/github-imgs/ggc.png"/>
+  </a>
 </p>
