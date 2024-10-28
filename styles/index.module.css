@@ -308,6 +308,55 @@
   color: gray;
 }
 
+.countries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  align-self: flex-start;
+}
+
+.countries_cont {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.countries_cont > h5 {
+  font-size: 40px;
+  font-family: "Potta One", cursive;
+  color: rgb(42, 132, 250);
+  text-decoration: underline;
+}
+
+.countries_cont > p {
+  font-size: 20px;
+  max-width: 650px;
+}
+
+.cont {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cont_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 80px;
+  text-align: center;
+}
+
+.cont_desc > div {
+  font-size: 80px;
+}
+
+.cont_desc > h6 {
+  font-size: 16px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

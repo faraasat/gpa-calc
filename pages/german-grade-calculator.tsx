@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { useAptabase } from "@aptabase/react";
 
-import { calGGC, ggcGrading, ggcQna } from "../data";
+import { calGGC, germanCountries, ggcGrading, ggcQna } from "../data";
 import MetaHead from "@/components/ui/meta-head";
 import PageHeading from "@/components/ui/page-heading";
 import DetailedInput from "@/components/ui/detailed-input";
@@ -10,6 +10,8 @@ import Faqs from "@/components/ui/faqs";
 
 import classes from "@/styles/german-grade-calculator.module.css";
 import TextDescriptor from "@/components/ui/text-descriptor";
+import { Wave1 } from "../assets";
+import SupportedCountries from "@/components/ui/supported-countries";
 
 const GermanGradeCalculator: NextPage = () => {
   const { trackEvent } = useAptabase();
@@ -101,6 +103,17 @@ const GermanGradeCalculator: NextPage = () => {
         </div>
 
         <Faqs faqs={ggcQna} />
+
+        <div className={`${classes.wave} ${classes.wave_2}`}>
+          <Wave1 />
+        </div>
+        <SupportedCountries
+          title="German Grade Supported Countries"
+          subTitle="We support the following countries for German Grade"
+          headingType="default"
+          bgType="default"
+          countryList={germanCountries}
+        />
       </section>
     </>
   );

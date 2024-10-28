@@ -9,9 +9,11 @@ import MetaHead from "@/components/ui/meta-head";
 import Threshold from "@/components/ui/threshold";
 import ResultPane from "@/components/ui/result-pane";
 import { GpaCalculatorInputs } from "@/components/index";
-import { calcGpa, gpaQna } from "@/data/index";
+import { calcGpa, gpaCountries, gpaQna } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
 import PageHeading from "@/components/ui/page-heading";
+import { Wave1 } from "../assets";
+import SupportedCountries from "@/components/ui/supported-countries";
 
 import classes from "@/styles/calc-gpa.module.css";
 
@@ -142,6 +144,17 @@ const CalcGPA: NextPage = () => {
         </div>
 
         <Faqs faqs={gpaQna} />
+
+        <div className={`${classes.wave} ${classes.wave_2}`}>
+          <Wave1 />
+        </div>
+        <SupportedCountries
+          title="GPA Supported Countries"
+          subTitle="We support the following countries for GPA"
+          headingType="default"
+          bgType="default"
+          countryList={gpaCountries}
+        />
       </section>
     </>
   );
