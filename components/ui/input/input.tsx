@@ -1,7 +1,7 @@
 import { FC, useContext, useState } from "react";
 import { XCircle } from "react-feather";
 
-import AppContext from "../../context/app-context";
+import AppContext from "@/context/app-context";
 
 import { InputType } from "./input.d";
 import { IGrade } from "./../grading/grading.d";

@@ -125,7 +125,8 @@
 }
 
 .about_heading > h3 {
-  font-size: 30px;
+  font-family: "Lobster", sans-serif;
+  font-size: 40px;
   font-weight: bolder;
 }
 

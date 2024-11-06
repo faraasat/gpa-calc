@@ -1,5 +1,5 @@
 import { createContext, FC, ReactNode, useState } from "react";
-import { IGrade } from "./../components/grading/grading.d";
+import { IGrade } from "@/components/grading/grading.d";
 
 interface IAppContext {
   grades: Array<IGrade>;

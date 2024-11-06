@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import GradeSettingInputComponent from "../components/grade-setting-input/grade-setting-input";
+import GradeSettingInputComponent from "@/components/grade-setting-input/grade-setting-input";
 
 export default {
   title: "Grade Setting Input",

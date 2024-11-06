@@ -2,13 +2,13 @@ import type { AppProps } from "next/app";
 import { Fragment } from "react";
 import { AptabaseProvider } from "@aptabase/react";
 import Head from "next/head";
+import { AppContextProvider } from "@/context/app-context";
 
-import Navbar from "../components/navbar/navbar";
-import OverlayComponent from "../components/overlay/overlay";
-import GradeSettingComponent from "../components/grade-setting/grade-setting";
-import { AppContextProvider } from "../context/app-context";
+import Navbar from "@/components/ui/navbar/navbar";
+import OverlayComponent from "@/components/ui/overlay/overlay";
+import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 
-import "../styles/globals.css";
+import "@/styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

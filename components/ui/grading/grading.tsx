@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 
-import AppContext from "../../context/app-context";
+import AppContext from "@/context/app-context";
 import ButtonComponent from "./../button/button";
 
 import { IGrade } from "./grading.d";

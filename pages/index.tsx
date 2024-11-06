@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
-import ParticlesComponent from "../components/particles/particles";
+import ParticlesComponent from "@/components/ui/particles/particles";
 import { useAptabase } from "@aptabase/react";
 import { useEffect } from "react";
-import { Wave1, AboutMan } from "../assets";
+import { Wave1, AboutMan } from "@/assets/index";
 
-import classes from "../styles/index.module.css";
+import classes from "@/styles/index.module.css";
 import Link from "next/link";
 
 const Home: NextPage = () => {

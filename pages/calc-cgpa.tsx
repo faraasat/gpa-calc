@@ -1,12 +1,13 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import ButtonComponent from "../components/button/button";
-import InputCGPAComponent from "../components/input/input-cgpa";
-import InputModelCGPAComponent from "../components/input/input-model-cgpa";
 import { useAptabase } from "@aptabase/react";
 
-import classes from "../styles/calc-cgpa.module.css";
+import ButtonComponent from "@/components/ui/button/button";
+import InputCGPAComponent from "@/components/ui/input/input-cgpa";
+import InputModelCGPAComponent from "@/components/ui/input/input-model-cgpa";
+
+import classes from "@/styles/calc-cgpa.module.css";
 
 const CalcCGPA: NextPage = () => {
   const [gradeThreshold, setGradeThreshold] = useState<number>(4);

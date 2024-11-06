@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import GradingComponent from "../components/grading/grading";
+import GradingComponent from "@/components/grading/grading";
 
 export default {
   title: "Grading",

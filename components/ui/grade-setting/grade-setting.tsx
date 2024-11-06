@@ -1,7 +1,7 @@
 import { FC, useContext } from "react";
 import { X } from "react-feather";
 
-import AppContext from "../../context/app-context";
+import AppContext from "@/context/app-context";
 import ButtonComponent from "../button/button";
 import GradeSettingInputComponent from "../grade-setting-input/grade-setting-input";
 

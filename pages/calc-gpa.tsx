@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import { useAptabase } from "@aptabase/react";
 
-import InputModelComponent from "../components/input/input-model";
-import InputComponent from "./../components/input/input";
-import ButtonComponent from "./../components/button/button";
-import GradingComponent from "../components/grading/grading";
+import InputModelComponent from "@/components/ui/input/input-model";
+import InputComponent from "@/components/ui/input/input";
+import ButtonComponent from "@/components/ui/button/button";
+import GradingComponent from "@/components/ui/grading/grading";
 
-import classes from "../styles/calc-gpa.module.css";
+import classes from "@/styles/calc-gpa.module.css";
 
 const CalcGPA: NextPage = () => {
   const [inputFields, setInputFields] = useState<Array<number | undefined>>([
