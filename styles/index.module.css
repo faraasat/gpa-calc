@@ -6,6 +6,7 @@
   min-height: calc(100vh - 62px);
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .hero_items {
