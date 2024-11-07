@@ -4,6 +4,7 @@ import { AptabaseProvider } from "@aptabase/react";
 import Head from "next/head";
 import { AppContextProvider } from "@/context/app-context";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
@@ -60,6 +61,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GoogleAnalytics
         gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
       />
+      <Script
+        async
+        crossOrigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
+      ></Script>
     </Fragment>
   );
 }

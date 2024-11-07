@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -35,11 +34,6 @@ class MyDocument extends Document {
             <Main />
           </main>
           <NextScript />
-          <Script
-            async
-            crossOrigin="anonymous"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
-          ></Script>
         </body>
       </Html>
     );
