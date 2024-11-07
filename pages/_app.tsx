@@ -27,6 +27,10 @@ function MyApp({ Component, pageProps }: AppProps) {
             content="bX4q7B0hfSZmMZ694hNi-AeZT8GanwWo5zxZI289dec"
           />
           <meta
+            name="google-adsense-account"
+            content="ca-pub-7834120314991304"
+          ></meta>
+          <meta
             name="description"
             content="Calculate your GPA, CGPA, and ECTS quickly and accurately with our powerful online tool. Simply input your grades for instant, reliable results, including seamless GPA to ECTS conversion. Designed for students, teachers, and educators, our user-friendly platform guarantees fast, hassle-free calculations to help you track academic progress with ease. Try it now and stay ahead in your studies!"
           />
