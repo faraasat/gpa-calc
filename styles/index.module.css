@@ -96,27 +96,6 @@
   flex-direction: column;
 }
 
-.about_heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 5px;
-}
-
-.about_heading > h3 {
-  font-family: "Lobster", sans-serif;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.about_heading > h4 {
-  font-family: "Potta One", cursive;
-  font-size: 45px;
-  color: rgba(42, 132, 250, 1);
-}
-
 .about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

@@ -1,4 +1,5 @@
 import LinkButton from "@/components/ui/link-button";
+import Heading from "@/components/ui/heading";
 import AboutMan from "@/assets/about-man";
 
 import classes from "@/styles/index.module.css";
@@ -7,10 +8,7 @@ const HomeAbout = () => {
   return (
     <section className={classes.about_section__wrapper}>
       <div className={`${classes.about_section} container`}>
-        <div className={classes.about_heading}>
-          <h3>A Little Detail...</h3>
-          <h4>What this is About!</h4>
-        </div>
+        <Heading title="A Little Detail..." subTitle="What this is About!" />
         <div className={classes.about}>
           <div className={classes.about_paras}>
             <p>

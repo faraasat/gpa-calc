@@ -1,0 +1,28 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.heading > h3 {
+  font-family: "Lobster", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.heading > h4 {
+  font-family: "Potta One", cursive;
+  font-size: 45px;
+  color: rgba(42, 132, 250, 1);
+}
+
+.heading_style_primary > h3 {
+  color: rgba(42, 132, 250, 1);
+}
+
+.heading_style_primary > h4 {
+  color: rgba(255, 194, 61, 1);
+}
