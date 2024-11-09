@@ -6,8 +6,8 @@ import classes from "@/styles/index.module.css";
 
 const HomeAbout = () => {
   return (
-    <section className={classes.about_section__wrapper}>
-      <div className={`${classes.about_section} container`}>
+    <section className={`${classes.wrapper} ${classes.about_yellow}`}>
+      <div className={`${classes.section} container`}>
         <Heading title="A Little Detail..." subTitle="What this is About!" />
         <div className={classes.about}>
           <div className={classes.about_paras}>

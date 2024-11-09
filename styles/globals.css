@@ -24,11 +24,17 @@ a {
 * {
   box-sizing: border-box;
   font-family: "Cabin", sans-serif;
+  margin-block: 0;
+  line-height: 1 !important;
 }
 
 nav {
   z-index: 50;
   position: relative;
+}
+
+#__next {
+  overflow: hidden;
 }
 
 #grading-window {

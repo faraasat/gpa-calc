@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useAptabase } from "@aptabase/react";
 import { useEffect } from "react";
 
-import { HomeAbout, HomeHero } from "@/components/index";
+import { HomeAbout, HomeFeatures, HomeHero } from "@/components/index";
 import { Wave1 } from "@/assets/index";
 
 import classes from "@/styles/index.module.css";
@@ -21,6 +21,7 @@ const Home: NextPage = () => {
         <Wave1 />
       </div>
       <HomeAbout />
+      <HomeFeatures />
     </>
   );
 };
