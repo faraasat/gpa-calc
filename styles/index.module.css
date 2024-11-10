@@ -117,6 +117,63 @@
   margin-top: 25px;
 }
 
+.section_features {
+  padding: 75px 0;
+  gap: 65px;
+}
+
+.features_list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+
+.feature_card {
+  background-color: rgba(255, 194, 61, 0.781);
+  border-radius: 12px;
+  grid-column: auto / span 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-direction: column;
+  padding: 25px 12px;
+  cursor: pointer;
+  border: 2px inset rgba(255, 194, 61, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.feature_card:hover {
+  transform: scale(1.04);
+}
+
+.feature_card > svg {
+  font-size: 65px;
+  color: #fff;
+}
+
+.feature_card > h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Potta One", cursive;
+  color: rgb(42, 132, 250);
+}
+
+.feature_card > p {
+  font-size: 18px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.featured_btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wave_2 {
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 1200px) {
   .hero_items {
     flex-direction: column;
@@ -136,10 +193,6 @@
     padding-left: 40px;
     padding-right: 40px;
     width: 90%;
-  }
-
-  .wave {
-    margin-top: 0px;
   }
 
   .about {

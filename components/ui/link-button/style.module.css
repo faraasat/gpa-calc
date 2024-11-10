@@ -6,6 +6,7 @@
   text-align: center;
   font-weight: bold;
   font-family: "Cabin", cursive;
+  text-align: center;
 }
 
 .btn:hover {
@@ -20,6 +21,10 @@
 .btn_type_white {
   background-color: #fff;
   color: rgb(42, 132, 250);
+}
+
+.btn_type_orange {
+  background-color: rgba(255, 194, 61);
 }
 
 .btn_style_default {

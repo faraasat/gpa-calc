@@ -6,7 +6,7 @@ import classes from "./style.module.css";
 const LinkButton: FC<
   LinkProps & {
     className?: string;
-    type?: "default" | "white";
+    type?: "default" | "white" | "orange";
     btnStyle?: "default" | "rounded";
   }
 > = ({
@@ -21,12 +21,16 @@ const LinkButton: FC<
     <Link
       href={href}
       className={`${classes.btn} ${
-        type === "white" ? classes.btn_type_white : classes.btn_type_default
+        type === "white"
+          ? classes.btn_type_white
+          : type === "orange"
+          ? classes.btn_type_orange
+          : classes.btn_type_default
       } ${
         btnStyle === "rounded"
           ? classes.btn_style_rounded
           : classes.btn_style_default
-      } ${className}`}
+      } ${className ? className : ""}`}
       {...props}
     >
       {children}
