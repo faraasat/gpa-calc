@@ -45,7 +45,7 @@ const NavbarComponent: NextComponentType = () => {
             <Link href="/">GPA CALCULATOR</Link>
           </h1>
           <div className={classes.navbar_links}>
-            <span
+            <div
               className={
                 router && router?.pathname == "/"
                   ? `${classes.navbar_link_active}`
@@ -53,8 +53,8 @@ const NavbarComponent: NextComponentType = () => {
               }
             >
               <Link href="/">Home</Link>
-            </span>
-            <span
+            </div>
+            <div
               className={
                 router && router?.pathname == "/calc-gpa"
                   ? `${classes.navbar_link_active}`
@@ -63,8 +63,8 @@ const NavbarComponent: NextComponentType = () => {
               onClick={() => setIsOpen(false)}
             >
               <Link href="/calc-gpa">Calculate GPA</Link>
-            </span>
-            <span
+            </div>
+            <div
               className={
                 router && router?.pathname == "/calc-cgpa"
                   ? `${classes.navbar_link_active}`
@@ -73,7 +73,7 @@ const NavbarComponent: NextComponentType = () => {
               onClick={() => setIsOpen(false)}
             >
               <Link href="/calc-cgpa">Calculate CGPA</Link>
-            </span>
+            </div>
             <Link
               href={"https://github.com/faraasat/gpa-calc"}
               className={classes.navbar_github}
@@ -101,7 +101,7 @@ const NavbarComponent: NextComponentType = () => {
               !isOpen ? classes.display_none : ""
             }`}
           >
-            <span
+            <div
               className={
                 router && router.pathname == "/"
                   ? `${classes.navbar_link_active}`
@@ -109,9 +109,9 @@ const NavbarComponent: NextComponentType = () => {
               }
             >
               <Link href="/">Home</Link>
-            </span>
+            </div>
             <hr />
-            <span
+            <div
               className={
                 router && router.pathname == "/calc-gpa"
                   ? `${classes.navbar_link_active}`
@@ -119,9 +119,9 @@ const NavbarComponent: NextComponentType = () => {
               }
             >
               <Link href="/calc-gpa">Calculate GPA</Link>
-            </span>
+            </div>
             <hr />
-            <span
+            <div
               className={
                 router && router.pathname == "/calc-cgpa"
                   ? `${classes.navbar_link_active}`
@@ -129,7 +129,7 @@ const NavbarComponent: NextComponentType = () => {
               }
             >
               <Link href="/calc-cgpa">Calculate CGPA</Link>
-            </span>
+            </div>
             <hr />
           </div>
         </section>
