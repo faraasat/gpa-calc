@@ -14,6 +14,9 @@ importers:
       next:
         specifier: 14.2.11
         version: 14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-optimized-classnames:
+        specifier: ^1.0.2
+        version: 1.0.2
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -2502,6 +2505,9 @@ packages:
   crypto-browserify@3.12.0:
     resolution: {integrity: sha512-fz4spIh+znjO2VjL+IdhEpRJ3YN6sMzITSBijk6FK2UvTqruSQW+/cCZTSNsMiZNvUeq0CqurF+dAbyiGOY6Wg==}
 
+  css-class-generator@2.0.0:
+    resolution: {integrity: sha512-zlmG8hCTmtc+3Esj1R5PgXCKDqJT1Uqhm8NyALvg3kSjAK0+tByFTkMhEh101V+f7toETM4RGigBU4BjGvphLg==}
+
   css-loader@3.6.0:
     resolution: {integrity: sha512-M5lSukoWi1If8dhQAUCvj4H8vUt3vOnwbQBH9DdTm/s4Ym2B/3dPMtYZeJmq7Q3S3Pa+I94DcZ7pc9bP14cWIQ==}
     engines: {node: '>= 8.9.0'}
@@ -4274,6 +4280,9 @@ packages:
 
   nested-error-stacks@2.1.1:
     resolution: {integrity: sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==}
+
+  next-optimized-classnames@1.0.2:
+    resolution: {integrity: sha512-qbO0NBE+LObf0QOSQ524yKrriZEMJcJ+CRXUs/WSR0IuDDufJcXdWEZEPPGPUL0LpRFO9CU/MM3v/3U5a1ukaQ==}
 
   next@14.2.11:
     resolution: {integrity: sha512-8MDFqHBhdmR2wdfaWc8+lW3A/hppFe1ggQ9vgIu/g2/2QEMYJrPoQP6b+VNk56gIug/bStysAmrpUKtj3XN8Bw==}
@@ -9723,6 +9732,8 @@ snapshots:
       randombytes: 2.1.0
       randomfill: 1.0.4
 
+  css-class-generator@2.0.0: {}
+
   css-loader@3.6.0(webpack@4.47.0):
     dependencies:
       camelcase: 5.3.1
@@ -11873,6 +11884,10 @@ snapshots:
   neo-async@2.6.2: {}
 
   nested-error-stacks@2.1.1: {}
+
+  next-optimized-classnames@1.0.2:
+    dependencies:
+      css-class-generator: 2.0.0
 
   next@14.2.11(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

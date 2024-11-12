@@ -30,6 +30,7 @@
   "dependencies": {
     "@aptabase/react": "^0.3.4",
     "next": "14.2.11",
+    "next-optimized-classnames": "^1.0.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-feather": "^2.0.10",

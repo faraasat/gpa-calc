@@ -7,6 +7,7 @@ import InputModelComponent from "@/components/ui/input/input-model";
 import InputComponent from "@/components/ui/input/input";
 import ButtonComponent from "@/components/ui/button/button";
 import GradingComponent from "@/components/ui/grading/grading";
+import ExportButtons from "@/components/ui/export-buttons";
 
 import classes from "@/styles/calc-gpa.module.css";
 
@@ -103,6 +104,9 @@ const CalcGPA: NextPage = () => {
           <div className={classes.gpa_align_middle}>
             <GradingComponent />
           </div>
+
+          <ExportButtons />
+
           <div className={classes.gpa_align_bottom}>
             <div className={classes.gpa_calc}>
               <div className={classes.gpa_calc_details}>
