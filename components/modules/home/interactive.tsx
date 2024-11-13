@@ -1,5 +1,6 @@
 import Heading from "@/components/ui/heading";
 import LinkButton from "@/components/ui/link-button";
+import { LuLoader } from "react-icons/lu";
 
 import classes from "@/styles/index.module.css";
 
@@ -8,7 +9,18 @@ const HomeInteractive = () => {
     <section className={`${classes.wrapper} ${classes.about_yellow}`}>
       <div className={`${classes.section} container`}>
         <Heading title="Try It!" subTitle="Interact with Our Calculator..." />
-        <div className={classes.interactive}></div>
+        <div className={classes.interactive}>
+          <LuLoader className={classes.interactive_loader} />
+          <video
+            className={classes.interactive_video}
+            autoPlay={true}
+            loop={true}
+            controls={false}
+            muted={true}
+          >
+            <source src="calc.webm" type="video/webm" />
+          </video>
+        </div>
         <p className={classes.interactive_para}>
           Our interactive GPA & CGPA demo lets you experience the ease of
           calculating your academic performance in real-time. Input your grades,

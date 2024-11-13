@@ -176,6 +176,47 @@
 
 .interactive_para {
   text-align: center;
+  font-size: 22px;
+  max-width: 1075px;
+}
+
+.interactive {
+  max-width: 750px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 30px;
+  border: 2px inset #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive_loader {
+  z-index: 30;
+  position: absolute;
+  font-size: 65px;
+  color: rgb(42, 132, 250);
+  animation: spin 1.2s linear infinite;
+}
+
+.interactive_video {
+  border-radius: 30px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 50;
+  aspect-ratio: 16 / 9;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 1200px) {
