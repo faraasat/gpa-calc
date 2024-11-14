@@ -9,6 +9,7 @@ import OverlayComponent from "@/components/ui/overlay/overlay";
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 
 import "@/styles/globals.css";
+import Footer from "@/components/ui/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <OverlayComponent />
           <GradeSettingComponent />
         </div>
+        <Footer />
       </AppContextProvider>
     </Fragment>
   );
