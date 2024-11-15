@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import {
   HomeAbout,
+  HomeFAQs,
   HomeFeatures,
   HomeHero,
   HomeInteractive,
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
         <Wave1 />
       </div>
       <HomeInteractive />
+      <HomeFAQs />
     </>
   );
 };
