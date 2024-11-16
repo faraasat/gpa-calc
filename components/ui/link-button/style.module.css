@@ -37,3 +37,9 @@
 .btn_style_rounded {
   border-radius: 30px;
 }
+
+@media screen and (max-width: 460px) {
+  .btn {
+    font-size: 15px;
+  }
+}

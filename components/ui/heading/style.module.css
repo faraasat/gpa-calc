@@ -26,3 +26,23 @@
 .heading_style_primary > h4 {
   color: rgba(255, 194, 61, 1);
 }
+
+@media screen and (max-width: 670px) {
+  .heading > h3 {
+    font-size: 30px;
+  }
+
+  .heading > h4 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .heading > h3 {
+    font-size: 25px;
+  }
+
+  .heading > h4 {
+    font-size: 30px;
+  }
+}

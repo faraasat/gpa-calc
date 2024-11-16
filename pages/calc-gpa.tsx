@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import Head from "next/head";
 import { useAptabase } from "@aptabase/react";
 
@@ -8,6 +8,7 @@ import InputComponent from "@/components/ui/input/input";
 import ButtonComponent from "@/components/ui/button/button";
 import GradingComponent from "@/components/ui/grading/grading";
 import ExportButtons from "@/components/ui/export-buttons";
+import AppContext from "@/context/app-context";
 
 import classes from "@/styles/calc-gpa.module.css";
 
@@ -21,7 +22,11 @@ const CalcGPA: NextPage = () => {
     obtained: 0,
     total: 0,
   });
+  const [resData, setResData] = useState<
+    Array<{ credits: string; grade: string }>
+  >([]);
   const { trackEvent } = useAptabase();
+  const { grades } = useContext(AppContext);
 
   useEffect(() => {
     trackEvent("PAGE_VIEW", { page: "calc-gpa" });
@@ -45,6 +50,7 @@ const CalcGPA: NextPage = () => {
       });
     }
     calculateGPA(data);
+    setResData(data);
   };
 
   const calculateGPA = (data: Array<{ credits: string; grade: string }>) => {
@@ -74,6 +80,25 @@ const CalcGPA: NextPage = () => {
     setInputFields(inps);
     setIsDelete("");
   }
+
+  const exportData = useMemo(() => {
+    return {
+      marks: resData.map((data) => {
+        const grade = grades.find((grade) => grade.value === +data.grade);
+
+        return {
+          credits: data.credits,
+          grade: data.grade,
+          gradeAlpha: grade?.text!,
+        };
+      }),
+      marksObtained: +details.obtained.toFixed(2),
+      totalMarks: +details.total.toFixed(2),
+      gradeThreshold: +gradeThreshold.toFixed(2),
+      gpa: +((+details.obtained / +details.total) * +gradeThreshold).toFixed(2),
+      isGpa: true,
+    };
+  }, [resData, grades, details.obtained, details.total, gradeThreshold]);
 
   return (
     <>
@@ -105,7 +130,10 @@ const CalcGPA: NextPage = () => {
             <GradingComponent />
           </div>
 
-          <ExportButtons />
+          <ExportButtons
+            disabled={details.obtained === 0}
+            exportData={exportData}
+          />
 
           <div className={classes.gpa_align_bottom}>
             <div className={classes.gpa_calc}>
@@ -146,7 +174,6 @@ const CalcGPA: NextPage = () => {
                   })}
                 <InputModelComponent handleAdd={handleAdd} />
               </div>
-              <span style={{ marginTop: 15 }} />
               <ButtonComponent
                 text="Calculate Result"
                 inverted={false}
@@ -164,21 +191,21 @@ const CalcGPA: NextPage = () => {
                   {`${details.obtained}`} / {details.total} =&nbsp;
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        7
+                        3
                       )
                     : 0}
                 </div>
                 <div className={classes.gpa_result_detail_2}>
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        7
+                        3
                       )
                     : 0}{" "}
                   * {gradeThreshold} ={" "}
                   {details.obtained !== 0
                     ? parseFloat(
                         `${(details.obtained / details.total) * gradeThreshold}`
-                      ).toFixed(5)
+                      ).toFixed(2)
                     : 0}
                 </div>
                 <div className={classes.gpa_result_detail_3}>

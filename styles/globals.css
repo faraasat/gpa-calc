@@ -60,3 +60,15 @@ footer {
   z-index: 50;
   text-align: center;
 }
+
+@media screen and (max-width: 590px) {
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    width: 95%;
+  }
+}

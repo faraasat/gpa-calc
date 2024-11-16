@@ -6,34 +6,42 @@ import CustomButton from "../link-button/button";
 
 import classes from "./style.module.css";
 
-const ExportButtons: FC<{ data: Array<any> }> = ({ data }) => {
-  const convertToCSV = (data: Array<any>) => {
-    const array = [Object.keys(data[0])].concat(data);
+interface IExportData {
+  marks: Array<{
+    credits: string;
+    grade: string;
+    gradeAlpha: string;
+  }>;
+  marksObtained: number;
+  totalMarks: number;
+  gradeThreshold: number;
+  gpa: number;
+  isGpa: boolean;
+}
 
-    return array
-      .map((row) => {
-        return Object.values(row)
-          .map((item) => `"${item}"`)
-          .join(",");
-      })
-      .join("\n");
+const ExportButtons: FC<{
+  exportData: IExportData;
+  disabled: boolean;
+}> = ({ exportData, disabled }) => {
+  const convertToCSV = (data: IExportData) => {
+    let csvStr = "S No.,Credits,Marks,Grade,Total\n";
+    data.marks.forEach((x, i) => {
+      csvStr += `${i + 1},${x.credits},${x.grade},${x.gradeAlpha},${
+        Number(x.grade) * Number(x.credits)
+      }\n`;
+    });
+    csvStr += "\n";
+    csvStr += `Marks Total,,${data.marksObtained},Out Of,${data.totalMarks}\n`;
+    csvStr += `GPA,,${data.gpa},Out Of,${data.gradeThreshold}\n`;
+    return csvStr;
   };
 
-  const convertToJSON = (data: Array<any>) => {
-    const array = [Object.keys(data[0])].concat(data);
-
-    return array
-      .map((row) => {
-        return Object.values(row)
-          .map((item) => `"${item}"`)
-          .join(",");
-      })
-      .join("\n");
-  };
-
-  const downloadCSV = (type: string = "csv") => {
-    const csvData = type === "csv" ? convertToCSV(data) : convertToJSON(data);
-    const blob = new Blob([csvData], {
+  const downloadFile = (type: string = "csv") => {
+    const d =
+      type === "csv"
+        ? convertToCSV(exportData)
+        : JSON.stringify(exportData, null, 4);
+    const blob = new Blob([d], {
       type: type === "csv" ? "text/csv" : "application/json",
     });
     const url = window.URL.createObjectURL(blob);
@@ -52,14 +60,16 @@ const ExportButtons: FC<{ data: Array<any> }> = ({ data }) => {
         btnStyle="rounded"
         btnType="orange"
         className={classes.btns}
-        onClick={() => downloadCSV("csv")}
+        onClick={() => downloadFile("csv")}
+        disabled={disabled}
       >
         <RiFileExcel2Fill /> Export to CSV
       </CustomButton>
       <CustomButton
         btnStyle="rounded"
         className={classes.btns}
-        onClick={() => downloadCSV("json")}
+        onClick={() => downloadFile("json")}
+        disabled={disabled}
       >
         <LuFileJson2 /> Export to JSON
       </CustomButton>

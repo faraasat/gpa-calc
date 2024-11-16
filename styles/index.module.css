@@ -320,6 +320,10 @@
   .hero_item_image {
     width: 80%;
   }
+
+  .feature_card {
+    grid-column: auto / span 6;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -340,6 +344,19 @@
   }
   .hero_item_text > p {
     font-size: 19px;
+  }
+  .interactive_para {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .wave {
+    margin-top: -10px;
+  }
+
+  .about_paras {
+    font-size: 17px;
   }
 }
 
@@ -362,6 +379,18 @@
   .hero_item_text > p {
     font-size: 17px;
   }
+  .feature_card {
+    grid-column: auto / span 12;
+  }
+  .interactive_para {
+    font-size: 18px;
+  }
+  .faq_item > h4 > button {
+    font-size: 22px;
+  }
+  .faq_item > div {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -369,6 +398,7 @@
     background-color: rgba(42, 132, 250, 0.781);
     width: 100%;
     min-height: calc(100vh - 62px);
+    z-index: 100;
   }
   .hero_item_image {
     position: relative;
@@ -391,8 +421,56 @@
   .hero_item_text > p {
     font-size: 15px;
   }
-
   .wave {
     margin-top: -30px;
+  }
+  .interactive_para {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .hero_item_image {
+    width: 105%;
+    margin-top: -25px;
+  }
+
+  .hero_items {
+    min-height: auto;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  #tsparticles {
+    height: 100vh;
+  }
+
+  .hero_item_text {
+    margin-top: 110px;
+  }
+  .faq_item > h4 > button {
+    font-size: 20px;
+  }
+  .faq_item > div {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .about_para__btn,
+  .featured_btns,
+  .hero_item_btn {
+    flex-direction: column;
+  }
+  .about_para__btn > button,
+  .about_para__btn > a,
+  .featured_btns > button,
+  .featured_btns > a,
+  .hero_item_btn > button,
+  .hero_item_btn > a {
+    width: 100%;
+    max-width: 200px;
   }
 }

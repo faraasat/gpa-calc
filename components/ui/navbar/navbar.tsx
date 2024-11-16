@@ -41,9 +41,9 @@ const NavbarComponent: NextComponentType = () => {
     <Fragment>
       {typeof width != "undefined" && width > 900 ? (
         <section className={classes.navbar}>
-          <h1 className={classes.navbar_brand}>
+          <div className={classes.navbar_brand}>
             <Link href="/">GPA CALCULATOR</Link>
-          </h1>
+          </div>
           <div className={classes.navbar_links}>
             <div
               className={

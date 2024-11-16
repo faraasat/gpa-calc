@@ -14,3 +14,10 @@
   gap: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1050px) {
+  .export_btns {
+    margin: 45px 0;
+  }
+  
+}
