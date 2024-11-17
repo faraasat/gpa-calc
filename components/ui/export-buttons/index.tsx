@@ -10,7 +10,7 @@ interface IExportData {
   marks: Array<{
     credits: string;
     grade: string;
-    gradeAlpha: string;
+    gradeAlpha?: string;
   }>;
   marksObtained: number;
   totalMarks: number;
@@ -24,15 +24,25 @@ const ExportButtons: FC<{
   disabled: boolean;
 }> = ({ exportData, disabled }) => {
   const convertToCSV = (data: IExportData) => {
-    let csvStr = "S No.,Credits,Marks,Grade,Total\n";
+    let csvStr = data.isGpa
+      ? "S No.,Credits,Marks,Grade,Total\n"
+      : "S No.,Credits,Marks,Total\n";
     data.marks.forEach((x, i) => {
-      csvStr += `${i + 1},${x.credits},${x.grade},${x.gradeAlpha},${
-        Number(x.grade) * Number(x.credits)
-      }\n`;
+      csvStr += data.isGpa
+        ? `${i + 1},${x.credits},${x.grade},${x.gradeAlpha},${
+            Number(x.grade) * Number(x.credits)
+          }\n`
+        : `${i + 1},${x.credits},${x.grade},${
+            Number(x.grade) * Number(x.credits)
+          }\n`;
     });
     csvStr += "\n";
-    csvStr += `Marks Total,,${data.marksObtained},Out Of,${data.totalMarks}\n`;
-    csvStr += `GPA,,${data.gpa},Out Of,${data.gradeThreshold}\n`;
+    csvStr += data.isGpa
+      ? `Marks Total,,${data.marksObtained},Out Of,${data.totalMarks}\n`
+      : `Marks Total,${data.marksObtained},Out Of,${data.totalMarks}\n`;
+    csvStr += data.isGpa
+      ? `GPA,,${data.gpa},Out Of,${data.gradeThreshold}\n`
+      : `GPA,${data.gpa},Out Of,${data.gradeThreshold}\n`;
     return csvStr;
   };
 

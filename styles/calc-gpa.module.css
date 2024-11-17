@@ -91,11 +91,15 @@
 
   .gpa_result {
     margin-top: 20px;
-    width: 500px;
+    width: 100%;
   }
 
   .gpa_calc {
-    width: 500px;
+    width: 100%;
+  }
+
+  .gpa_calc_inps {
+    width: 100%;
   }
 }
 
@@ -126,13 +130,13 @@
   }
 }
 
-@media screen and (max-width: 550px) { 
+@media screen and (max-width: 550px) {
   .gpa_align {
     padding: 50px 10px;
   }
 }
 
-@media screen and (max-width: 360px) { 
+@media screen and (max-width: 360px) {
   .gpa_align_top {
     flex-direction: column;
   }

@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAptabase } from "@aptabase/react";
 
 import ButtonComponent from "@/components/ui/button/button";
 import InputCGPAComponent from "@/components/ui/input/input-cgpa";
 import InputModelCGPAComponent from "@/components/ui/input/input-model-cgpa";
+import ExportButtons from "@/components/ui/export-buttons";
 
 import classes from "@/styles/calc-cgpa.module.css";
 
@@ -19,6 +20,9 @@ const CalcCGPA: NextPage = () => {
     obtained: 0,
     total: 0,
   });
+  const [resData, setResData] = useState<
+    Array<{ credits: string; grade: string }>
+  >([]);
   const { trackEvent } = useAptabase();
 
   useEffect(() => {
@@ -43,6 +47,7 @@ const CalcCGPA: NextPage = () => {
       });
     }
     calculateCGPA(data);
+    setResData(data);
   };
 
   const calculateCGPA = (data: Array<{ credits: string; grade: string }>) => {
@@ -73,6 +78,22 @@ const CalcCGPA: NextPage = () => {
     setIsDelete("");
   }
 
+  const exportData = useMemo(() => {
+    return {
+      marks: resData.map((data) => {
+        return {
+          credits: data.credits,
+          grade: data.grade,
+        };
+      }),
+      marksObtained: +details.obtained.toFixed(2),
+      totalMarks: +details.total.toFixed(2),
+      gradeThreshold: +gradeThreshold.toFixed(2),
+      gpa: +((+details.obtained / +details.total) * +gradeThreshold).toFixed(2),
+      isGpa: false,
+    };
+  }, [resData, details.obtained, details.total, gradeThreshold]);
+
   return (
     <>
       <Head>
@@ -99,6 +120,10 @@ const CalcCGPA: NextPage = () => {
               placeholder="Grade Threshold"
             />
           </div>
+          <ExportButtons
+            disabled={details.obtained === 0}
+            exportData={exportData}
+          />
           <div className={classes.cgpa_align_bottom}>
             <div className={classes.cgpa_calc}>
               <div className={classes.cgpa_calc_details}>
@@ -135,7 +160,6 @@ const CalcCGPA: NextPage = () => {
                   })}
                 <InputModelCGPAComponent handleAdd={handleAdd} />
               </div>
-              <span style={{ marginTop: 15 }} />
               <ButtonComponent
                 text="Calculate Result"
                 inverted={false}
@@ -150,17 +174,18 @@ const CalcCGPA: NextPage = () => {
               </div>
               <div className={classes.cgpa_result_details}>
                 <div className={classes.cgpa_result_detail_1}>
-                  {`${details.obtained}`} / {details.total} =&nbsp;
+                  {`${details.obtained.toFixed(2)}`} /{" "}
+                  {details.total.toFixed(2)} =&nbsp;
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        2
                       )
                     : 0}
                 </div>
                 <div className={classes.cgpa_result_detail_2}>
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        2
                       )
                     : 0}{" "}
                   * {gradeThreshold} ={" "}

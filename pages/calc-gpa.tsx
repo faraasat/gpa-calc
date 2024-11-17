@@ -188,17 +188,18 @@ const CalcGPA: NextPage = () => {
               </div>
               <div className={classes.gpa_result_details}>
                 <div className={classes.gpa_result_detail_1}>
-                  {`${details.obtained}`} / {details.total} =&nbsp;
+                  {`${details.obtained.toFixed(2)}`} /{" "}
+                  {details.total.toFixed(2)} =&nbsp;
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        2
                       )
                     : 0}
                 </div>
                 <div className={classes.gpa_result_detail_2}>
                   {details.obtained !== 0
                     ? parseFloat(`${details.obtained / details.total}`).toFixed(
-                        3
+                        2
                       )
                     : 0}{" "}
                   * {gradeThreshold} ={" "}
