@@ -43,3 +43,9 @@
     min-width: auto !important;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .input_model {
+    gap: 3px;
+  }
+}

@@ -19,5 +19,20 @@
   .export_btns {
     margin: 45px 0;
   }
-  
+}
+
+@media screen and (max-width: 970px) {
+  .export_btns {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .export_btns {
+    gap: 5px;
+  }
+
+  .export_btns > .btns {
+    padding: 15px 8px;
+  }
 }

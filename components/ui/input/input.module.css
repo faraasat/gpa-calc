@@ -50,3 +50,9 @@
     min-width: auto !important;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .inputs {
+    gap: 3px;
+  }
+}

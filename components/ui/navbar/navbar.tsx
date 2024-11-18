@@ -108,7 +108,9 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                Home
+              </Link>
             </div>
             <hr />
             <div
@@ -118,7 +120,9 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/calc-gpa">Calculate GPA</Link>
+              <Link href="/calc-gpa" onClick={() => setIsOpen(false)}>
+                Calculate GPA
+              </Link>
             </div>
             <hr />
             <div
@@ -128,7 +132,9 @@ const NavbarComponent: NextComponentType = () => {
                   : ""
               }
             >
-              <Link href="/calc-cgpa">Calculate CGPA</Link>
+              <Link href="/calc-cgpa" onClick={() => setIsOpen(false)}>
+                Calculate CGPA
+              </Link>
             </div>
             <hr />
           </div>
