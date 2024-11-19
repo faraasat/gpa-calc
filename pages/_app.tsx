@@ -7,9 +7,10 @@ import { AppContextProvider } from "@/context/app-context";
 import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
+import Footer from "@/components/ui/footer";
+import SocialSide from "@/components/ui/social-side";
 
 import "@/styles/globals.css";
-import Footer from "@/components/ui/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -38,6 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <nav>
           <Navbar />
         </nav>
+        <SocialSide />
         <AptabaseProvider appKey={process.env.NEXT_PUBLIC_APTABASE_APP_ID!}>
           <Component {...pageProps} />
         </AptabaseProvider>

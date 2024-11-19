@@ -395,6 +395,7 @@
 
 @media only screen and (max-width: 460px) {
   .hero_items {
+    padding-top: 30px;
     background-color: rgba(42, 132, 250, 0.781);
     width: 100%;
     min-height: calc(100vh - 62px);
