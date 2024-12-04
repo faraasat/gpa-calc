@@ -4,4 +4,16 @@ import HomeFeatures from "./modules/home/features";
 import HomeInteractive from "./modules/home/interactive";
 import HomeFAQs from "./modules/home/faqs";
 
-export { HomeHero, HomeAbout, HomeFeatures, HomeInteractive, HomeFAQs };
+import CalculatorInputs from "./modules/calc-gpa/calculator-inputs";
+
+import CgpaCalculatorInputs from "./modules/calc-cgpa/calculator-inputs";
+
+export {
+  HomeHero,
+  HomeAbout,
+  HomeFeatures,
+  HomeInteractive,
+  HomeFAQs,
+  CalculatorInputs as GpaCalculatorInputs,
+  CgpaCalculatorInputs,
+};

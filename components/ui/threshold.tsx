@@ -1,0 +1,22 @@
+import { Dispatch, FC, SetStateAction } from "react";
+
+const Threshold: FC<{
+  value: number;
+  setValue: Dispatch<SetStateAction<number>>;
+}> = ({ value, setValue }) => {
+  return (
+    <div className="threshold">
+      <div>GPA Threshold</div>
+      <input
+        type="number"
+        min={4}
+        max={100}
+        value={value}
+        onChange={(e) => setValue(Number(e.target.value))}
+        placeholder="Grade Threshold"
+      />
+    </div>
+  );
+};
+
+export default Threshold;
