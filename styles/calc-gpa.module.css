@@ -63,6 +63,14 @@
   }
 }
 
+.gpa_calc_details {
+  font-family: "Potta One", cursive;
+  font-weight: bolder;
+  color: rgba(42, 132, 250);
+  font-size: 28px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 550px) {
   .gpa_align {
     padding: 50px 5px;

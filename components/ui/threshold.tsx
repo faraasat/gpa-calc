@@ -6,7 +6,7 @@ const Threshold: FC<{
 }> = ({ value, setValue }) => {
   return (
     <div className="threshold">
-      <div>GPA Threshold</div>
+      <h4>GPA Threshold</h4>
       <input
         type="number"
         min={4}

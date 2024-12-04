@@ -101,12 +101,15 @@ footer {
   align-items: center;
   border-radius: 5px;
   padding: 20px 10px;
+  gap: 15px;
 }
 
 .result_pane_calc_details {
   font-family: "Potta One", cursive;
   font-weight: bolder;
-  color: rgba(42, 132, 250, 0.781);
+  color: rgba(42, 132, 250, 1);
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .result_pane_details {

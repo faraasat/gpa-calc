@@ -10,11 +10,11 @@ import ExportButtons from "@/components/ui/export-buttons";
 
 import classes from "@/styles/calc-cgpa.module.css";
 
-const EctsPage: NextPage = () => {
+const CGPAToECTS: NextPage = () => {
   const { trackEvent } = useAptabase();
 
   useEffect(() => {
-    trackEvent("PAGE_VIEW", { page: "calculate-ects", name: "Calculate ECTS" });
+    trackEvent("PAGE_VIEW", { page: "cgpa-to-ects", name: "CGPA to ECTS" });
   }, []);
 
   return (
@@ -37,4 +37,4 @@ const EctsPage: NextPage = () => {
   );
 };
 
-export default EctsPage;
+export default CGPAToECTS;

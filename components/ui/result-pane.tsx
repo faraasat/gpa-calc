@@ -11,17 +11,17 @@ const ResultPane: FC<{
   return (
     <div className={"result_pane"}>
       <div className={"result_pane_calc_details"}>
-        <h1>Your GPA</h1>
+        <h4>Your GPA</h4>
       </div>
       <div className={"result_pane_details"}>
-        <div className={"result_pane_detail_1"}>
+        <p className={"result_pane_detail_1"}>
           {`${details.obtained.toFixed(2)}`} / {details.total.toFixed(2)}{" "}
           =&nbsp;
           {details.obtained !== 0
             ? parseFloat(`${details.obtained / details.total}`).toFixed(2)
             : 0}
-        </div>
-        <div className={"result_pane_detail_2"}>
+        </p>
+        <p className={"result_pane_detail_2"}>
           {details.obtained !== 0
             ? parseFloat(`${details.obtained / details.total}`).toFixed(2)
             : 0}{" "}
@@ -31,8 +31,8 @@ const ResultPane: FC<{
                 `${(details.obtained / details.total) * gradeThreshold}`
               ).toFixed(2)
             : 0}
-        </div>
-        <div className={"result_pane_detail_3"}>
+        </p>
+        <p className={"result_pane_detail_3"}>
           <span>{title}</span>
           <span>
             {details.obtained !== 0
@@ -41,7 +41,7 @@ const ResultPane: FC<{
                 ).toFixed(2)
               : 0}
           </span>
-        </div>
+        </p>
       </div>
     </div>
   );

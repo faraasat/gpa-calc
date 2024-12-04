@@ -3,34 +3,38 @@
   min-height: 60px;
   display: flex;
   align-items: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: space-between;
   /* background-image: linear-gradient(to top, rgb(8, 91, 245), rgb(0, 183, 255)); */
   background-color: rgb(255, 194, 61);
+  gap: 40px;
 }
 
 .navbar_brand > a {
   font-family: "Potta One", cursive;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 18px;
   margin-block: 0 !important;
   color: rgb(255, 255, 255) !important;
   text-decoration: none !important;
+  white-space: nowrap;
 }
 
 .navbar_links {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  gap: 20px;
 }
 
 .navbar_links > div {
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   font-family: "Potta One", cursive;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
 }
 
@@ -39,6 +43,8 @@
   font-weight: lighter;
   color: white;
   text-decoration: none !important;
+  word-spacing: -1px;
+  letter-spacing: -0.2px;
 }
 
 .navbar_link_active > a {

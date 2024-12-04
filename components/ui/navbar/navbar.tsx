@@ -74,6 +74,28 @@ const NavbarComponent: NextComponentType = () => {
             >
               <Link href="/calc-cgpa">Calculate CGPA</Link>
             </div>
+            <div
+              className={
+                router && router?.pathname == "/cgpa-to-ects"
+                  ? `${classes.navbar_link_active}`
+                  : ""
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              <Link href="/cgpa-to-ects">CGPA to ECTS</Link>
+            </div>
+            <div
+              className={
+                router && router?.pathname == "/german-grade-calculator"
+                  ? `${classes.navbar_link_active}`
+                  : ""
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              <Link href="/german-grade-calculator">
+                German Grade Calculator
+              </Link>
+            </div>
             <Link
               href={"https://github.com/faraasat/gpa-calc"}
               className={classes.navbar_github}
@@ -134,6 +156,32 @@ const NavbarComponent: NextComponentType = () => {
             >
               <Link href="/calc-cgpa" onClick={() => setIsOpen(false)}>
                 Calculate CGPA
+              </Link>
+            </div>
+            <hr />
+            <div
+              className={
+                router && router.pathname == "/cgpa-to-ects"
+                  ? `${classes.navbar_link_active}`
+                  : ""
+              }
+            >
+              <Link href="/cgpa-to-ects" onClick={() => setIsOpen(false)}>
+                CGPA to ECTS
+              </Link>
+            </div>
+            <div
+              className={
+                router && router.pathname == "/german-grade-calculator"
+                  ? `${classes.navbar_link_active}`
+                  : ""
+              }
+            >
+              <Link
+                href="/german-grade-calculator"
+                onClick={() => setIsOpen(false)}
+              >
+                German Grade Calculator
               </Link>
             </div>
             <hr />

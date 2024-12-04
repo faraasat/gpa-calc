@@ -43,6 +43,11 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero_item_btn > a {
+  width: 45%;
 }
 
 .hero_item_text > h1 {

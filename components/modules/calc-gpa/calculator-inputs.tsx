@@ -15,7 +15,7 @@ const CalculatorInputs: FC<{
   return (
     <div className={classes.gpa_calc}>
       <div className={classes.gpa_calc_details}>
-        <h1>Your Details</h1>
+        <h4>Your Details</h4>
       </div>
       <div className={classes.gpa_calc_inps}>
         <InputComponent

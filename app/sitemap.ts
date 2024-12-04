@@ -23,7 +23,13 @@ async function generateSitemaps(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/calculate-ects`,
+      url: `${BASE_URL}/cgpa-to-ects`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${BASE_URL}/german-grade-calculator`,
       lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 1,
