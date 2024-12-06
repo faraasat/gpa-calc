@@ -11,6 +11,7 @@ import ResultPane from "@/components/ui/result-pane";
 import { GpaCalculatorInputs } from "@/components/index";
 import { calcGpa, GpaQna } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
+import PageHeading from "@/components/ui/page-heading";
 
 import classes from "@/styles/calc-gpa.module.css";
 
@@ -107,6 +108,8 @@ const CalcGPA: NextPage = () => {
       <MetaHead {...calcGpa} />
       <section className={classes.gpa}>
         <div className={classes.gpa_align}>
+          <PageHeading title={calcGpa.pageTitle} desc={calcGpa.desc} />
+
           <Threshold value={gradeThreshold} setValue={setGradeThreshold} />
 
           <div className={classes.gpa_align_middle}>

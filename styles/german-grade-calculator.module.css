@@ -1,0 +1,7 @@
+.ggc {
+  min-height: calc(100vh - 62px);
+}
+
+.ggc_align {
+  padding: 50px 70px;
+}

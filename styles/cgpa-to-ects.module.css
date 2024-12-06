@@ -1,0 +1,7 @@
+.cte {
+  min-height: calc(100vh - 62px);
+}
+
+.cte_align {
+  padding: 50px 70px;
+}

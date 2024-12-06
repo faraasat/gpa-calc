@@ -9,6 +9,7 @@ import Threshold from "@/components/ui/threshold";
 import { CgpaCalculatorInputs } from "@/components/index";
 import { calCgpa, cgpaQna } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
+import PageHeading from "@/components/ui/page-heading";
 
 import classes from "@/styles/calc-cgpa.module.css";
 
@@ -102,6 +103,8 @@ const CalcCGPA: NextPage = () => {
 
       <section className={classes.cgpa}>
         <div className={classes.cgpa_align}>
+          <PageHeading title={calCgpa.pageTitle} desc={calCgpa.desc} />
+
           <Threshold value={gradeThreshold} setValue={setGradeThreshold} />
 
           <ExportButtons

@@ -5,6 +5,8 @@ export const calcGpa = {
     "Accurately calculate your CGPA using our advanced CGPA calculator with a fully customizable grading system tailored for the US, India, Europe, and other regions. Dynamically adjust GPA thresholds, grading scales, and letter grade ranges to fit your unique requirements. Generate detailed reports in both CSV and JSON formats with just a click, making it perfect for students, educators, and institutions. Whether you're adapting to a new grading system or exporting results for academic purposes, our tool simplifies the process with user-friendly features and flexible grading criteria. Try it now to streamline your CGPA calculations!",
   metaKeywords:
     "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+  pageTitle: "Calculate Your Grade Point Average (GPA) With Ease:",
+  desc: "Effortlessly calculate your GPA with our user-friendly tool. Whether you're a student or educator, our calculator simplifies the process, helping you stay on top of your academic progress in just a few clicks.",
 };
 
 export const calCgpa = {
@@ -14,6 +16,33 @@ export const calCgpa = {
     "Easily calculate your overall CGPA by entering GPA and credit hours for each semester. Customize GPA thresholds, and quickly generate detailed reports in CSV or JSON formats. Perfect for students and educators looking for a fast, user-friendly solution to track academic performance across semesters.",
   metaKeywords:
     "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+  pageTitle:
+    "Calculate Your Cumulative Grade Point Average (CGPA) With Effortlessly:",
+  desc: "Easily compute your CGPA using our simple and intuitive calculator. Stay informed about your overall academic performance, track your progress, and plan ahead with just a few steps.",
+};
+
+export const calcCTE = {
+  metaTitle:
+    "CGPA Calculator with Custom Grading System | Adjust GPA Criteria for US, India, Europe | Easily Export Reports in CSV & JSON",
+  metaDescription:
+    "Accurately calculate your CGPA using our advanced CGPA calculator with a fully customizable grading system tailored for the US, India, Europe, and other regions. Dynamically adjust GPA thresholds, grading scales, and letter grade ranges to fit your unique requirements. Generate detailed reports in both CSV and JSON formats with just a click, making it perfect for students, educators, and institutions. Whether you're adapting to a new grading system or exporting results for academic purposes, our tool simplifies the process with user-friendly features and flexible grading criteria. Try it now to streamline your CGPA calculations!",
+  metaKeywords:
+    "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+  pageTitle:
+    "Convert Your Cumulative Grade Point Average (CGPA) to European Credit Transfer System (ECTS) for Your Subjects:",
+  desc: "Quickly and accurately convert your CGPA to the European Credit Transfer System (ECTS) using our reliable tool. Whether you're preparing for international studies or need to translate your academic results for European institutions, our converter simplifies the process, ensuring your grades align with the ECTS framework.",
+};
+
+export const calGGC = {
+  metaTitle:
+    "Easily Calculate Overall CGPA with Semester GPA & Credits | Quick Export to CSV & JSON Reports",
+  metaDescription:
+    "Easily calculate your overall CGPA by entering GPA and credit hours for each semester. Customize GPA thresholds, and quickly generate detailed reports in CSV or JSON formats. Perfect for students and educators looking for a fast, user-friendly solution to track academic performance across semesters.",
+  metaKeywords:
+    "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+  pageTitle:
+    "Convert Your Credits/Cumulative Grade Point Average (CGPA) to German Grade Swiftly:",
+  desc: "Easily convert your credits or CGPA into the German grading system with our efficient and precise converter. Whether you're applying to a German university or need your academic results translated for career opportunities, our tool streamlines the conversion process, ensuring your grades meet the German academic standards with accuracy and ease.",
 };
 
 export const cgpaQna = [

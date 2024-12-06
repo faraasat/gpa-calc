@@ -67,9 +67,10 @@ footer {
   margin-bottom: 20px;
   align-items: center;
   gap: 15px;
+  margin-top: 50px;
 }
 
-.threshold div {
+.threshold h4 {
   margin-right: 10px;
   font-family: "Potta One", cursive;
   color: rgb(42, 132, 250);
@@ -120,6 +121,20 @@ footer {
 
 .result_pane_details > div {
   margin-bottom: 10px;
+}
+
+.page__title {
+  color: rgb(255, 194, 61);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  max-width: 850px;
+}
+
+.page__desc {
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 1050px;
 }
 
 @media screen and (max-width: 1050px) {
