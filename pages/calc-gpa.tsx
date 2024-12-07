@@ -9,7 +9,7 @@ import MetaHead from "@/components/ui/meta-head";
 import Threshold from "@/components/ui/threshold";
 import ResultPane from "@/components/ui/result-pane";
 import { GpaCalculatorInputs } from "@/components/index";
-import { calcGpa, GpaQna } from "@/data/index";
+import { calcGpa, gpaQna } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
 import PageHeading from "@/components/ui/page-heading";
 
@@ -108,18 +108,22 @@ const CalcGPA: NextPage = () => {
       <MetaHead {...calcGpa} />
       <section className={classes.gpa}>
         <div className={classes.gpa_align}>
-          <PageHeading title={calcGpa.pageTitle} desc={calcGpa.desc} />
+          <PageHeading
+            title={calcGpa.pageTitle}
+            desc={calcGpa.desc}
+            steps={calcGpa.steps}
+          />
 
           <Threshold value={gradeThreshold} setValue={setGradeThreshold} />
-
-          <div className={classes.gpa_align_middle}>
-            <GradingComponent />
-          </div>
 
           <ExportButtons
             disabled={details.obtained === 0}
             exportData={exportData}
           />
+
+          <div className={classes.gpa_align_middle}>
+            <GradingComponent />
+          </div>
 
           <div className={classes.gpa_align_bottom}>
             <GpaCalculatorInputs
@@ -137,7 +141,7 @@ const CalcGPA: NextPage = () => {
           </div>
         </div>
 
-        <Faqs faqs={GpaQna} />
+        <Faqs faqs={gpaQna} />
       </section>
     </>
   );

@@ -5,3 +5,15 @@
 .ggc_align {
   padding: 50px 70px;
 }
+
+@media screen and (max-width: 550px) {
+  .ggc_align {
+    padding: 50px 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .ggc_align {
+    padding: 90px 5px 50px;
+  }
+}

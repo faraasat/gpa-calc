@@ -1,0 +1,56 @@
+.cte {
+  min-height: calc(100vh - 62px);
+}
+
+.cte_align {
+  padding: 50px 70px;
+}
+
+.ects_inps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.ects_inps > h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(42, 132, 250);
+}
+
+.ects_inps > p {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ects_inps > p > span {
+  color: rgb(255, 194, 61);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ects_or {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 45px;
+  font-weight: bold;
+  color: rgba(42, 132, 250, 0.5);
+  margin: 30px;
+  font-family: "Potta One", cursive;
+}
+
+@media screen and (max-width: 550px) {
+  .cte_align {
+    padding: 50px 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .cte_align {
+    padding: 90px 5px 50px;
+  }
+}

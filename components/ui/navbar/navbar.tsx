@@ -76,13 +76,13 @@ const NavbarComponent: NextComponentType = () => {
             </div>
             <div
               className={
-                router && router?.pathname == "/cgpa-to-ects"
+                router && router?.pathname == "/gpa-to-ects"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
               onClick={() => setIsOpen(false)}
             >
-              <Link href="/cgpa-to-ects">CGPA to ECTS</Link>
+              <Link href="/gpa-to-ects">GPA to ECTS</Link>
             </div>
             <div
               className={
@@ -161,13 +161,13 @@ const NavbarComponent: NextComponentType = () => {
             <hr />
             <div
               className={
-                router && router.pathname == "/cgpa-to-ects"
+                router && router.pathname == "/gpa-to-ects"
                   ? `${classes.navbar_link_active}`
                   : ""
               }
             >
-              <Link href="/cgpa-to-ects" onClick={() => setIsOpen(false)}>
-                CGPA to ECTS
+              <Link href="/gpa-to-ects" onClick={() => setIsOpen(false)}>
+                GPA to ECTS
               </Link>
             </div>
             <div

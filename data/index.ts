@@ -7,6 +7,71 @@ export const calcGpa = {
     "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
   pageTitle: "Calculate Your Grade Point Average (GPA) With Ease:",
   desc: "Effortlessly calculate your GPA with our user-friendly tool. Whether you're a student or educator, our calculator simplifies the process, helping you stay on top of your academic progress in just a few clicks.",
+  steps: [
+    {
+      main: "Update grade threshold if you have your Max Grade other than 4.0 GPA System. For example,",
+      subLists: [
+        {
+          title: "United States (US), Pakistan & South Korea uses 4.0 System.",
+        },
+        {
+          title: "Brazil, Thailand & Saudi Arabia uses 5.0 Grade Point Scale.",
+        },
+        { title: "Australia uses both 6.0 & 7.0 Grade Point System." },
+        { title: "France uses 20 GPA Scale." },
+        {
+          title:
+            "The ECTS grading scale is used across Europe. It doesn’t always convert to GPA but rather uses letter grades (A–F) that can be mapped to a GPA system depending on the institution.",
+          links: [
+            {
+              text: "You can calculate for ECTS...",
+              link: "/gpa-to-ects",
+            },
+            {
+              text: "You can convert to german grade from GPA...",
+              link: "/german-grade-calculator",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      main: "You can update your grading scale mapping below by clicking `Change Grade Scale`.",
+    },
+    {
+      main: "Add Your Details under the `Your Details` Section. Following are the what each field represents",
+      subLists: [
+        {
+          title:
+            "`Credit Hours` are the number of credits of your particular subject. For example, Theory have usually 2-3 Credits while Labs usually have 1 Credit.",
+        },
+        {
+          title:
+            "`Select Grade` gives you the options to select the grade which you have achieved in the subject and these grades are relative to the grading scale above.",
+        },
+        {
+          title:
+            "`Grade Marks` are the marks relative to the Grade Selected by You.",
+        },
+        {
+          title:
+            "Last field is also calculated by us and it shows the total marks got in the subject which use formula: Credit Hours * Grade Marks",
+        },
+      ],
+    },
+    {
+      main: "You can add more fields by clicking Green Add button and delete the field by clicking red cross button.",
+    },
+    {
+      main: "After you have added all of your details, you can click `Calculate Result`, which will then calculate your result.",
+    },
+    {
+      main: "Now you can see your total grades under the `Your GPA` Section.",
+    },
+    {
+      main: "Click `Export to CSV` to export your calculation to CSV while click `Export to JSON` to export your calculation to JSON.",
+    },
+  ],
 };
 
 export const calCgpa = {
@@ -19,15 +84,72 @@ export const calCgpa = {
   pageTitle:
     "Calculate Your Cumulative Grade Point Average (CGPA) With Effortlessly:",
   desc: "Easily compute your CGPA using our simple and intuitive calculator. Stay informed about your overall academic performance, track your progress, and plan ahead with just a few steps.",
+  steps: [
+    {
+      main: "Update grade threshold if you have your Max Grade other than 4.0 GPA System. For example,",
+      subLists: [
+        {
+          title: "United States (US), Pakistan & South Korea uses 4.0 System.",
+        },
+        {
+          title: "Brazil, Thailand & Saudi Arabia uses 5.0 Grade Point Scale.",
+        },
+        { title: "Australia uses both 6.0 & 7.0 Grade Point System." },
+        { title: "France uses 20 GPA Scale." },
+        {
+          title:
+            "The ECTS grading scale is used across Europe. It doesn’t always convert to GPA but rather uses letter grades (A–F) that can be mapped to a GPA system depending on the institution.",
+          links: [
+            {
+              text: "You can calculate for ECTS...",
+              link: "/gpa-to-ects",
+            },
+            {
+              text: "You can convert to german grade from GPA...",
+              link: "/german-grade-calculator",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      main: "Add Your Details under the `Your Details` Section. Following are the what each field represents",
+      subLists: [
+        {
+          title:
+            "`Credit Hours` are the number of credits of your particular semester. For example, you can have usually 14 - 17 credits per semester.",
+        },
+        {
+          title: "`Grade Marks` are the marks you got in that semester.",
+        },
+        {
+          title:
+            "Last field is calculated by us and it shows the total grade got in that semester which use formula: Credit Hours * Grade Marks",
+        },
+      ],
+    },
+    {
+      main: "You can add more fields by clicking Green Add button and delete the field by clicking red cross button.",
+    },
+    {
+      main: "After you have added all of your details, you can click `Calculate Result`, which will then calculate your result.",
+    },
+    {
+      main: "Now you can see your total grades under the `Your GPA` Section.",
+    },
+    {
+      main: "Click `Export to CSV` to export your calculation to CSV while click `Export to JSON` to export your calculation to JSON.",
+    },
+  ],
 };
 
 export const calcCTE = {
   metaTitle:
-    "CGPA Calculator with Custom Grading System | Adjust GPA Criteria for US, India, Europe | Easily Export Reports in CSV & JSON",
+    "GPA to ECTS Calculator | CGPA to ECTS Converter | Flexible Conversion for Global Academic Standards",
   metaDescription:
-    "Accurately calculate your CGPA using our advanced CGPA calculator with a fully customizable grading system tailored for the US, India, Europe, and other regions. Dynamically adjust GPA thresholds, grading scales, and letter grade ranges to fit your unique requirements. Generate detailed reports in both CSV and JSON formats with just a click, making it perfect for students, educators, and institutions. Whether you're adapting to a new grading system or exporting results for academic purposes, our tool simplifies the process with user-friendly features and flexible grading criteria. Try it now to streamline your CGPA calculations!",
+    "Easily convert your GPA to ECTS credits with our user-friendly tool, designed for students applying to European institutions. Customize the conversion using lecture hours, self-study time, or subject credits for accurate results. Ideal for international academic applications, our tool simplifies the process and ensures your grades align with ECTS requirements.",
   metaKeywords:
-    "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+    "CGPA to ECTS converter, convert CGPA to ECTS, ECTS calculator, CGPA conversion tool, European Credit Transfer System, academic grade conversion, international grade conversion, CGPA to European credits, ECTS credit calculator, global academic standards, ECTS for European universities, CGPA grading system, credit transfer system, ECTS credits for students, academic applications ECTS",
   pageTitle:
     "Convert Your Cumulative Grade Point Average (CGPA) to European Credit Transfer System (ECTS) for Your Subjects:",
   desc: "Quickly and accurately convert your CGPA to the European Credit Transfer System (ECTS) using our reliable tool. Whether you're preparing for international studies or need to translate your academic results for European institutions, our converter simplifies the process, ensuring your grades align with the ECTS framework.",
@@ -119,7 +241,7 @@ export const cgpaQna = [
   },
 ];
 
-export const GpaQna = [
+export const gpaQna = [
   {
     question: "What is this page about?",
     answer:
@@ -194,5 +316,109 @@ export const GpaQna = [
     question: "Is this CGPA calculator free to use?",
     answer:
       "Yes, this CGPA calculator is completely free to use, offering all its features without any cost, making it accessible for students and educators worldwide.",
+  },
+];
+
+export const ectsQna = [
+  {
+    question: "What is CGPA?",
+    answer:
+      "CGPA stands for Cumulative Grade Point Average, which is the average of a student's grades over a period of time in their academic program.",
+  },
+  {
+    question: "What is ECTS?",
+    answer:
+      "ECTS stands for European Credit Transfer and Accumulation System. It is a standard used by European universities to measure the workload and achievements of students.",
+  },
+  {
+    question: "How does the GPA to ECTS conversion work?",
+    answer:
+      "The conversion is based on the number of hours spent in lectures, self-study, and the total weeks per semester. Alternatively, it can be done using your subject credits and total program credits.",
+  },
+  {
+    question: "What is the range of hours required for 1 ECTS credit?",
+    answer: "Typically, 1 ECTS credit equals 25 to 30 hours of total workload.",
+  },
+  {
+    question: "What is the significance of converting GPA to ECTS?",
+    answer:
+      "Converting GPA to ECTS helps align your academic achievements with European standards, which is often required for international studies or applications to European institutions.",
+  },
+  {
+    question: "What is the 'Hours Per Week (Lecture)' field?",
+    answer:
+      "This refers to the number of hours you spent in lectures per week during your academic program.",
+  },
+  {
+    question: "What is the 'Hours Per Week (Self Study)' field?",
+    answer:
+      "This refers to the number of hours you spent in self-study per week outside of lectures during your academic program.",
+  },
+  {
+    question: "What does 'Weeks/Semester' mean?",
+    answer:
+      "This refers to the number of weeks in a typical semester during your academic program.",
+  },
+  {
+    question: "How is 'Subject Credits' used in the second method?",
+    answer:
+      "In the second method, you enter the credit hours assigned to each subject to calculate the equivalent ECTS credits.",
+  },
+  {
+    question: "What does 'Total Credits' mean?",
+    answer:
+      "This refers to the total credit hours of your entire academic program.",
+  },
+  {
+    question: "What does 'Course Years' refer to?",
+    answer:
+      "This refers to the total number of years of your academic program.",
+  },
+  {
+    question: "What does 'ECTS/Year' mean?",
+    answer:
+      "This field refers to the standard ECTS credits assigned per year of study. Typically, it is 60 ECTS credits per academic year.",
+  },
+  {
+    question: "Which method is more accurate for conversion?",
+    answer:
+      "Both methods can be used, but the first method (based on hours and weeks) is more detailed and accurate for calculating workload.",
+  },
+  {
+    question:
+      "Can I use this tool for converting my grades to other credit systems?",
+    answer:
+      "This tool is specifically designed for converting GPA to ECTS. For other systems, different tools or methods may be required.",
+  },
+  {
+    question: "Is the conversion result recognized by European institutions?",
+    answer:
+      "The conversion provides an approximation based on standard formulas. It's advisable to check specific institution requirements for grade conversions.",
+  },
+  {
+    question: "Do all European universities use the ECTS system?",
+    answer:
+      "Most European universities use the ECTS system, but it is always good to confirm the specific requirements of the university you are applying to.",
+  },
+  {
+    question: "Is this tool applicable for postgraduate programs?",
+    answer:
+      "Yes, the tool can be used for both undergraduate and postgraduate programs, as long as the CGPA and credit hour information is provided.",
+  },
+  {
+    question: "What if I don't know my exact hours for lectures or self-study?",
+    answer:
+      "You can estimate the hours you typically spent each week, but for more accuracy, try to provide the most precise values possible.",
+  },
+  {
+    question: "Can I convert ECTS back to CGPA using this tool?",
+    answer:
+      "No, this tool is specifically designed for converting GPA to ECTS. Converting ECTS back to CGPA would require a different approach.",
+  },
+  {
+    question:
+      "What should I do if my program uses a different grading or credit system?",
+    answer:
+      "If your program uses a non-CGPA or non-ECTS system, consult with your academic institution or the one you're applying to for specific conversion methods.",
   },
 ];

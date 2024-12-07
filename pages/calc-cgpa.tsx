@@ -103,7 +103,11 @@ const CalcCGPA: NextPage = () => {
 
       <section className={classes.cgpa}>
         <div className={classes.cgpa_align}>
-          <PageHeading title={calCgpa.pageTitle} desc={calCgpa.desc} />
+          <PageHeading
+            title={calCgpa.pageTitle}
+            desc={calCgpa.desc}
+            steps={calCgpa.steps}
+          />
 
           <Threshold value={gradeThreshold} setValue={setGradeThreshold} />
 

@@ -20,8 +20,8 @@ const HomeHero = () => {
             <LinkButton href={"/calc-cgpa"} type="white">
               Calculate CGPA
             </LinkButton>
-            <LinkButton href={"/cgpa-to-ects"} type="white">
-              CGPA to ECTS
+            <LinkButton href={"/gpa-to-ects"} type="white">
+              GPA to ECTS
             </LinkButton>
             <LinkButton href={"/german-grade-calculator"}>
               German Grade Calculator
