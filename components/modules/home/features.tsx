@@ -73,6 +73,10 @@ const HomeFeatures = () => {
           <LinkButton href={"/calc-cgpa"} type="orange">
             Check Your CGPA
           </LinkButton>
+          <LinkButton href={"/calc-gpa"}>Convert Your GPA to ECTS</LinkButton>
+          <LinkButton href={"/calc-cgpa"} type="orange">
+            Calculate Your German Grade
+          </LinkButton>
         </div>
       </div>
     </section>

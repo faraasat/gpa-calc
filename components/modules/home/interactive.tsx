@@ -1,14 +1,39 @@
+import { FC } from "react";
+import { LuLoader } from "react-icons/lu";
+
 import Heading from "@/components/ui/heading";
 import LinkButton from "@/components/ui/link-button";
-import { LuLoader } from "react-icons/lu";
 
 import classes from "@/styles/index.module.css";
 
-const HomeInteractive = () => {
+const HomeInteractive: FC<{
+  title: string;
+  subTitle: string;
+  videoUrl: string;
+  para: string;
+  linkText: string;
+  link: string;
+  headingType: "default" | "primary";
+  bgType: "default" | "primary";
+}> = ({
+  title,
+  subTitle,
+  videoUrl,
+  para,
+  linkText,
+  link,
+  headingType,
+  bgType,
+}) => {
   return (
-    <section className={`${classes.wrapper} ${classes.about_yellow}`}>
+    <section
+      className={`${classes.wrapper} ${
+        bgType === "default" ? classes.about_yellow : ""
+      } ${bgType === "primary" ? classes.about_primary : ""}`}
+      style={{ padding: "30px 0" }}
+    >
       <div className={`${classes.section} container`}>
-        <Heading title="Try It!" subTitle="Interact with Our Calculator..." />
+        <Heading title={title} subTitle={subTitle} styleType={headingType} />
         <div className={classes.interactive}>
           <LuLoader className={classes.interactive_loader} />
           <video
@@ -18,25 +43,17 @@ const HomeInteractive = () => {
             controls={false}
             muted={true}
           >
-            <source src="calc.webm" type="video/webm" />
+            <source src={videoUrl} type="video/webm" />
           </video>
         </div>
-        <p className={classes.interactive_para}>
-          Our interactive GPA & CGPA demo lets you experience the ease of
-          calculating your academic performance in real-time. Input your grades,
-          course credits, and see your GPA instantly adjust. With a
-          user-friendly interface and dynamic calculations, you can quickly
-          experiment with different academic scenarios to plan your future
-          performance. This feature empowers students to understand the impact
-          of their grades and credit hours on their overall GPA and CGPA, giving
-          a clear picture of where they stand academically.
-        </p>
+        <p className={classes.interactive_para}>{para}</p>
         <div className={classes.about_para__btn}>
-          <LinkButton href={"/calc-gpa"} btnStyle="rounded">
-            Checkout GPA Calculator
-          </LinkButton>
-          <LinkButton href={"/calc-cgpa"} btnStyle="rounded" type="white">
-            Checkout CGPA Calculator
+          <LinkButton
+            href={link}
+            btnStyle="rounded"
+            type={bgType === "primary" ? "orange" : "default"}
+          >
+            {linkText}
           </LinkButton>
         </div>
       </div>

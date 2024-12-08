@@ -125,8 +125,8 @@ const CGPAToECTS: NextPage = () => {
           <div className={classes.ects_inps}>
             <h4>Second Method</h4>
             <DetailedInput
-              title="Subject Credits*"
-              desc="Your Credit Hours for the Subject"
+              title="Subject/Overall Credits*"
+              desc="Your Credit Hours for the Subject (In case of Overall, it's Total Credit Hours)"
               value={secondMethod.subjectCredits}
               setValue={updateSecondMethod}
               valueType="subjectCredits"

@@ -119,7 +119,20 @@
   align-items: center;
   justify-content: flex-start;
   gap: 18px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
+}
+
+.about_para__btn > a {
+  font-size: 15px !important;
+  min-width: 240px;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.para_sep {
+  margin-top: 15px;
 }
 
 .section_features {
@@ -190,7 +203,7 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 30px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
@@ -252,6 +265,14 @@
   padding: 20px 20px;
   background-color: rgb(42, 132, 250);
   font-size: 18px;
+}
+
+.about_primary .interactive {
+  border: 3px solid #000 !important;
+}
+
+.about_primary .interactive_para {
+  color: gray;
 }
 
 @keyframes spin {
@@ -353,6 +374,16 @@
   .interactive_para {
     font-size: 20px;
   }
+  .featured_btns {
+    flex-wrap: wrap;
+  }
+  .featured_btns > a {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -395,6 +426,26 @@
   }
   .faq_item > div {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about_para__btn {
+    flex-direction: column;
+  }
+  .about_para__btn > a {
+    width: 100%;
+    min-width: unset;
+  }
+  .featured_btns {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .featured_btns > a {
+    width: 100%;
+    min-width: 200px;
+    max-width: 320px;
   }
 }
 
@@ -476,7 +527,7 @@
   .featured_btns > a,
   .hero_item_btn > button,
   .hero_item_btn > a {
-    width: 100%;
-    max-width: 200px;
+    width: 85%;
+    max-width: 220px;
   }
 }

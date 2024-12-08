@@ -12,36 +12,44 @@ const HomeAbout = () => {
         <div className={classes.about}>
           <div className={classes.about_paras}>
             <p>
-              Welcome to GPA Calculate, your ultimate tool for streamlining GPA
-              and CGPA calculations! Whether you are a student striving to
-              monitor your academic progress or someone eager to grasp the
-              intricacies of grading systems, our app offers a seamless and
-              intuitive experience. Designed with precision and efficiency in
-              mind, GPA Calculate allows you to effortlessly input your grades
-              and credits to receive instant and accurate GPA results, giving
-              you a clear, actionable view of your academic performance.
+              Welcome to the Calculator, your ultimate tool for streamlining GPA
+              & CGPA Calculations, GPA to ECTS conversions & German Grade
+              Calculations! Whether you are a student aiming to monitor your
+              academic progress or someone looking to understand various grading
+              systems, our app provides a seamless, intuitive experience. Now,
+              in addition to GPA and CGPA calculators, you can calculate German
+              grades and convert GPA to ECTS credits for a comprehensive
+              academic assessment.
             </p>
             <p>
-              Our mission is to empower students by providing reliable tools
-              that facilitate better decision-making and future planning. We
-              understand that managing academic performance can be challenging,
-              which is why we havve created a user-friendly platform that
-              simplifies grade calculations and makes them accessible to
-              everyone. With GPA Calculate, you can confidently track your
-              progress and set yourself up for success.
+              Our mission is to empower students by providing reliable tools for
+              better decision-making and future planning. We have designed an
+              accessible platform that simplifies complex grade calculations,
+              making academic management easier than ever. With GPA Calculate,
+              you can confidently track your progress, convert grades, and set
+              yourself up for success.
             </p>
             <p>
-              Experience the ease and clarity of managing your GPA and CGPA
-              today with GPA Calculate, and take control of your academic
-              journey with a tool that is as dedicated to your success as you
-              are.
+              Experience the convenience of managing GPA, CGPA, and
+              international grade conversions with the Calculator, and take
+              charge of your academic journey with a tool dedicated to your
+              success!
             </p>
+            <div className={classes.para_sep} />
             <div className={classes.about_para__btn}>
               <LinkButton href={"/calc-gpa"} btnStyle="rounded">
                 Checkout GPA Calculator
               </LinkButton>
               <LinkButton href={"/calc-cgpa"} btnStyle="rounded" type="white">
                 Checkout CGPA Calculator
+              </LinkButton>
+            </div>
+            <div className={classes.about_para__btn}>
+              <LinkButton href={"/calc-gpa"} btnStyle="rounded" type="white">
+                Check GPA to ECTS Converter
+              </LinkButton>
+              <LinkButton href={"/calc-cgpa"} btnStyle="rounded">
+                Check German Grade Calculator
               </LinkButton>
             </div>
           </div>
