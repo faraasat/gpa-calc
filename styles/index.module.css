@@ -275,6 +275,39 @@
   color: gray;
 }
 
+.td {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px 0;
+  max-width: 900px;
+}
+
+.td > h4 {
+  font-size: 28px;
+  font-family: "Potta One", cursive;
+  color: rgb(42, 132, 250);
+}
+
+.td > ul > li {
+  font-size: 18px;
+}
+
+.td > ul > li > .td_span_1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.td > ul > li > .td_span_2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 194, 61);
+}
+
+.td > ul > li > .td_span_3 {
+  color: gray;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

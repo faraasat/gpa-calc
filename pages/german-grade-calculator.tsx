@@ -2,12 +2,14 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { useAptabase } from "@aptabase/react";
 
-import { calGGC } from "../data";
+import { calGGC, ggcGrading, ggcQna } from "../data";
 import MetaHead from "@/components/ui/meta-head";
 import PageHeading from "@/components/ui/page-heading";
+import DetailedInput from "@/components/ui/detailed-input";
+import Faqs from "@/components/ui/faqs";
 
 import classes from "@/styles/german-grade-calculator.module.css";
-import DetailedInput from "@/components/ui/detailed-input";
+import TextDescriptor from "@/components/ui/text-descriptor";
 
 const GermanGradeCalculator: NextPage = () => {
   const { trackEvent } = useAptabase();
@@ -34,6 +36,14 @@ const GermanGradeCalculator: NextPage = () => {
     const res = ((ggc.max - ggc.obtained) * 3) / (ggc.max - ggc.min) + 1;
     if (res < 0) return 0;
     return res;
+  };
+
+  const getExtraInfo = () => {
+    if (calculateGcc() >= 5) return ggcGrading.find((x) => x.min === 5.0);
+    else if (calculateGcc() < 5)
+      return ggcGrading.find(
+        (x) => calculateGcc() >= x.min && calculateGcc() <= +x.max
+      );
   };
 
   return (
@@ -72,12 +82,25 @@ const GermanGradeCalculator: NextPage = () => {
             </p>
             {getMul() > 0 && (
               <p className={classes.ggc_res2}>
-                Your Grade is in the range of <span>1.0 - 1.5</span> which
-                implies your score is <span>Sehr Gut (Very Good)</span>
+                Your Grade is in the range of{" "}
+                <span>
+                  {getExtraInfo()?.min} - {getExtraInfo()?.max}
+                </span>{" "}
+                which implies your score is{" "}
+                <span>
+                  {getExtraInfo()?.gerText} ({getExtraInfo()?.text})
+                </span>{" "}
+                which shows: <span>{getExtraInfo()?.description}</span>
               </p>
             )}
           </div>
+          <TextDescriptor
+            heading={"German Grade Descriptor"}
+            data={ggcGrading}
+          />
         </div>
+
+        <Faqs faqs={ggcQna} />
       </section>
     </>
   );

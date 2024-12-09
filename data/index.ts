@@ -157,11 +157,11 @@ export const calcCTE = {
 
 export const calGGC = {
   metaTitle:
-    "Easily Calculate Overall CGPA with Semester GPA & Credits | Quick Export to CSV & JSON Reports",
+    "Convert GPA or Marks to German Grade | Fast & Accurate German Grade Conversion Tool for University Applications",
   metaDescription:
-    "Easily calculate your overall CGPA by entering GPA and credit hours for each semester. Customize GPA thresholds, and quickly generate detailed reports in CSV or JSON formats. Perfect for students and educators looking for a fast, user-friendly solution to track academic performance across semesters.",
+    "Easily convert your GPA or marks to the German grading system using our precise and efficient German Grade Calculator. Perfect for students applying to German universities or professionals translating academic results for career opportunities.",
   metaKeywords:
-    "gpa, calculator, gpa calculator, cgpa, cgpa calculator, university, bahria, bahria university, college, marks, grade, education, online GPA calculator, student GPA calculator, academic progress, grade calculation, CGPA calculation, GPA and CGPA, GPA calculation tool, accurate GPA calculation, quick GPA calculation, reliable GPA calculation",
+    "German grade calculator, GPA to German grade, convert marks to German grade, German grading system, GPA conversion, marks to German grade conversion, German university grade converter, academic grade conversion tool, international grade conversion, German university application grade",
   pageTitle:
     "Convert Your Credits/Cumulative Grade Point Average (CGPA) to German Grade Swiftly:",
   desc: "Easily convert your credits or CGPA into the German grading system with our efficient and precise converter. Whether you're applying to a German university or need your academic results translated for career opportunities, our tool streamlines the conversion process, ensuring your grades meet the German academic standards with accuracy and ease.",
@@ -420,5 +420,99 @@ export const ectsQna = [
       "What should I do if my program uses a different grading or credit system?",
     answer:
       "If your program uses a non-CGPA or non-ECTS system, consult with your academic institution or the one you're applying to for specific conversion methods.",
+  },
+];
+
+export const ggcQna = [
+  {
+    question: "What is the German grading system?",
+    answer:
+      "The German grading system typically ranges from 1.0 (excellent) to 5.0 (fail), with 1.0 being the highest achievable grade.",
+  },
+  {
+    question: "How does the GPA to German grade conversion work?",
+    answer:
+      "Our converter uses a formula that aligns your GPA or marks with the German grading system, ensuring accurate conversion based on your academic performance.",
+  },
+  {
+    question: "What inputs are needed for the German grade conversion?",
+    answer:
+      "You need to provide your maximum score, minimum score, and the score you achieved in the exam to calculate your equivalent German grade.",
+  },
+  {
+    question: "Can I convert both GPA and marks to a German grade?",
+    answer:
+      "Yes, our tool allows you to convert either your GPA or marks into the German grading system, depending on the format of your academic results.",
+  },
+  {
+    question: "Why do I need to know my equivalent German grade?",
+    answer:
+      "If you're applying to German universities or jobs in Germany, your academic results need to be translated into the German grading system to meet application requirements.",
+  },
+  {
+    question: "What is the maximum score I can input for conversion?",
+    answer:
+      "You can input a maximum score based on the grading scale of your institution, such as 4.0 for GPA or 100 for percentage marks.",
+  },
+  {
+    question: "Is the German grade calculator accurate?",
+    answer:
+      "Yes, the calculator uses a precise formula to ensure your GPA or marks are accurately converted to the German grading system.",
+  },
+  {
+    question: "Can I use this tool for multiple conversions?",
+    answer:
+      "Yes, you can use the tool to convert as many scores as needed, whether for GPA or individual exam marks.",
+  },
+  {
+    question: "Does this calculator work for all grading systems?",
+    answer:
+      "The calculator is designed to work with common GPA and percentage-based systems but may not cover every global grading system. Ensure your inputs match the required format.",
+  },
+  {
+    question: "Is the German grade important for university applications?",
+    answer:
+      "Yes, many German universities require international applicants to submit their grades in the German grading format for proper evaluation.",
+  },
+];
+
+export const ggcGrading = [
+  {
+    min: 1.0,
+    max: 1.5,
+    gerText: "sehr gut",
+    text: "very good",
+    description:
+      "A performance that is exceptionally above the standard requirements.",
+  },
+  {
+    min: 1.6,
+    max: 2.5,
+    gerText: "gut",
+    text: "good",
+    description:
+      "A performance that significantly exceeds the average expectations.",
+  },
+  {
+    min: 2.6,
+    max: 3.5,
+    gerText: "befriedigend",
+    text: "satisfactory",
+    description: "A performance that meets the standard requirements.",
+  },
+  {
+    min: 3.6,
+    max: 4.0,
+    gerText: "ausreichend",
+    text: "sufficient",
+    description: "A performance that barely meets the minimum requirements.",
+  },
+  {
+    min: 5.0,
+    max: "above",
+    gerText: "nicht ausreichend / nicht bestanden",
+    text: "not sufficient / failed",
+    description:
+      "A performance that does not meet the required standards for passing.",
   },
 ];
