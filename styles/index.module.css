@@ -325,14 +325,14 @@
 }
 
 .countries_cont > h5 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Potta One", cursive;
   color: rgb(42, 132, 250);
   text-decoration: underline;
 }
 
 .countries_cont > p {
-  font-size: 20px;
+  font-size: 17px;
   max-width: 650px;
 }
 
@@ -344,18 +344,19 @@
 
 .cont_desc {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  width: 80px;
-  text-align: center;
+  flex-direction: row;
+  gap: 5px;
+  width: 125px;
+  text-align: start;
+  align-items: center;
 }
 
 .cont_desc > div {
-  font-size: 80px;
+  font-size: 35px;
 }
 
 .cont_desc > h6 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @keyframes spin {

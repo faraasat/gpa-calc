@@ -80,7 +80,7 @@ const Home: NextPage = () => {
       </div>
       <SupportedCountries
         title="Supported Countries"
-        subTitle="We support the following countries"
+        subTitle="Calculator supported for the following:"
         headingType="default"
         bgType="default"
         countryList={homeCountries}
