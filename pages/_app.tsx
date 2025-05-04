@@ -68,12 +68,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         strategy="lazyOnload"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
       ></Script>
-      <Script
+      {/* <Script
         id="gg-ads-scr"
         dangerouslySetInnerHTML={{
           __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
         }}
-      />
+      /> */}
     </Fragment>
   );
 }

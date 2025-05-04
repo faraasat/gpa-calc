@@ -1,9 +1,15 @@
-import ParticlesComponent from "@/components/ui/particles/particles";
+import dynamic from "next/dynamic";
 
-import classes from "@/styles/index.module.css";
+// import ParticlesComponent from "@/components/ui/particles/particles";
 import LinkButton from "@/components/ui/link-button";
 import StudySvg from "@/assets/study";
 import AdBanner from "@/components/ui/ads";
+
+const ParticlesComponent = dynamic(
+  () => import("@/components/ui/particles/particles")
+);
+
+import classes from "@/styles/index.module.css";
 
 const HomeHero = () => {
   return (
@@ -14,7 +20,7 @@ const HomeHero = () => {
           <StudySvg />
         </div>
         <div className={classes.hero_item_text}>
-          <h1>TRY OUR GPA CALCULATOR!</h1>
+          <h1>TRY OUR GPA CALCULATOR With Ease!</h1>
           <p>
             This App provides you with an interface to calculate your GPA and
             CGPA with great flexibility...
