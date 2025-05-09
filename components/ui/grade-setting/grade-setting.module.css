@@ -33,7 +33,7 @@
   padding: 0 30px;
   justify-content: space-between;
   height: 60px;
-  font-family: "Cabin", sans-serif;
+  font-family: var(--font-cabin), sans-serif;
   color: rgb(42, 132, 250);
   transform: translateY(5px);
 }

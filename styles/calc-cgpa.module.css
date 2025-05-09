@@ -16,7 +16,7 @@
 
 .cgpa_align_top div {
   margin-right: 10px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: rgb(42, 132, 250);
   font-size: 1.5em;
 }
@@ -49,7 +49,7 @@
 }
 
 .cgpa_calc_details {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: bolder;
   color: rgba(42, 132, 250);
   font-size: 28px;
@@ -78,7 +78,7 @@
 .cgpa_result_details {
   color: rgb(255, 194, 61);
   font-size: 1.5em;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
 }
 
 .cgpa_result_details > div {

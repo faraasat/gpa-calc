@@ -1,3 +1,4 @@
+import { NextComponentType } from "next";
 import { FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -6,188 +7,182 @@ import { Menu } from "react-feather";
 
 import classes from "./navbar.module.css";
 
-import { INavbar } from "./navbar.d";
-import { NextComponentType } from "next";
+// import { INavbar } from "./navbar.d";
 
-function useWindowSize() {
-  const [windowSize, setWindowSize] = useState<INavbar>({
-    width: undefined,
-    height: undefined,
-  });
+// function useWindowSize() {
+//   const [windowSize, setWindowSize] = useState<INavbar>({
+//     width: undefined,
+//     height: undefined,
+//   });
 
-  function handleResize() {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  }
+//   function handleResize() {
+//     setWindowSize({
+//       width: window.innerWidth,
+//       height: window.innerHeight,
+//     });
+//   }
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-      handleResize();
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-  return windowSize;
-}
+//   useEffect(() => {
+//     if (typeof window !== "undefined") {
+//       window.addEventListener("resize", handleResize);
+//       handleResize();
+//       return () => window.removeEventListener("resize", handleResize);
+//     }
+//   }, []);
+//   return windowSize;
+// }
 
 const NavbarComponent: NextComponentType = () => {
   const router = useRouter();
-  const { width } = useWindowSize();
+  // const { width } = useWindowSize();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <Fragment>
-      {typeof width != "undefined" && width > 900 ? (
-        <section className={classes.navbar}>
-          <div className={classes.navbar_brand}>
-            <Link href="/">GPA CALCULATOR</Link>
-          </div>
-          <div className={classes.navbar_links}>
-            <div
-              className={
-                router && router?.pathname == "/"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link href="/">Home</Link>
-            </div>
-            <div
-              className={
-                router && router?.pathname == "/calc-gpa"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              <Link href="/calc-gpa">Calculate GPA</Link>
-            </div>
-            <div
-              className={
-                router && router?.pathname == "/calc-cgpa"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              <Link href="/calc-cgpa">Calculate CGPA</Link>
-            </div>
-            <div
-              className={
-                router && router?.pathname == "/gpa-to-ects"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              <Link href="/gpa-to-ects">GPA to ECTS</Link>
-            </div>
-            <div
-              className={
-                router && router?.pathname == "/german-grade-calculator"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              <Link href="/german-grade-calculator">
-                German Grade Calculator
-              </Link>
-            </div>
-            <Link
-              href={"https://github.com/faraasat/gpa-calc"}
-              className={classes.navbar_github}
-              target="_blank"
-            >
-              <FaGithub />
-            </Link>
-          </div>
-        </section>
-      ) : (
-        <section className={classes.subnavbar} id="subnav">
-          <div className={classes.subnavbar_top}>
-            <h1 className={classes.subnavbar_brand}>
-              <Link href="/">GPA CALCULATOR</Link>
-            </h1>
-            <h2
-              className={classes.subnavbar_menu}
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <Menu size={40} fontFamily="Potta One" />
-            </h2>
+      <header className={`${classes.navbar} max-md:hidden`}>
+        <div className={classes.navbar_brand}>
+          <Link href="/">GPA CALCULATOR</Link>
+        </div>
+        <nav className={classes.navbar_links}>
+          <div
+            className={
+              router && router?.pathname == "/"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link href="/">Home</Link>
           </div>
           <div
-            className={`${classes.subnavbar_links} ${
-              !isOpen ? classes.display_none : ""
-            }`}
+            className={
+              router && router?.pathname == "/calc-gpa"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+            onClick={() => setIsOpen(false)}
           >
-            <div
-              className={
-                router && router.pathname == "/"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link href="/" onClick={() => setIsOpen(false)}>
-                Home
-              </Link>
-            </div>
-            <hr />
-            <div
-              className={
-                router && router.pathname == "/calc-gpa"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link href="/calc-gpa" onClick={() => setIsOpen(false)}>
-                Calculate GPA
-              </Link>
-            </div>
-            <hr />
-            <div
-              className={
-                router && router.pathname == "/calc-cgpa"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link href="/calc-cgpa" onClick={() => setIsOpen(false)}>
-                Calculate CGPA
-              </Link>
-            </div>
-            <hr />
-            <div
-              className={
-                router && router.pathname == "/gpa-to-ects"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link href="/gpa-to-ects" onClick={() => setIsOpen(false)}>
-                GPA to ECTS
-              </Link>
-            </div>
-            <div
-              className={
-                router && router.pathname == "/german-grade-calculator"
-                  ? `${classes.navbar_link_active}`
-                  : ""
-              }
-            >
-              <Link
-                href="/german-grade-calculator"
-                onClick={() => setIsOpen(false)}
-              >
-                German Grade Calculator
-              </Link>
-            </div>
-            <hr />
+            <Link href="/calc-gpa">Calculate GPA</Link>
           </div>
-        </section>
-      )}
+          <div
+            className={
+              router && router?.pathname == "/calc-cgpa"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            <Link href="/calc-cgpa">Calculate CGPA</Link>
+          </div>
+          <div
+            className={
+              router && router?.pathname == "/gpa-to-ects"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            <Link href="/gpa-to-ects">GPA to ECTS</Link>
+          </div>
+          <div
+            className={
+              router && router?.pathname == "/german-grade-calculator"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            <Link href="/german-grade-calculator">German Grade Calculator</Link>
+          </div>
+          <Link
+            href={"https://github.com/faraasat/gpa-calc"}
+            className={classes.navbar_github}
+            target="_blank"
+          >
+            <FaGithub />
+          </Link>
+        </nav>
+      </header>
+      <header className={`${classes.subnavbar} hidden`} id="subnav">
+        <div className={classes.subnavbar_top}>
+          <h1 className={classes.subnavbar_brand}>
+            <Link href="/">GPA CALCULATOR</Link>
+          </h1>
+          <h2
+            className={classes.subnavbar_menu}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Menu size={40} fontFamily="Potta One" />
+          </h2>
+        </div>
+        <nav
+          className={`${classes.subnavbar_links} ${
+            !isOpen ? classes.display_none : ""
+          }`}
+        >
+          <div
+            className={
+              router && router.pathname == "/"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link href="/" onClick={() => setIsOpen(false)}>
+              Home
+            </Link>
+          </div>
+          <hr />
+          <div
+            className={
+              router && router.pathname == "/calc-gpa"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link href="/calc-gpa" onClick={() => setIsOpen(false)}>
+              Calculate GPA
+            </Link>
+          </div>
+          <hr />
+          <div
+            className={
+              router && router.pathname == "/calc-cgpa"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link href="/calc-cgpa" onClick={() => setIsOpen(false)}>
+              Calculate CGPA
+            </Link>
+          </div>
+          <hr />
+          <div
+            className={
+              router && router.pathname == "/gpa-to-ects"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link href="/gpa-to-ects" onClick={() => setIsOpen(false)}>
+              GPA to ECTS
+            </Link>
+          </div>
+          <div
+            className={
+              router && router.pathname == "/german-grade-calculator"
+                ? `${classes.navbar_link_active}`
+                : ""
+            }
+          >
+            <Link
+              href="/german-grade-calculator"
+              onClick={() => setIsOpen(false)}
+            >
+              German Grade Calculator
+            </Link>
+          </div>
+          <hr />
+        </nav>
+      </header>
     </Fragment>
   );
 };

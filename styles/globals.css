@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import "tailwindcss";
+
+/* @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
 
 :root {
   --orange: "rgb(255, 194, 61)";
@@ -23,19 +25,33 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: "Cabin", sans-serif;
+  font-family: var(--font-cabin), sans-serif;
   margin-block: 0;
   line-height: 1 !important;
 }
 
-nav {
+header {
   position: fixed;
   width: 100%;
   z-index: 999999;
 }
 
+.font-potta {
+  font-family: var(--font-potta);
+}
+
+.font-cabin {
+  font-family: var(--font-cabin);
+}
+
+.font-lobster {
+  font-family: var(--font-lobster);
+}
+
 #__next {
   overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #grading-window {
@@ -56,7 +72,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: white;
   z-index: 50;
   text-align: center;
@@ -73,7 +89,7 @@ footer {
 
 .threshold h4 {
   margin-right: 10px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: rgb(42, 132, 250);
   font-size: 1.5em;
 }
@@ -107,7 +123,7 @@ footer {
 }
 
 .result_pane_calc_details {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: bolder;
   color: rgba(42, 132, 250, 1);
   font-size: 28px;
@@ -117,7 +133,7 @@ footer {
 .result_pane_details {
   color: rgb(255, 194, 61);
   font-size: 1.5em;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
 }
 
 .result_pane_details > div {

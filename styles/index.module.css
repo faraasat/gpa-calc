@@ -58,14 +58,14 @@
 }
 
 .hero_item_text > h1 {
-  font-family: "Potta One", cursive !important;
+  font-family: var(--font-potta), cursive !important;
   font-weight: bolder;
   color: rgb(42, 132, 250);
   padding-bottom: 5px;
 }
 
 .hero_item_text > p {
-  font-family: "Cabin", sans-serif;
+  font-family: var(--font-cabin), sans-serif;
   color: white;
   font-weight: 500;
   font-size: 20px;
@@ -180,7 +180,7 @@
 .feature_card > h4 {
   font-size: 25px;
   text-align: center;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: rgb(42, 132, 250);
 }
 
@@ -292,7 +292,7 @@
 
 .td > h4 {
   font-size: 28px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: rgb(42, 132, 250);
 }
 
@@ -332,7 +332,7 @@
 
 .countries_cont > h5 {
   font-size: 30px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   color: rgb(42, 132, 250);
   text-decoration: underline;
 }

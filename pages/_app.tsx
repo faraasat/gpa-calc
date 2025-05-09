@@ -1,18 +1,34 @@
 import type { AppProps } from "next/app";
 import { Fragment } from "react";
 import { AptabaseProvider } from "@aptabase/react";
+import Script from "next/script";
 import Head from "next/head";
-import { AppContextProvider } from "@/context/app-context";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Potta_One, Cabin, Lobster } from "next/font/google";
 
+import { AppContextProvider } from "@/context/app-context";
 import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 import Footer from "@/components/ui/footer";
-import SocialSide from "@/components/ui/social-side";
-import Script from "next/script";
+// import SocialSide from "@/components/ui/social-side";
 
 import "@/styles/globals.css";
+
+const potta_one = Potta_One({
+  weight: "400",
+  variable: "--font-potta",
+});
+
+const cabin = Cabin({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cabin",
+});
+
+const lobster = Lobster({
+  weight: "400",
+  variable: "--font-lobster",
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -45,19 +61,32 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <nav>
-          <Navbar />
-        </nav>
-        <SocialSide />
+
+        <style jsx global>{`
+          :root {
+            --font-potta: ${potta_one.variable};
+            --font-lobster: ${lobster.variable};
+            --font-cabin: ${cabin.variable};
+          }
+        `}</style>
+
+        {/* PAGE */}
+        <Navbar />
+
+        {/* <SocialSide /> */}
         <AptabaseProvider appKey={process.env.NEXT_PUBLIC_APTABASE_APP_ID!}>
           <Component {...pageProps} />
         </AptabaseProvider>
+
         <div id="grading-window">
           <OverlayComponent />
           <GradeSettingComponent />
         </div>
+
         <Footer />
       </AppContextProvider>
+
+      {/* ANALYTICS AND SCRIPTS */}
       <GoogleAnalytics
         gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
       />
@@ -68,12 +97,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         strategy="lazyOnload"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
       ></Script>
-      {/* <Script
-        id="gg-ads-scr"
-        dangerouslySetInnerHTML={{
-          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-        }}
-      /> */}
     </Fragment>
   );
 }

@@ -40,7 +40,7 @@
   font-weight: bold;
   color: rgba(42, 132, 250, 0.5);
   margin: 30px;
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
 }
 
 @media screen and (max-width: 550px) {

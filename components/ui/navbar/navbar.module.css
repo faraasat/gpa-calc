@@ -12,7 +12,7 @@
 }
 
 .navbar_brand > a {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: bolder;
   font-size: 18px;
   margin-block: 0 !important;
@@ -32,14 +32,14 @@
 .navbar_links > div {
   /* padding-left: 15px;
   padding-right: 15px; */
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: lighter;
   font-size: 16px;
   color: white;
 }
 
 .navbar_links > div > a {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: lighter;
   color: white;
   text-decoration: none !important;
@@ -70,7 +70,7 @@
 }
 
 .subnavbar_brand > a {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-weight: bolder;
   font-size: 22px;
   margin-block: 0 !important;

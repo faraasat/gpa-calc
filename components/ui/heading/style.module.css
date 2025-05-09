@@ -8,13 +8,13 @@
 }
 
 .heading > h3 {
-  font-family: "Lobster", sans-serif;
+  font-family: var(--font-lobster), sans-serif;
   font-size: 40px;
   font-weight: bolder;
 }
 
 .heading > h4 {
-  font-family: "Potta One", cursive;
+  font-family: var(--font-potta), cursive;
   font-size: 45px;
   color: rgba(42, 132, 250, 1);
 }
