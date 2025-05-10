@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 import LinkButton from "@/components/ui/link-button";
 import Heading from "@/components/ui/heading";
-import AboutMan from "@/assets/about-man";
+import { StudentImg } from "@/assets/index";
 
 import classes from "@/styles/index.module.css";
 
@@ -54,7 +56,7 @@ const HomeAbout = () => {
             </div>
           </div>
           <div className={classes.about_img}>
-            <AboutMan />
+            <Image src={StudentImg} alt="Student working to get gpa" fill />
           </div>
         </div>
       </div>

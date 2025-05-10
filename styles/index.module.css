@@ -116,6 +116,7 @@
 }
 
 .about_img {
+  position: relative;
   grid-column: 7 / span 6;
   display: flex;
   min-width: 600px;

@@ -23,6 +23,7 @@ const potta_one = Potta_One({
 const cabin = Cabin({
   weight: ["400", "500", "600", "700"],
   variable: "--font-cabin",
+  subsets: ["latin"],
 });
 
 const lobster = Lobster({

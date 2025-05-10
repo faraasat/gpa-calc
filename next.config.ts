@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
-const optimize = require("next-optimized-classnames");
+// const optimize = require("next-optimized-classnames");
 
-const nextConfig = {
+import {NextConfig} from "next"
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   async rewrites() {
     return [
@@ -13,4 +15,6 @@ const nextConfig = {
   },
 };
 
-module.exports = optimize(nextConfig);
+// module.exports = optimize(nextConfig);
+
+export default nextConfig
