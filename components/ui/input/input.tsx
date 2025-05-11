@@ -19,7 +19,7 @@ const InputComponent: FC<InputType> = (props: InputType): JSX.Element => {
     setCredit(e.target.value);
   };
 
-  let filteredGrades: Array<IGrade> = [];
+  const filteredGrades: Array<IGrade> = [];
   grades.map((grade) => {
     if (grade.checked) {
       filteredGrades.push(grade);

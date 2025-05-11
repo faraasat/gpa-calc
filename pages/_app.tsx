@@ -18,6 +18,7 @@ import "@/styles/globals.css";
 const potta_one = Potta_One({
   weight: "400",
   variable: "--font-potta",
+  subsets: ["latin"],
 });
 
 const cabin = Cabin({
@@ -29,6 +30,7 @@ const cabin = Cabin({
 const lobster = Lobster({
   weight: "400",
   variable: "--font-lobster",
+  subsets: ["latin"],
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

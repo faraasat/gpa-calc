@@ -1,13 +1,14 @@
 import dynamic from "next/dynamic";
+// import Image from "next/image";
 
-// import ParticlesComponent from "@/components/ui/particles/particles";
 import LinkButton from "@/components/ui/link-button";
-import StudySvg from "@/assets/study";
+// import { StudentImg } from "@/assets/index";
 import AdBanner from "@/components/ui/ads";
 
 const ParticlesComponent = dynamic(
   () => import("@/components/ui/particles/particles")
 );
+const StudySvg = dynamic(() => import("@/assets/study"));
 
 import classes from "@/styles/index.module.css";
 
@@ -18,6 +19,13 @@ const HomeHero = () => {
       <div className={`${classes.hero_items} container`}>
         <div className={classes.hero_item_image}>
           <StudySvg />
+          {/* <Image
+            src={StudentImg}
+            alt="Student working to get gpa"
+            fill
+            draggable={false}
+            className="rounded-md"
+          /> */}
         </div>
         <div className={classes.hero_item_text}>
           <h1>TRY OUR GPA CALCULATOR With Ease!</h1>

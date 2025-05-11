@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
-
 :root {
-  --orange: "rgb(255, 194, 61)";
+  --orange: #ffc23d;
+}
+
+@theme {
+  --orange: --orange;
 }
 
 html,
@@ -16,6 +16,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: var(--font-cabin), sans-serif;
 }
 
 a {
@@ -25,9 +26,6 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: var(--font-cabin), sans-serif;
-  margin-block: 0;
-  line-height: 1 !important;
 }
 
 header {
@@ -36,15 +34,15 @@ header {
   z-index: 999999;
 }
 
-.font-potta {
+@utility font-potta {
   font-family: var(--font-potta);
 }
 
-.font-cabin {
+@utility font-cabin {
   font-family: var(--font-cabin);
 }
 
-.font-lobster {
+@utility font-lobster {
   font-family: var(--font-lobster);
 }
 

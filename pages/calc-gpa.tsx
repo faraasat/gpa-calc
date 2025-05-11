@@ -47,7 +47,7 @@ const CalcGPA: NextPage = () => {
 
   const handleCheckResult = () => {
     const data: Array<{ credits: string; grade: string }> = [];
-    for (let i in inputFields) {
+    for (const i in inputFields) {
       const inp_values: HTMLElement = document.getElementById(`inp_${i}`)!;
       data.push({
         credits: (inp_values.childNodes[0] as HTMLInputElement).value,
@@ -77,7 +77,7 @@ const CalcGPA: NextPage = () => {
   };
 
   if (isDelete && isDelete.length >= 5) {
-    let inps: Array<number> = [];
+    const inps: Array<number> = [];
     inputFields.map((x) => {
       if (Number(x) !== Number(isDelete.split("_")[1]))
         if (typeof x != "undefined") inps.push(x);

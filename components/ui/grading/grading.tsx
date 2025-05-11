@@ -14,7 +14,7 @@ const GradingComponent: FC = () => {
 
   const { grades } = useContext(AppContext);
 
-  let filteredGrades: Array<IGrade> = [];
+  const filteredGrades: Array<IGrade> = [];
   grades.map((grade) => {
     if (grade.checked) {
       filteredGrades.push(grade);
