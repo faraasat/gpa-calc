@@ -4748,6 +4748,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "class-variance-authority@npm:0.7.1"
+  dependencies:
+    clsx: "npm:^2.1.1"
+  checksum: 10c0/0f438cea22131808b99272de0fa933c2532d5659773bfec0c583de7b3f038378996d3350683426b8e9c74a6286699382106d71fbec52f0dd5fbb191792cccb5b
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:^5.2.2":
   version: 5.3.3
   resolution: "clean-css@npm:5.3.3"
@@ -4761,6 +4770,13 @@ __metadata:
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 10c0/9d6cfd0c19e1c96a434605added99dff48482152af791ec4172fb912a71cff9027ff174efd8cdb2160cc7f377543e0537ffc462d4f279bc4701de3f2a3c4b358
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -6523,8 +6539,11 @@ __metadata:
     "@types/node": "npm:22.15.19"
     "@types/react": "npm:19.1.4"
     "@types/react-dom": "npm:^19.1.5"
+    class-variance-authority: "npm:^0.7.1"
+    clsx: "npm:^2.1.1"
     eslint: "npm:9.27.0"
     eslint-config-next: "npm:15.3.2"
+    lucide-react: "npm:^0.511.0"
     next: "npm:15.3.2"
     next-optimized-classnames: "npm:^1.0.2"
     postcss: "npm:^8.5.3"
@@ -6533,7 +6552,9 @@ __metadata:
     react-feather: "npm:^2.0.10"
     react-icons: "npm:^5.5.0"
     storybook: "npm:^8.6.14"
+    tailwind-merge: "npm:^3.3.0"
     tailwindcss: "npm:^4.1.7"
+    tw-animate-css: "npm:^1.3.0"
     typescript: "npm:5.8.3"
   languageName: unknown
   linkType: soft
@@ -7644,6 +7665,15 @@ __metadata:
   dependencies:
     yallist: "npm:^3.0.2"
   checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.511.0":
+  version: 0.511.0
+  resolution: "lucide-react@npm:0.511.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/bf09dd73cf2233abea90506ad31a91739555d761062722acbe045cb73e274f035b196472de0971a8a8f0645b2b54e3f21b8c1980fe87c909ca93171a9c28428a
   languageName: node
   linkType: hard
 
@@ -10018,6 +10048,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwind-merge@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "tailwind-merge@npm:3.3.0"
+  checksum: 10c0/a50cd141100486f98541dfab3705712af5860556689b7496dc6b0284374f02d12d5471f0f40035f6bb8b1c749c422060a1f3e5f8900057d8a7786b111c8472e6
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:4.1.7, tailwindcss@npm:^4.1.7":
   version: 4.1.7
   resolution: "tailwindcss@npm:4.1.7"
@@ -10210,6 +10247,13 @@ __metadata:
   version: 0.0.1
   resolution: "tty-browserify@npm:0.0.1"
   checksum: 10c0/5e34883388eb5f556234dae75b08e069b9e62de12bd6d87687f7817f5569430a6dfef550b51dbc961715ae0cd0eb5a059e6e3fc34dc127ea164aa0f9b5bb033d
+  languageName: node
+  linkType: hard
+
+"tw-animate-css@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "tw-animate-css@npm:1.3.0"
+  checksum: 10c0/c72a2c189d6aebd6cc31189c3ca1cf4cf2c3f37f005d0879cd40cfdd6550bfb665384e9a50b91dfc9befe9860ff09adb536a7f7431bf18132aef7e04734a02f2
   languageName: node
   linkType: hard
 

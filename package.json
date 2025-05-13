@@ -35,12 +35,16 @@
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "next-optimized-classnames": "^1.0.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-feather": "^2.0.10",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
@@ -56,6 +60,7 @@
     "postcss": "^8.5.3",
     "storybook": "^8.6.14",
     "tailwindcss": "^4.1.7",
+    "tw-animate-css": "^1.3.0",
     "typescript": "5.8.3"
   },
   "packageManager": "yarn@4.9.1"
