@@ -40,7 +40,7 @@
 }
 
 @theme {
-  --orange: --orange;
+  --color-orange-c: var(--orange);
 }
 
 html,
