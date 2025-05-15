@@ -2912,7 +2912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsparticles/basic@npm:3.8.1, @tsparticles/basic@npm:^3.8.1":
+"@tsparticles/basic@npm:3.8.1":
   version: 3.8.1
   resolution: "@tsparticles/basic@npm:3.8.1"
   dependencies:
@@ -6532,7 +6532,6 @@ __metadata:
     "@storybook/react": "npm:^8.6.14"
     "@szhsin/react-accordion": "npm:^1.4.1"
     "@tailwindcss/postcss": "npm:^4.1.7"
-    "@tsparticles/basic": "npm:^3.8.1"
     "@tsparticles/engine": "npm:^3.8.1"
     "@tsparticles/react": "npm:^3.0.0"
     "@tsparticles/slim": "npm:^3.8.1"

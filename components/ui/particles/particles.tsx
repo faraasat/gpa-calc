@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { NextComponentType } from "next";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadBasic } from "@tsparticles/basic";
 import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent: NextComponentType = () => {
@@ -9,7 +8,6 @@ const ParticlesComponent: NextComponentType = () => {
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadBasic(engine);
       await loadSlim(engine)
     }).then(() => {
       setInit(true);

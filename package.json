@@ -31,7 +31,6 @@
     "@aptabase/react": "^0.4.0",
     "@next/third-parties": "^15.3.2",
     "@szhsin/react-accordion": "^1.4.1",
-    "@tsparticles/basic": "^3.8.1",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",

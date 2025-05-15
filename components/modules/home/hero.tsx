@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic";
-// import Image from "next/image";
 
 import LinkButton from "@/components/ui/link-button";
-// import { StudentImg } from "@/assets/index";
 import AdBanner from "@/components/ui/ads";
 
 const ParticlesComponent = dynamic(
@@ -14,22 +12,18 @@ import classes from "@/styles/index.module.css";
 
 const HomeHero = () => {
   return (
-    <section className={classes.hero}>
+    <section className="flex w-full relative min-h-screen flex-col mt-[70px] items-center justify-center">
       <ParticlesComponent />
-      <div className={`${classes.hero_items} container`}>
-        <div className={classes.hero_item_image}>
-          <StudySvg />
-          {/* <Image
-            src={StudentImg}
-            alt="Student working to get gpa"
-            fill
-            draggable={false}
-            className="rounded-md"
-          /> */}
-        </div>
-        <div className={classes.hero_item_text}>
-          <h1>TRY OUR GPA CALCULATOR With Ease!</h1>
-          <p>
+      <div
+        className={`container flex text-center items-center justify-between`}
+      >
+        <StudySvg className="flex items-center justify-center w-[10%] h-auto z-50" />
+        <div className="flex flex-col items-center justify-center w-full z-50 bg-orange-c text-white rounded-2xl p-5 shadow-[1px_1px_3px_3px_var(--orange)]">
+          <h1 className="text-2xl leading-[1] font-lobster mb-3">
+            Get to Experience the Easiest Calculator and Calculate GPA, CGPA,
+            ECTS & German Grade with Ease
+          </h1>
+          <p className="text-md leading-[1] mb-6">
             This App provides you with an interface to calculate your GPA and
             CGPA with great flexibility...
           </p>
