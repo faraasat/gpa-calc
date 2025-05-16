@@ -1,8 +1,6 @@
 import { FC, JSX } from "react";
 import Link, { LinkProps } from "next/link";
 
-import classes from "./style.module.css";
-
 const LinkButton: FC<
   LinkProps & {
     className?: string;
@@ -21,17 +19,15 @@ const LinkButton: FC<
   return (
     <Link
       href={href}
-      className={`${classes.btn} ${
-        type === "white"
-          ? classes.btn_type_white
-          : type === "orange"
-          ? classes.btn_type_orange
-          : classes.btn_type_default
+      className={`px-2.5 py-4 round-sm pointer transition-all ${
+        btnStyle === "rounded" ? "rounded-xl" : "rounded-sm"
       } ${
-        btnStyle === "rounded"
-          ? classes.btn_style_rounded
-          : classes.btn_style_default
-      } ${className ? className : ""}`}
+        type === "orange"
+          ? "bg-(--orange)"
+          : type === "white"
+          ? "bg-white text-(--blue)"
+          : "bg-(--blue)"
+      } hover:scale-110 ${className ? className : ""}`}
       {...props}
     >
       {children}

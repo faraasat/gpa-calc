@@ -1,31 +1,40 @@
-import { NextComponentType } from "next";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { NextComponentType } from "next";
+import { NextRouter, useRouter } from "next/router";
 import { IoMenu } from "react-icons/io5";
 
-const linkData = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Calculate GPA",
-    href: "/calc-gpa",
-  },
-  {
-    name: "Calculate CGPA",
-    href: "/calc-cgpa",
-  },
-  {
-    name: "GPA to ECTS",
-    href: "/gpa-to-ects",
-  },
-  {
-    name: "German Grade Calculator",
-    href: "/german-grade-calculator",
-  },
-];
+import { navigationData } from "@/data/index";
+
+import { FlattenT } from "types";
+
+const NavLinks = ({
+  link,
+  router,
+  isMobile = false,
+  index = 0,
+}: {
+  link: FlattenT<typeof navigationData>;
+  router: NextRouter;
+  isMobile?: boolean;
+  index?: number;
+}) => {
+  return (
+    <Fragment>
+      <Link
+        href={link.href}
+        className={`font-potta text-xl ${
+          router && router?.pathname == link.href ? "text-shadow-lg" : ""
+        }`}
+      >
+        {link.name}
+      </Link>
+      {isMobile && index < navigationData.length - 1 && (
+        <hr className="w-full h-0.5 border-1 border-white" />
+      )}
+    </Fragment>
+  );
+};
 
 const NavbarComponent: NextComponentType = () => {
   const router = useRouter();
@@ -39,18 +48,8 @@ const NavbarComponent: NextComponentType = () => {
             GPA CALCULATOR
           </Link>
           <nav className="flex items-center justify-center gap-5 max-xl:hidden">
-            {linkData.map((link) => (
-              <Link
-                href={link.href}
-                key={link.name}
-                className={`font-potta text-xl ${
-                  router && router?.pathname == link.href
-                    ? "text-shadow-lg"
-                    : ""
-                }`}
-              >
-                {link.name}
-              </Link>
+            {navigationData.map((link) => (
+              <NavLinks key={link.name} link={link} router={router} />
             ))}
           </nav>
           <div className="hidden max-xl:block">
@@ -60,23 +59,14 @@ const NavbarComponent: NextComponentType = () => {
             />
             {isOpen && (
               <nav className="fixed top-[70px] left-0 w-full bg-orange-c/50 flex items-center justify-center flex-col z-50 p-5 gap-3">
-                {linkData.map((link, i) => (
-                  <Fragment key={link.name}>
-                    <Link
-                      href={link.href}
-                      className={`font-potta text-2xl ${
-                        router && router?.pathname == link.href
-                          ? "text-shadow-lg"
-                          : ""
-                      }`}
-                      onClick={() => setIsOpen((prev) => !prev)}
-                    >
-                      {link.name}
-                    </Link>
-                    {i < linkData.length - 1 && (
-                      <hr className="w-full h-0.5 border-1 border-white" />
-                    )}
-                  </Fragment>
+                {navigationData.map((link, i) => (
+                  <NavLinks
+                    key={link.name}
+                    link={link}
+                    router={router}
+                    index={i}
+                    isMobile={true}
+                  />
                 ))}
               </nav>
             )}

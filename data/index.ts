@@ -1,3 +1,48 @@
+const navLinks = [
+  "/",
+  "/calc-gpa",
+  "/calc-cgpa",
+  "/gpa-to-ects",
+  "/german-grade-calculator",
+];
+
+const navLinksName = [
+  "Home",
+  "Calculate GPA",
+  "Calculate CGPA",
+  "GPA to ECTS",
+  "German Grade Calculator",
+];
+
+const navLinksTitle2 = [
+  "Calculate GPA",
+  "Calculate CGPA",
+  "GPA to ECTS",
+  "German Grade Calculator",
+];
+
+export const navigationData = navLinks.map((nl, i) => {
+  return {
+    href: nl,
+    name: navLinksName[i],
+  };
+});
+
+export const homeHeroData = {
+  title:
+    "Get to Experience the Easiest Calculator and Calculate GPA, CGPA, ECTS & German Grade with Ease",
+  subTitle:
+    "Enjoy the Dynamic interface to calculate your GPA, CGPA, ECTS, and German Grade with great flexibility! Convert your CGPA to ECTS and German Grade...",
+  navLinks: navLinks
+    .filter((x) => x !== "/")
+    .map((nl, i) => {
+      return {
+        href: nl,
+        name: navLinksTitle2[i],
+      };
+    }),
+};
+
 export const calcGpa = {
   metaTitle:
     "CGPA Calculator with Custom Grading System | Adjust GPA Criteria for US, India, Europe | Easily Export Reports in CSV & JSON",
