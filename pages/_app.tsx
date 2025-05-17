@@ -4,7 +4,7 @@ import { AptabaseProvider } from "@aptabase/react";
 import Script from "next/script";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Potta_One, Cabin, Lobster } from "next/font/google";
+import { Cabin, Lilita_One } from "next/font/google";
 
 import { AppContextProvider } from "@/context/app-context";
 import Navbar from "@/components/ui/navbar/navbar";
@@ -15,7 +15,7 @@ import Footer from "@/components/ui/footer";
 
 import "@/styles/globals.css";
 
-const potta_one = Potta_One({
+const potta_one = Lilita_One({
   weight: "400",
   variable: "--font-potta",
   subsets: ["latin"],
@@ -27,11 +27,11 @@ const cabin = Cabin({
   subsets: ["latin"],
 });
 
-const lobster = Lobster({
-  weight: "400",
-  variable: "--font-lobster",
-  subsets: ["latin"],
-});
+// const lobster = Satisfy({
+//   weight: "400",
+//   variable: "--font-lobster",
+//   subsets: ["latin"],
+// });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -68,8 +68,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <style jsx global>{`
           :root {
             --font-potta: ${potta_one.variable};
-            --font-lobster: ${lobster.variable};
             --font-cabin: ${cabin.variable};
+          }
+
+          .font-potta {
+            font-family: ${potta_one.style.fontFamily};
+          }
+
+          .font-cabin {
+            font-family: ${cabin.style.fontFamily};
           }
         `}</style>
 

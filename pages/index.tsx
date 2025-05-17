@@ -25,9 +25,6 @@ const Home: NextPage = () => {
   return (
     <>
       <HomeHero />
-      <div className={`${classes.wave}`}>
-        <Wave1 />
-      </div>
       <HomeAbout />
       <HomeFeatures />
       <div className={`${classes.wave} ${classes.wave_2}`}>

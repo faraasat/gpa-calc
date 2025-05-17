@@ -14,13 +14,15 @@ export default function AdBanner({
   style = {},
 }: Props) {
   useEffect(() => {
-    try {
-      if (typeof window !== "undefined") {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+    (() => {
+      try {
+        if (typeof window !== "undefined") {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      } catch (e) {
+        console.error("Adsense error", e);
       }
-    } catch (e) {
-      console.error("Adsense error", e);
-    }
+    })();
   }, []);
 
   return (

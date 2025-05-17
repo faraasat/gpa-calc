@@ -1,14 +1,11 @@
 import { FC } from "react";
 
-import classes from "./style.module.css";
-
 interface IHeading {
   title: string;
   subTitle: string;
   wrapperClass?: string;
   titleClass?: string;
   subTitleClass?: string;
-  styleType?: "default" | "primary";
 }
 
 const Heading: FC<IHeading> = ({
@@ -16,17 +13,24 @@ const Heading: FC<IHeading> = ({
   subTitle,
   wrapperClass,
   titleClass,
-  styleType = "default",
   subTitleClass,
 }) => {
   return (
     <div
-      className={`${classes.heading} ${
-        styleType === "primary" ? classes.heading_style_primary : ""
-      } ${wrapperClass}`}
+      className={`flex flex-col items-center justify-center text-center ${
+        wrapperClass ? wrapperClass : ""
+      }`}
     >
-      <h3 className={`${titleClass}`}>{title}</h3>
-      <h4 className={`${subTitleClass}`}>{subTitle}</h4>
+      <h3
+        className={`text-5xl font-potta text-(--secondary-c) ${
+          titleClass ? titleClass : ""
+        }`}
+      >
+        {title}
+      </h3>
+      <h4 className={`text-2xl leading-6 max-w-[700px] ${subTitleClass ? subTitleClass : ""}`}>
+        {subTitle}
+      </h4>
     </div>
   );
 };

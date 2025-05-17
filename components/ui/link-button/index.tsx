@@ -19,14 +19,14 @@ const LinkButton: FC<
   return (
     <Link
       href={href}
-      className={`px-2.5 py-4 round-sm pointer transition-all ${
+      className={`px-2 py-3 round-sm pointer transition-all ${
         btnStyle === "rounded" ? "rounded-xl" : "rounded-sm"
       } ${
         type === "orange"
-          ? "bg-(--orange)"
+          ? "bg-(--primary-c)"
           : type === "white"
-          ? "bg-white text-(--blue)"
-          : "bg-(--blue)"
+          ? "bg-white text-(--secondary-c)"
+          : "bg-(--secondary-c)"
       } hover:scale-110 ${className ? className : ""}`}
       {...props}
     >

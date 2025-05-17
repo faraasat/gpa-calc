@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --orange: #ffc23d;
-  --blue: #2a84fa;
+  --primary-c: #ffc23d;
+  --secondary-c: #2a84fa;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -41,8 +41,8 @@
 }
 
 @theme {
-  --color-orange-c: var(--orange);
-  --color-blue-c: var(--blue);
+  --color-primary-c: var(--primary-c);
+  --color-secondary-c: var(--secondary-c);
 }
 
 html,
@@ -69,18 +69,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999999;
-}
-
-@utility font-potta {
-  font-family: var(--font-potta);
-}
-
-@utility font-cabin {
-  font-family: var(--font-cabin);
-}
-
-@utility font-lobster {
-  font-family: var(--font-lobster);
 }
 
 #__next {

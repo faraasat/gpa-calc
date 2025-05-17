@@ -1,61 +1,41 @@
-import LinkButton from "@/components/ui/link-button";
-import Heading from "@/components/ui/heading";
-import AboutMan from "@/assets/about-man";
+import { Fragment } from "react";
 
-import classes from "@/styles/index.module.css";
+import Heading from "@/components/ui/heading";
+import Wave1 from "@/assets/wave1";
+import { homeAboutData } from "@/data/index";
+import AdBanner from "@/components/ui/ads";
 
 const HomeAbout = () => {
+  const { title, subTitle, paras } = homeAboutData;
+
   return (
-    <section className={`${classes.wrapper} ${classes.about_yellow}`}>
-      <div className={`${classes.section} container`}>
-        <Heading title="A Little Detail..." subTitle="What this is About!" />
-        <div className={classes.about}>
-          <div className={classes.about_paras}>
-            <p>
-              Welcome to the Calculator, your ultimate tool for streamlining GPA
-              & CGPA Calculations, GPA to ECTS conversions & German Grade
-              Calculations! Whether you are a student aiming to monitor your
-              academic progress or someone looking to understand various grading
-              systems, our app provides a seamless, intuitive experience. Now,
-              in addition to GPA and CGPA calculators, you can calculate German
-              grades and convert GPA to ECTS credits for a comprehensive
-              academic assessment.
-            </p>
-            <p>
-              Our mission is to empower students by providing reliable tools for
-              better decision-making and future planning. We have designed an
-              accessible platform that simplifies complex grade calculations,
-              making academic management easier than ever. With GPA Calculate,
-              you can confidently track your progress, convert grades, and set
-              yourself up for success.
-            </p>
-            <p>
-              Experience the convenience of managing GPA, CGPA, and
-              international grade conversions with the Calculator, and take
-              charge of your academic journey with a tool dedicated to your
-              success!
-            </p>
-            <div className={classes.para_sep} />
-            <div className={classes.about_para__btn}>
-              <LinkButton href={"/calc-gpa"} btnStyle="rounded">
-                Checkout GPA Calculator
-              </LinkButton>
-              <LinkButton href={"/calc-cgpa"} btnStyle="rounded" type="white">
-                Checkout CGPA Calculator
-              </LinkButton>
-            </div>
-            <div className={classes.about_para__btn}>
-              <LinkButton href={"/calc-gpa"} btnStyle="rounded" type="white">
-                Check GPA to ECTS Converter
-              </LinkButton>
-              <LinkButton href={"/calc-cgpa"} btnStyle="rounded">
-                Check German Grade Calculator
-              </LinkButton>
-            </div>
+    <section
+      className={
+        "relative flex flex-col w-full bg-primary-c z-50 mt-4 text-white"
+      }
+    >
+      <Wave1 className="-translate-y-18" />
+      <div className={`flex flex-col gap-16 pb-20 container`}>
+        <Heading title={title} subTitle={subTitle} />
+
+        <div className="flex items-center justify-center gap-4">
+          <div className="w-full flex flex-col">
+            {paras.map((pa, i) => {
+              return (
+                <Fragment key={i}>
+                  {pa.includes("ads") ? (
+                    <AdBanner slot={pa.split(":")?.[1]} />
+                  ) : (
+                    <p>{pa}</p>
+                  )}
+                </Fragment>
+              );
+            })}
           </div>
-          <div className={classes.about_img}>
-            <AboutMan />
-          </div>
+          <aside className="w-[35%]">
+            <AdBanner slot="9960327449" />
+            <AdBanner slot="2081837426" />
+          </aside>
         </div>
       </div>
     </section>

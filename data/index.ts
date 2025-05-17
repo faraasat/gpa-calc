@@ -43,6 +43,20 @@ export const homeHeroData = {
     }),
 };
 
+export const homeAboutData = {
+  title: "What's this About???",
+  subTitle:
+    "An In-Depth Look Into the Functionality and Real-World Use Cases of This Powerful Tool...",
+  paras: [
+    "Welcome to the Calculator, your ultimate tool for streamlining GPA & CGPA Calculations, GPA to ECTS conversions & German Grade Calculations! Whether you are a student aiming to monitor your academic progress or someone looking to understand various grading systems, our app provides a seamless, intuitive experience. Now, in addition to GPA and CGPA calculators, you can calculate German grades and convert GPA to ECTS credits for a comprehensive academic assessment.",
+    "ads:4444276880",
+    "Our mission is to empower students by providing reliable tools for better decision-making and future planning. We have designed an accessible platform that simplifies complex grade calculations, making academic management easier than ever. With GPA Calculate, you can confidently track your progress, convert grades, and set yourself up for success.",
+    "ads:4708000768",
+    "Experience the convenience of managing GPA, CGPA, and international grade conversions with the Calculator, and take charge of your academic journey with a tool dedicated to your success!",
+    "ads:3394919094",
+  ],
+};
+
 export const calcGpa = {
   metaTitle:
     "CGPA Calculator with Custom Grading System | Adjust GPA Criteria for US, India, Europe | Easily Export Reports in CSV & JSON",

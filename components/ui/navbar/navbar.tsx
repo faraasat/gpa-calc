@@ -23,7 +23,7 @@ const NavLinks = ({
     <Fragment>
       <Link
         href={link.href}
-        className={`font-potta text-xl ${
+        className={`font-potta text-lg ${
           router && router?.pathname == link.href ? "text-shadow-lg" : ""
         }`}
       >
@@ -42,12 +42,12 @@ const NavbarComponent: NextComponentType = () => {
 
   return (
     <Fragment>
-      <header className="fixed top-0 left-0 min-h-[70px] bg-(--orange) flex items-center w-full  text-white">
+      <header className="fixed top-0 left-0 min-h-[70px] bg-(--primary-c) flex items-center w-full text-white">
         <div className="container flex justify-between items-center h-full">
           <Link href="/" className="font-potta text-2xl text-shadow-md">
             GPA CALCULATOR
           </Link>
-          <nav className="flex items-center justify-center gap-5 max-xl:hidden">
+          <nav className="flex items-center justify-center gap-4 max-xl:hidden" style={{wordSpacing: "-2.5px"}}>
             {navigationData.map((link) => (
               <NavLinks key={link.name} link={link} router={router} />
             ))}
@@ -58,7 +58,7 @@ const NavbarComponent: NextComponentType = () => {
               onClick={() => setIsOpen((prev) => !prev)}
             />
             {isOpen && (
-              <nav className="fixed top-[70px] left-0 w-full bg-orange-c/50 flex items-center justify-center flex-col z-50 p-5 gap-3">
+              <nav className="fixed top-[70px] left-0 w-full bg-primary-c/50 flex items-center justify-center flex-col z-50 p-5 gap-3">
                 {navigationData.map((link, i) => (
                   <NavLinks
                     key={link.name}

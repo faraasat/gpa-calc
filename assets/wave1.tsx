@@ -1,12 +1,13 @@
 import React from "react";
 
-function Wave1() {
+function Wave1({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       style={{ WebkitTransition: "0.3s", transition: "0.3s" }}
       version="1.1"
       viewBox="0 0 1440 100"
+      className={className}
     >
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
