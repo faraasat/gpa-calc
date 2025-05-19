@@ -17,7 +17,7 @@ const Heading: FC<IHeading> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center text-center ${
+      className={`flex flex-col items-center justify-center text-center gap-1.5 ${
         wrapperClass ? wrapperClass : ""
       }`}
     >

@@ -43,6 +43,13 @@ export const homeHeroData = {
     }),
 };
 
+const navLinksTitle3 = [
+  "Checkout GPA Calculator",
+  "Calculate Your CGPA",
+  "Convert Your GPA to ECTS",
+  "Find Out Your German Grade",
+];
+
 export const homeAboutData = {
   title: "What's this About???",
   subTitle:
@@ -55,6 +62,14 @@ export const homeAboutData = {
     "Experience the convenience of managing GPA, CGPA, and international grade conversions with the Calculator, and take charge of your academic journey with a tool dedicated to your success!",
     "ads:3394919094",
   ],
+  navLinks: navLinks
+    .filter((x) => x !== "/")
+    .map((nl, i) => {
+      return {
+        href: nl,
+        name: navLinksTitle3[i],
+      };
+    }),
 };
 
 export const calcGpa = {

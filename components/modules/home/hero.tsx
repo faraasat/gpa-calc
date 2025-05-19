@@ -41,7 +41,7 @@ const HomeHero = () => {
           </div>
         </div>
       </div>
-      <AdBanner slot="6835946019" className="z-40 mb-16 mx-auto lg:-mt-8 max-lg:-mt-16" />
+      <AdBanner slot="6835946019" className="z-40 mx-auto lg:-mt-8 max-lg:-mt-16" />
     </section>
   );
 };
