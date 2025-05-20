@@ -25,7 +25,7 @@ export default function AdBanner({
 
   return (
     <ins
-      className={`adsbygoogle ${className}`}
+      className={`gg-ads-c adsbygoogle ${className}`}
       style={{ display: "block", ...style }}
       data-ad-client="ca-pub-7834120314991304"
       data-ad-slot={slot}
