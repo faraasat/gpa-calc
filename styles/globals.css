@@ -249,3 +249,8 @@ footer {
   width: 100%;
   height: auto;
 }
+
+.google-auto-placed {
+  position: relative;
+  z-index: 100;
+}
