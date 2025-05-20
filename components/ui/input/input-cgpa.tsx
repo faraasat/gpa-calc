@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, JSX, useState } from "react";
 import { XCircle } from "react-feather";
 
 import { InputType } from "./input.d";

@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from "react";
+import { FC, JSX, useContext, useState } from "react";
 import { XCircle } from "react-feather";
 
 import AppContext from "@/context/app-context";

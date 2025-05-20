@@ -34,6 +34,7 @@
     "@tsparticles/basic": "^3.8.1",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "next": "15.3.2",
     "next-optimized-classnames": "^1.0.2",
     "react": "19.1.0",
