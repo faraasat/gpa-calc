@@ -1,13 +1,23 @@
-import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
 
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import ButtonComponent from "@/components/ui/button/button";
 
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 
-export default {
+const meta: Meta<typeof ButtonComponent> = {
   title: "Grade Setting",
-  Component: GradeSettingComponent,
-} as ComponentMeta<typeof GradeSettingComponent>;
+  component: GradeSettingComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
+};
 
-export const GradeSetting: ComponentStory<typeof GradeSettingComponent> =
-  () => <GradeSettingComponent />;
+export default meta;
+
+type Story = StoryObj<typeof GradeSettingComponent>;
+
+export const GradeSetting: Story = {
+  args: {},
+};

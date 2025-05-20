@@ -1,28 +1,33 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import ButtonComponent from "@/components/ui/button/button";
 
-export default {
+const meta: Meta<typeof ButtonComponent> = {
   title: "My Button",
-  Component: ButtonComponent,
-} as ComponentMeta<typeof ButtonComponent>;
-
-const Template: ComponentStory<typeof ButtonComponent> = (args) => (
-  <ButtonComponent {...args} />
-);
-
-export const Inverted = Template.bind({});
-Inverted.args = {
-  inverted: true,
-  text: "Inverted Button",
-  onClick: () => alert("onClick() Called!"),
+  component: ButtonComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
 };
 
-export const NotInverted = Template.bind({});
-NotInverted.args = {
-  inverted: false,
-  text: "Non-Inverted Button",
-  onClick: () => alert("onClick() Called!"),
+export default meta;
+
+type Story = StoryObj<typeof ButtonComponent>;
+
+export const Inverted: Story = {
+  args: {
+    inverted: true,
+    text: "Inverted Button",
+    onClick: () => alert("onClick() Called!"),
+  },
+};
+
+export const NotInverted: Story = {
+  args: {
+    inverted: false,
+    text: "Non-Inverted Button",
+    onClick: () => alert("onClick() Called!"),
+  },
 };

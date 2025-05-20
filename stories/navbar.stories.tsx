@@ -1,14 +1,21 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import NavbarComponent from "@/components/ui/navbar/navbar";
 
-export default {
+const meta: Meta<typeof NavbarComponent> = {
   title: "Navbar",
-  Component: NavbarComponent,
-} as ComponentMeta<typeof NavbarComponent>;
+  component: NavbarComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
+};
 
-export const Navbar: ComponentStory<typeof NavbarComponent> = () => (
-  <NavbarComponent />
-);
+export default meta;
+
+type Story = StoryObj<typeof NavbarComponent>;
+
+export const Navbar: Story = {
+  args: {},
+};

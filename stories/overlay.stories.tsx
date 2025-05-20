@@ -1,14 +1,21 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import OverlayComponent from "@/components/ui/overlay/overlay";
 
-export default {
+const meta: Meta<typeof OverlayComponent> = {
   title: "Overlay",
-  Component: OverlayComponent,
-} as ComponentMeta<typeof OverlayComponent>;
+  component: OverlayComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
+};
 
-export const Overlay: ComponentStory<typeof OverlayComponent> = () => (
-  <OverlayComponent />
-);
+export default meta;
+
+type Story = StoryObj<typeof OverlayComponent>;
+
+export const Overlay: Story = {
+  args: {},
+};

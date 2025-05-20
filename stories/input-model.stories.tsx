@@ -1,14 +1,23 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import InputModelComponent from "@/components/ui/input/input-model";
 
-export default {
+const meta: Meta<typeof InputModelComponent> = {
   title: "Input Model",
-  Component: InputModelComponent,
-} as ComponentMeta<typeof InputModelComponent>;
+  component: InputModelComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
+};
 
-export const InputModel: ComponentStory<typeof InputModelComponent> = () => (
-  <InputModelComponent handleAdd={() => alert("handleAdd() Called!")} />
-);
+export default meta;
+
+type Story = StoryObj<typeof InputModelComponent>;
+
+export const InputModel: Story = {
+  args: {
+    handleAdd: () => alert("handleAdd() Called!"),
+  },
+};

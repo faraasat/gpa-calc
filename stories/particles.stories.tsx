@@ -1,14 +1,21 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import ParticleComponent from "@/components/ui/particles/particles";
 
-export default {
+const meta: Meta<typeof ParticleComponent> = {
   title: "Particles",
-  Component: ParticleComponent,
-} as ComponentMeta<typeof ParticleComponent>;
+  component: ParticleComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
+};
 
-export const Particles: ComponentStory<typeof ParticleComponent> = () => (
-  <ParticleComponent />
-);
+export default meta;
+
+type Story = StoryObj<typeof ParticleComponent>;
+
+export const Particles: Story = {
+  args: {},
+};

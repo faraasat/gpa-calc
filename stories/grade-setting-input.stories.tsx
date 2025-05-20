@@ -1,26 +1,31 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import GradeSettingInputComponent from "@/components/ui/grade-setting-input/grade-setting-input";
 
-export default {
+const meta: Meta<typeof GradeSettingInputComponent> = {
   title: "Grade Setting Input",
-  Component: GradeSettingInputComponent,
-} as ComponentMeta<typeof GradeSettingInputComponent>;
-
-const Template: ComponentStory<typeof GradeSettingInputComponent> = (args) => (
-  <GradeSettingInputComponent {...args} />
-);
-
-export const Checked = Template.bind({});
-Checked.args = {
-  id: "1",
-  grade: { checked: true, text: "A", min: 85, max: 100, value: 4 },
+  component: GradeSettingInputComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
 };
 
-export const UnChecked = Template.bind({});
-UnChecked.args = {
-  id: "1",
-  grade: { checked: false, text: "A", min: 85, max: 100, value: 4 },
+export default meta;
+
+type Story = StoryObj<typeof GradeSettingInputComponent>;
+
+export const Checked: Story = {
+  args: {
+    id: "1",
+    grade: { checked: true, text: "A", min: 85, max: 100, value: 4 },
+  },
+};
+
+export const UnChecked: Story = {
+  args: {
+    id: "1",
+    grade: { checked: false, text: "A", min: 85, max: 100, value: 4 },
+  },
 };

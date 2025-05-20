@@ -1,26 +1,33 @@
-import React from "react";
-
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import InputComponent from "@/components/ui/input/input";
 
-export default {
+const meta: Meta<typeof InputComponent> = {
   title: "Input",
-  Component: InputComponent,
-} as ComponentMeta<typeof InputComponent>;
-
-const Template: ComponentStory<typeof InputComponent> = (args) => <InputComponent {...args} />;
-
-export const Deleteable = Template.bind({});
-Deleteable.args = {
-  isDelete: false,
-  id: "1",
-  setDelete: () => alert("setDelete called!"),
+  component: InputComponent,
+  parameters: {
+    nextjs: {
+      appDirectory: false,
+    },
+  },
 };
 
-export const NotDeleteable = Template.bind({});
-NotDeleteable.args = {
-  isDelete: true,
-  id: "2",
-  setDelete: () => alert("setDelete called!"),
+export default meta;
+
+type Story = StoryObj<typeof InputComponent>;
+
+export const Deleteable: Story = {
+  args: {
+    isDelete: false,
+    id: "1",
+    setDelete: () => alert("setDelete called!"),
+  },
+};
+
+export const NotDeleteable: Story = {
+  args: {
+    isDelete: true,
+    id: "2",
+    setDelete: () => alert("setDelete called!"),
+  },
 };
