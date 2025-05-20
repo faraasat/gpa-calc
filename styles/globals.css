@@ -242,13 +242,13 @@ footer {
   position: relative;
 }
 
-.ad-banner-div {
+/* .ad-banner-div {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-}
+} */
 
 .google-auto-placed {
   position: relative;
