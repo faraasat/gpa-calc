@@ -34,7 +34,7 @@ const HomeHero = () => {
         </div>
       </div>
       <div
-        className="container"
+        className="container ad-banner-div"
         style={{
           marginBottom: 80,
           zIndex: 30,

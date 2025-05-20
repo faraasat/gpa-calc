@@ -90,7 +90,7 @@ const HomeFeatures = () => {
             );
           })}
         </div>
-        <div className={`container`}>
+        <div className={`container ad-banner-div`}>
           <AdBanner slot="8593774450" />
         </div>
         <div className={classes.featured_btns}>
@@ -103,7 +103,7 @@ const HomeFeatures = () => {
             Calculate Your German Grade
           </LinkButton>
         </div>
-        <div className={`container`}>
+        <div className={`container ad-banner-div`}>
           <AdBanner slot="4854674141" />
         </div>
       </div>
