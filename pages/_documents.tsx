@@ -30,12 +30,14 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <Script
+            id="gg-ads"
             async
             crossOrigin="anonymous"
             strategy="lazyOnload"
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
           ></Script>
           <Script
+            id="gg-ads-scr"
             dangerouslySetInnerHTML={{
               __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
             }}
