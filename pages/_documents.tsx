@@ -29,19 +29,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
           ></link>
-          <Script
-            id="gg-ads"
-            async
-            crossOrigin="anonymous"
-            strategy="lazyOnload"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
-          ></Script>
-          <Script
-            id="gg-ads-scr"
-            dangerouslySetInnerHTML={{
-              __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-            }}
-          />
         </Head>
         <body>
           <main>

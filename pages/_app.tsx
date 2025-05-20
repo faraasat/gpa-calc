@@ -10,6 +10,7 @@ import OverlayComponent from "@/components/ui/overlay/overlay";
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 import Footer from "@/components/ui/footer";
 import SocialSide from "@/components/ui/social-side";
+import Script from "next/script";
 
 import "@/styles/globals.css";
 
@@ -59,6 +60,19 @@ function MyApp({ Component, pageProps }: AppProps) {
       </AppContextProvider>
       <GoogleAnalytics
         gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
+      />
+      <Script
+        id="gg-ads"
+        async
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
+      ></Script>
+      <Script
+        id="gg-ads-scr"
+        dangerouslySetInnerHTML={{
+          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+        }}
       />
     </Fragment>
   );
