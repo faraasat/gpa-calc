@@ -1,7 +1,3 @@
-import { Accordion, AccordionItem } from "@szhsin/react-accordion";
-
-import Heading from "@/components/ui/heading";
-import classes from "@/styles/index.module.css";
 import Faqs from "@/components/ui/faqs";
 
 const faqs = [

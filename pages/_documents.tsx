@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -9,12 +10,12 @@ class MyDocument extends Document {
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossOrigin="true"
+            crossOrigin="anonymous"
           />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossOrigin="crossorigin"
+            crossOrigin="anonymous"
           ></link>
           <link
             href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
@@ -28,6 +29,17 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
           ></link>
+          <Script
+            async
+            crossOrigin="anonymous"
+            strategy="lazyOnload"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
+          ></Script>
+          <Script
+            dangerouslySetInnerHTML={{
+              __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+            }}
+          />
         </Head>
         <body>
           <main>

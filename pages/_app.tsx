@@ -61,12 +61,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GoogleAnalytics
         gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!}
       />
-      <Script
-        async
-        crossOrigin="anonymous"
-        strategy="lazyOnload"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834120314991304"
-      ></Script>
     </Fragment>
   );
 }

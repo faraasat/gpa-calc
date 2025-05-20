@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, JSX } from "react";
 import Link, { LinkProps } from "next/link";
 
 import classes from "./style.module.css";
@@ -8,6 +8,7 @@ const LinkButton: FC<
     className?: string;
     type?: "default" | "white" | "orange";
     btnStyle?: "default" | "rounded";
+    children: JSX.Element | string;
   }
 > = ({
   href,
