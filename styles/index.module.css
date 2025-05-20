@@ -3,15 +3,15 @@
   position: relative;
   display: flex;
   width: 100vw;
-  min-height: calc(100vh - 62px);
+  min-height: calc(100vh);
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  flex-direction: column;
 }
 
 .hero_items {
-  width: 80%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,10 +19,16 @@
 }
 
 .hero_item_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 20;
   width: 53%;
   height: 100%;
-  z-index: 20;
+}
+
+.hero_item_image > svg {
+  width: 100%;
 }
 
 .hero_item_text {
@@ -30,7 +36,7 @@
   border-radius: 15px;
   box-shadow: 3px 3px 1px 2px rgba(255, 194, 61, 0.9);
   background-color: rgba(255, 194, 61, 0.781);
-  width: 80%;
+  width: 55%;
   height: 60%;
   padding: 20px;
   display: flex;

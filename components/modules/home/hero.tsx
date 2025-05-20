@@ -2,13 +2,17 @@ import ParticlesComponent from "@/components/ui/particles/particles";
 
 import classes from "@/styles/index.module.css";
 import LinkButton from "@/components/ui/link-button";
+import StudySvg from "@/assets/study";
+import AdBanner from "@/components/ui/ads";
 
 const HomeHero = () => {
   return (
     <section className={classes.hero}>
       <ParticlesComponent />
-      <div className={classes.hero_items}>
-        <embed className={classes.hero_item_image} src={"/img/study.svg"} />
+      <div className={`${classes.hero_items} container`}>
+        <div className={classes.hero_item_image}>
+          <StudySvg />
+        </div>
         <div className={classes.hero_item_text}>
           <h1>TRY OUR GPA CALCULATOR!</h1>
           <p>
@@ -28,6 +32,15 @@ const HomeHero = () => {
             </LinkButton>
           </div>
         </div>
+      </div>
+      <div
+        className="container"
+        style={{
+          marginBottom: 80,
+          zIndex: 30,
+        }}
+      >
+        <AdBanner slot="6835946019" />
       </div>
     </section>
   );
