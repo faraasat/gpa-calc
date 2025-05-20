@@ -591,7 +591,12 @@
   }
 
   #tsparticles {
-    height: 100vh;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    min-height: 100vh;
+    position: fixed;
   }
 
   .hero_item_text {

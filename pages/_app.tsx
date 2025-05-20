@@ -4,7 +4,6 @@ import { AptabaseProvider } from "@aptabase/react";
 import Head from "next/head";
 import { AppContextProvider } from "@/context/app-context";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 
 import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
