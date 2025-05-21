@@ -24,13 +24,13 @@ const HomeAbout = () => {
                     {pa.includes("ads") ? (
                       <AdBanner slot={pa.split(":")?.[1]} />
                     ) : (
-                      <p className="text-xl leading-7">{pa}</p>
+                      <p className="text-xl max-md:text-md">{pa}</p>
                     )}
                   </Fragment>
                 );
               })}
             </div>
-            <aside className="min-w-[300px] w-[40%] max-w-[500px]">
+            <aside className="min-w-[300px] w-[40%] max-w-[500px] max-sm:hidden">
               <AdBanner slot="9960327449" />
               <AdBanner slot="2081837426" />
             </aside>
