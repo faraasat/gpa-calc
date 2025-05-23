@@ -1,3 +1,8 @@
+import { SlCalculator } from "react-icons/sl";
+import { FaFileExport, FaUserFriends } from "react-icons/fa";
+import { MdDashboardCustomize, MdPrivacyTip } from "react-icons/md";
+import { SiPlatformdotsh } from "react-icons/si";
+
 const navLinks = [
   "/",
   "/calc-gpa",
@@ -68,6 +73,76 @@ export const homeAboutData = {
       return {
         href: nl,
         name: navLinksTitle3[i],
+      };
+    }),
+};
+
+const navLinksTitle4 = [
+  "Your GPA Around the World",
+  "Your CGPA Around the World",
+  "Your GPA to ECTS Around the World",
+  "Your German Grade Around the World",
+];
+
+export const homeFeaturesData = {
+  title: "Features at a Glance!!!",
+  subTitle:
+    "Take a closer look at the standout features built to simplify complex calculations and boost your productivity...",
+  featuresList: [
+    {
+      Icon: SlCalculator,
+      title: "Accurate Calculation",
+      description:
+        "Our GPA and CGPA calculator provides precise calculations based on the grading system of your choice. Simply input your grades, credit hours, and course information to receive accurate and real-time results, ensuring that you stay on top of your academic progress.",
+    },
+    {
+      Icon: FaUserFriends,
+      title: "User-Friendly Interface",
+      description:
+        "Designed with simplicity and ease of use in mind, our GPA calculator features an intuitive interface that requires no technical knowledge. Whether you're a student or a professional, you can calculate your GPA or CGPA quickly and without any confusion.",
+    },
+    {
+      Icon: MdDashboardCustomize,
+      title: "Multiple Grading Systems",
+      description:
+        "Whether you're using a 4.0, 5.0, or even a custom grading scale, our calculator supports various international grading systems, making it perfect for students from all educational backgrounds. Customize your inputs to match your institution's specific criteria effortlessly.",
+    },
+    {
+      Icon: FaFileExport,
+      title: "Instant Calculation & Export",
+      description:
+        "With our GPA calculator, you get instant results with just a few clicks. Moreover, you can export your results for future reference, making it easy to track your academic performance over time or share it with teachers and counselors.",
+    },
+    {
+      Icon: SiPlatformdotsh,
+      title: "Cross-Platform Compatibility",
+      description:
+        "Our GPA & CGPA calculator is fully responsive and works seamlessly across all devices – from desktops and laptops to tablets and smartphones. You can access it anytime, anywhere, without any performance issues.",
+    },
+    {
+      Icon: MdPrivacyTip,
+      title: "Privacy-Focused and Secure",
+      description:
+        "Your academic data is personal, and we take privacy seriously. Our GPA calculator ensures that your information is processed securely, with no personal data stored or shared. You can calculate your GPA and CGPA with peace of mind, knowing your privacy is protected.",
+    },
+  ],
+  adsList: [
+    {
+      slot: "8749703037",
+    },
+    {
+      slot: "6048352225",
+    },
+    {
+      slot: "5931968008",
+    },
+  ],
+  navLinks: navLinks
+    .filter((x) => x !== "/")
+    .map((nl, i) => {
+      return {
+        href: nl,
+        name: navLinksTitle4[i],
       };
     }),
 };
