@@ -2114,6 +2114,25 @@ const aDesc = [
   "Antarctica is a pristine, remote continent where icy landscapes, towering glaciers, and untouched wilderness attract scientists from around the world.",
 ];
 
+const sideAds = [
+  "4696392476",
+  "9003287239",
+  "5443924985",
+  "5064042220",
+  "2187206253",
+  "2817761649",
+];
+
+const stripAds = [
+  "7498649781",
+  "5239302042",
+  "3611134418",
+  "1688512805",
+  "9375431135",
+  "8062349468",
+  "2122184116",
+];
+
 export const homeCountries = {
   title: "Supported Countries",
   subTitle: "Calculator supported for the following:",
@@ -2156,15 +2175,8 @@ export const homeCountries = {
       desc: aDesc[0],
     },
   ],
-  sideAds: [
-    "4696392476",
-    "9003287239",
-    "5443924985",
-    "5064042220",
-    "2187206253",
-    "2817761649",
-  ],
-  stripAds: []
+  sideAds: sideAds,
+  stripAds: stripAds,
 };
 
 export const gpaCountries = {
@@ -2209,15 +2221,8 @@ export const gpaCountries = {
       desc: aDesc[1],
     },
   ],
-  sideAds: [
-    "4696392476",
-    "9003287239",
-    "5443924985",
-    "5064042220",
-    "2187206253",
-    "2817761649",
-  ],
-  stripAds: []
+  sideAds: sideAds,
+  stripAds: stripAds,
 };
 
 export const cgpaCountries = {
@@ -2262,15 +2267,8 @@ export const cgpaCountries = {
       desc: aDesc[2],
     },
   ],
-  sideAds: [
-    "4696392476",
-    "9003287239",
-    "5443924985",
-    "5064042220",
-    "2187206253",
-    "2817761649",
-  ],
-  stripAds: []
+  sideAds: sideAds,
+  stripAds: stripAds,
 };
 
 export const ectsCountries = {
@@ -2310,15 +2308,8 @@ export const ectsCountries = {
       desc: aDesc[2],
     },
   ],
-  sideAds: [
-    "4696392476",
-    "9003287239",
-    "5443924985",
-    "5064042220",
-    "2187206253",
-    "2817761649",
-  ],
-  stripAds: []
+  sideAds: sideAds,
+  stripAds: stripAds,
 };
 
 export const germanCountries = {
@@ -2363,13 +2354,6 @@ export const germanCountries = {
       desc: aDesc[2],
     },
   ],
-  sideAds: [
-    "4696392476",
-    "9003287239",
-    "5443924985",
-    "5064042220",
-    "2187206253",
-    "2817761649",
-  ],
-  stripAds: []
+  sideAds: sideAds,
+  stripAds: stripAds,
 };

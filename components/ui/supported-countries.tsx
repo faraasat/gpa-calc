@@ -14,7 +14,8 @@ const SupportedCountries: FC<{
   bgType: "default" | "primary";
   countryList: Array<FlattenT<typeof homeCountries.countryList>>;
   sideAds?: Array<string>;
-}> = ({ title, subTitle, bgType, countryList, sideAds }) => {
+  stripAds?: Array<string>;
+}> = ({ title, subTitle, bgType, countryList, sideAds, stripAds }) => {
   return (
     <section className="relative z-50 w-full">
       {bgType === "default" && <Wave1 className="relative -mb-0.5" />}
@@ -49,6 +50,8 @@ const SupportedCountries: FC<{
                         );
                       })}
                     </div>
+
+                    {stripAds?.[index] && <AdBanner slot={stripAds[index]} />}
                   </div>
                 );
               })}
