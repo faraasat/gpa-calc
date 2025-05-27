@@ -9,12 +9,13 @@ import MetaHead from "@/components/ui/meta-head";
 import Threshold from "@/components/ui/threshold";
 import ResultPane from "@/components/ui/result-pane";
 import { GpaCalculatorInputs } from "@/components/index";
-import { calcGpa, gpaCountries, gpaQna } from "@/data/index";
+import { calcGpa, gpaCountries, gpaQna, pageMultiplex } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
 import PageHeading from "@/components/ui/page-heading";
 import SupportedCountries from "@/components/ui/supported-countries";
 
 import classes from "@/styles/calc-gpa.module.css";
+import AdBanner from "@/components/ui/ads";
 
 const CalcGPA: NextPage = () => {
   const [inputFields, setInputFields] = useState<Array<number | undefined>>([
@@ -107,8 +108,9 @@ const CalcGPA: NextPage = () => {
   return (
     <>
       <MetaHead {...calcGpa} />
-      <section className={classes.gpa}>
-        <div className={classes.gpa_align}>
+
+      <section className="relative z-50 py-28">
+        <div className="flex flex-col gap-5 container">
           <PageHeading
             title={calcGpa.pageTitle}
             desc={calcGpa.desc}
@@ -141,6 +143,8 @@ const CalcGPA: NextPage = () => {
             />
           </div>
         </div>
+
+        {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[1]} />}
 
         <Faqs {...gpaQna} />
 

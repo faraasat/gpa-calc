@@ -76,9 +76,13 @@ const CGPAToECTS: NextPage = () => {
   return (
     <>
       <MetaHead {...calcCTE} />
-      <section className={classes.cte}>
-        <div className={classes.cte_align}>
-          <PageHeading title={calcCTE.pageTitle} desc={calcCTE.desc} />
+      <section className="relative z-50 py-28">
+        <div className="flex flex-col gap-5 container">
+          <PageHeading
+            title={calcCTE.pageTitle}
+            desc={calcCTE.desc}
+            steps={calcCTE.steps}
+          />
 
           <div className={classes.ects_inps}>
             <h4>First Method</h4>

@@ -247,6 +247,10 @@ export const homeFaqData = {
   ],
 };
 
+export const pageHeadingSideAds = ["3791323153", "6349219646"];
+export const pageHeadingStripAds = ["9042815681", "1416441250"];
+export const pageMultiplex = ["7653728302"];
+
 export const calcGpa = {
   metaTitle:
     "CGPA Calculator with Custom Grading System | Adjust GPA Criteria for US, India, Europe | Easily Export Reports in CSV & JSON",
@@ -402,6 +406,90 @@ export const calcCTE = {
   pageTitle:
     "Convert Your Cumulative Grade Point Average (CGPA) to European Credit Transfer System (ECTS) for Your Subjects:",
   desc: "Quickly and accurately convert your CGPA to the European Credit Transfer System (ECTS) using our reliable tool. Whether you're preparing for international studies or need to translate your academic results for European institutions, our converter simplifies the process, ensuring your grades align with the ECTS framework.",
+  steps: [
+    {
+      main: "Understand the ECTS (European Credit Transfer and Accumulation System) grading scale before converting your GPA.",
+      subLists: [
+        {
+          title:
+            "ECTS grades are based on the relative performance of students and are usually represented with letters from A to F.",
+        },
+        {
+          title:
+            "They are commonly used across European countries to ensure consistency in higher education grading.",
+        },
+        {
+          title:
+            "Unlike GPA systems, ECTS does not use cumulative points but rather percentile ranks and letter grades.",
+        },
+      ],
+    },
+    {
+      main: "Enter your current GPA based on your home country's grading system.",
+      subLists: [
+        {
+          title:
+            "Make sure your GPA is on the correct scale (e.g., 4.0, 5.0, 10.0, or 20.0) before entering.",
+        },
+        {
+          title:
+            "If you're unsure about your GPA scale, refer to our homepage for country-specific systems.",
+        },
+      ],
+    },
+    {
+      main: "Select your GPA scale to help us map it accurately to the ECTS format.",
+      subLists: [
+        {
+          title:
+            "We support popular GPA systems including 4.0, 5.0, 10.0, and 20.0 scales.",
+        },
+        {
+          title:
+            "Custom GPA scales are also supported if your country uses a unique system.",
+        },
+      ],
+    },
+    {
+      main: "Click `Convert to ECTS` to get your equivalent ECTS letter grade.",
+      subLists: [
+        {
+          title:
+            "Your converted result will show the equivalent ECTS grade (A–F) based on performance percentile.",
+        },
+        {
+          title:
+            "This mapping is indicative and may vary slightly depending on the university or country.",
+        },
+      ],
+    },
+    {
+      main: "Need to convert to a specific country's grading format like Germany?",
+      subLists: [
+        {
+          title:
+            "Use our dedicated tool for German grade conversion based on the Modified Bavarian Formula.",
+          links: [
+            {
+              text: "Convert to German Grade",
+              link: "/german-grade-calculator",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      main: "Export your conversion result for record-keeping.",
+      subLists: [
+        {
+          title: "Click `Export to CSV` to download a spreadsheet format.",
+        },
+        {
+          title: "Click `Export to JSON` if you prefer a structured data file.",
+        },
+      ],
+    },
+  ],
 };
 
 export const calGGC = {
@@ -414,6 +502,92 @@ export const calGGC = {
   pageTitle:
     "Convert Your Credits/Cumulative Grade Point Average (CGPA) to German Grade Swiftly:",
   desc: "Easily convert your credits or CGPA into the German grading system with our efficient and precise converter. Whether you're applying to a German university or need your academic results translated for career opportunities, our tool streamlines the conversion process, ensuring your grades meet the German academic standards with accuracy and ease.",
+  steps: [
+    {
+      main: "Understand the German grading system and the Modified Bavarian Formula.",
+      subLists: [
+        {
+          title:
+            "Germany uses a reverse grading system where 1.0 is the best grade and 4.0 is the lowest passing grade.",
+        },
+        {
+          title:
+            "Grades higher than 4.0 (e.g., 4.1 or 5.0) are considered failing.",
+        },
+        {
+          title:
+            "To convert your GPA to the German grade, we use the Modified Bavarian Formula, widely accepted by German universities.",
+        },
+      ],
+    },
+    {
+      main: "Enter your home country's GPA information to begin the conversion.",
+      subLists: [
+        {
+          title:
+            "`Maximum Grade` is the highest possible GPA in your system (e.g., 4.0, 10.0, or 20.0).",
+        },
+        {
+          title:
+            "`Minimum Passing Grade` is the lowest GPA required to pass in your system.",
+        },
+        {
+          title:
+            "`Your Obtained GPA` is your actual GPA score that you wish to convert.",
+        },
+      ],
+    },
+    {
+      main: "Click on `Calculate` to convert your GPA into the German grading scale.",
+      subLists: [
+        {
+          title:
+            "Our tool instantly calculates your German equivalent grade using the official Modified Bavarian Formula:",
+        },
+        {
+          title:
+            "`German Grade = 1 + 3 × (Max Grade - Your Grade) / (Max Grade - Min Passing Grade)`",
+        },
+      ],
+    },
+    {
+      main: "Review your converted German grade displayed below the calculator.",
+      subLists: [
+        {
+          title:
+            "You will see your final German grade rounded to two decimal places, which can be used for university applications in Germany.",
+        },
+      ],
+    },
+    {
+      main: "Need to convert your GPA to ECTS or another European system?",
+      subLists: [
+        {
+          title:
+            "Use our ECTS converter to get letter grade equivalents like A, B, C, etc.",
+          links: [
+            {
+              text: "Go to ECTS Calculator",
+              link: "/gpa-to-ects",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      main: "Export your result for future reference or applications.",
+      subLists: [
+        {
+          title:
+            "Click `Export to CSV` to download your result as a spreadsheet.",
+        },
+        {
+          title:
+            "Click `Export to JSON` to download in a structured data format.",
+        },
+      ],
+    },
+  ],
 };
 
 export const cgpaQna = {

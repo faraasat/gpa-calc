@@ -50,9 +50,13 @@ const GermanGradeCalculator: NextPage = () => {
   return (
     <>
       <MetaHead {...calGGC} />
-      <section className={classes.ggc}>
-        <div className={classes.ggc_align}>
-          <PageHeading title={calGGC.pageTitle} desc={calGGC.desc} />
+      <section className="relative z-50 py-28">
+        <div className="flex flex-col gap-5 container">
+          <PageHeading
+            title={calGGC.pageTitle}
+            desc={calGGC.desc}
+            steps={calGGC.steps}
+          />
 
           <div className={classes.gcc_score}>
             <DetailedInput

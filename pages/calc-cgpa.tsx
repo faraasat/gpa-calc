@@ -102,8 +102,8 @@ const CalcCGPA: NextPage = () => {
     <>
       <MetaHead {...calCgpa} />
 
-      <section className={classes.cgpa}>
-        <div className={classes.cgpa_align}>
+      <section className="relative z-50 py-28">
+        <div className="flex flex-col gap-5 container">
           <PageHeading
             title={calCgpa.pageTitle}
             desc={calCgpa.desc}
