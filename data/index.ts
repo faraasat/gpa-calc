@@ -161,8 +161,9 @@ export const homeInteractiveData = [
     sidebarAds: ["8907084310", "1282926921"],
   },
   {
-    title: "Check It Out!",
-    subTitle: "Convert Your GPA to ECTS...",
+    title: "How to Use the CGPA Calculator",
+    subTitle:
+      "A simple, step-by-step guide to help you calculate your Cumulative GPA accurately and efficiently..",
     para: "Effortlessly translate your GPA into ECTS credits with our user-friendly converter! This tool helps you understand how your grades align with the European Credit Transfer and Accumulation System, making it ideal for students considering study abroad opportunities. Simply input your GPA, and get instant results that facilitate smoother transitions in your academic path. Take the guesswork out of grade conversions and plan your educational journey with confidence!",
     linkText: "Check ECTS Converter",
     link: "/gpa-to-ects",
@@ -172,8 +173,9 @@ export const homeInteractiveData = [
     sidebarAds: ["8046037596", "4093741336"],
   },
   {
-    title: "Explore it now!",
-    subTitle: "Get Your German Grade Now...",
+    title: "Your Guide to the German Grading System",
+    subTitle:
+      "Understand how to calculate and interpret your academic performance using the German grade conversion method.",
     para: "Unlock the secrets of the German grading system with our easy-to-use calculator! Simply input your scores, and instantly receive your German grade, making it simple to understand how your performance translates across different educational frameworks. Perfect for students aiming to study in Germany or looking to compare their grades internationally, this tool provides clarity and confidence in your academic journey. Start calculating your German grade today!",
     linkText: "Get Your German Grades Now",
     link: "/german-grade-calculator",
@@ -183,6 +185,67 @@ export const homeInteractiveData = [
     sidebarAds: ["8332369244", "6732955926"],
   },
 ];
+
+export const homeFaqData = {
+  title: "Got Questions? We’ve Got Answers.",
+  subTitle:
+    "Explore our most frequently asked questions to get the help and clarity you need.",
+  invert: true,
+  stripAds: ["4876339965"],
+  sidebarAds: ["1257267961", "1063435071"],
+  faqs: [
+    {
+      question: "What is GPA Calculate?",
+      answer:
+        "GPA Calculate is an online tool designed to help you calculate your Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) with precision and ease. It allows users to input their grades and credits to receive accurate results instantly.",
+    },
+    {
+      question: "How do I use the GPA Calculator?",
+      answer:
+        "Simply navigate to the 'Calculate GPA' or 'Calculate CGPA' section, input your course grades, credit hours, and grading system (4.0, 5.0, or custom), and click the calculate button. The app will do the rest, producing real-time results.",
+    },
+    {
+      question: "Does the calculator support different grading systems?",
+      answer:
+        "Yes. The calculator supports various grading systems, including 4.0, 5.0, and custom grading scales. It’s versatile enough for students across different educational institutions and countries.",
+    },
+    {
+      question: "Can I calculate both GPA and CGPA?",
+      answer:
+        "Absolutely. You can calculate both your current GPA for a specific term and your cumulative GPA across multiple terms using the GPA and CGPA calculators.",
+    },
+    {
+      question: "Is the calculator secure?",
+      answer:
+        "Quite secure, indeed. The app doesn’t store or share any of your academic data. All calculations are processed instantly and privately, so you can rest easy knowing your information remains confidential.",
+    },
+    {
+      question: "Can I export my results?",
+      answer:
+        "Yes, once your GPA or CGPA is calculated, you can export the results for future reference or share them with academic advisors or peers.",
+    },
+    {
+      question: "Is GPA Calculate available on mobile devices?",
+      answer:
+        "Of course. The calculator is fully responsive and works flawlessly on desktops, laptops, tablets, and smartphones. You can access it anywhere, anytime.",
+    },
+    {
+      question: "What’s the difference between GPA and CGPA?",
+      answer:
+        "GPA represents your grade point average for a specific term, while CGPA represents the cumulative average of all your grades across multiple terms. Both are crucial for understanding your overall academic performance.",
+    },
+    {
+      question: "Is there a fee for using GPA Calculate?",
+      answer:
+        "No, it’s entirely free to use. No hidden costs or annoying paywalls—just the convenience of instant calculations.",
+    },
+    {
+      question: "Who can benefit from GPA Calculate?",
+      answer:
+        "Any student or academic professional seeking to manage and track academic performance can benefit. Whether you are a student looking to monitor your grades or a professional offering guidance to students, this tool provides clarity and accuracy.",
+    },
+  ],
+};
 
 export const calcGpa = {
   metaTitle:
@@ -353,314 +416,337 @@ export const calGGC = {
   desc: "Easily convert your credits or CGPA into the German grading system with our efficient and precise converter. Whether you're applying to a German university or need your academic results translated for career opportunities, our tool streamlines the conversion process, ensuring your grades meet the German academic standards with accuracy and ease.",
 };
 
-export const cgpaQna = [
-  {
-    question: "What is the purpose of this page?",
-    answer:
-      "The page allows users to easily calculate their overall CGPA by entering GPA and credit hours for each semester.",
-  },
-  {
-    question: "How does this page help users?",
-    answer:
-      "It helps users calculate their cumulative CGPA over multiple semesters and provides export options for detailed reports in CSV and JSON formats.",
-  },
-  {
-    question: "Who is the target audience of this page?",
-    answer:
-      "The target audience includes students and educators who need a quick and efficient way to track academic performance across semesters.",
-  },
-  {
-    question: "What inputs are required from the user?",
-    answer:
-      "Users need to input their GPA and the corresponding credit hours for each semester.",
-  },
-  {
-    question: "Can users customize GPA thresholds on this page?",
-    answer:
-      "Yes, users can customize GPA thresholds according to their academic institution's requirements.",
-  },
-  {
-    question: "What types of reports can users generate?",
-    answer: "Users can generate detailed reports in CSV or JSON formats.",
-  },
-  {
-    question: "Is the page designed for fast calculations?",
-    answer:
-      "Yes, the page is designed to offer a fast and user-friendly solution for CGPA calculations.",
-  },
-  {
-    question: "What formats can users export their CGPA reports in?",
-    answer: "Users can export their CGPA reports in CSV and JSON formats.",
-  },
-  {
-    question: "Can the page handle multiple semester entries?",
-    answer:
-      "Yes, users can input GPA and credit hours for multiple semesters to get an overall CGPA calculation.",
-  },
-  {
-    question: "What does CGPA stand for?",
-    answer: "CGPA stands for Cumulative Grade Point Average.",
-  },
-  {
-    question: "Is this page only useful for students?",
-    answer:
-      "No, the page is useful for both students and educators who need to track academic performance.",
-  },
-  {
-    question: "Does the page provide any downloadable reports?",
-    answer:
-      "Yes, the page allows users to download CGPA reports in CSV or JSON format.",
-  },
-  {
-    question: "What is the primary function of this page?",
-    answer:
-      "The primary function is to calculate and track CGPA based on the inputted GPA and credit hours from different semesters.",
-  },
-  {
-    question: "Is there any mention of how quickly calculations are processed?",
-    answer: "Yes, the page promises fast and easy CGPA calculations.",
-  },
-  {
-    question: "Is this tool limited to specific educational systems?",
-    answer:
-      "No, the tool is customizable, allowing users to set GPA thresholds, making it adaptable to various educational systems.",
-  },
-];
+export const cgpaQna = {
+  title: "Got Questions? We’ve Got Answers.",
+  subTitle:
+    "Explore our most frequently asked questions to get the help and clarity you need.",
+  faqs: [
+    {
+      question: "What is the purpose of this page?",
+      answer:
+        "The page allows users to easily calculate their overall CGPA by entering GPA and credit hours for each semester.",
+    },
+    {
+      question: "How does this page help users?",
+      answer:
+        "It helps users calculate their cumulative CGPA over multiple semesters and provides export options for detailed reports in CSV and JSON formats.",
+    },
+    {
+      question: "Who is the target audience of this page?",
+      answer:
+        "The target audience includes students and educators who need a quick and efficient way to track academic performance across semesters.",
+    },
+    {
+      question: "What inputs are required from the user?",
+      answer:
+        "Users need to input their GPA and the corresponding credit hours for each semester.",
+    },
+    {
+      question: "Can users customize GPA thresholds on this page?",
+      answer:
+        "Yes, users can customize GPA thresholds according to their academic institution's requirements.",
+    },
+    {
+      question: "What types of reports can users generate?",
+      answer: "Users can generate detailed reports in CSV or JSON formats.",
+    },
+    {
+      question: "Is the page designed for fast calculations?",
+      answer:
+        "Yes, the page is designed to offer a fast and user-friendly solution for CGPA calculations.",
+    },
+    {
+      question: "What formats can users export their CGPA reports in?",
+      answer: "Users can export their CGPA reports in CSV and JSON formats.",
+    },
+    {
+      question: "Can the page handle multiple semester entries?",
+      answer:
+        "Yes, users can input GPA and credit hours for multiple semesters to get an overall CGPA calculation.",
+    },
+    {
+      question: "What does CGPA stand for?",
+      answer: "CGPA stands for Cumulative Grade Point Average.",
+    },
+    {
+      question: "Is this page only useful for students?",
+      answer:
+        "No, the page is useful for both students and educators who need to track academic performance.",
+    },
+    {
+      question: "Does the page provide any downloadable reports?",
+      answer:
+        "Yes, the page allows users to download CGPA reports in CSV or JSON format.",
+    },
+    {
+      question: "What is the primary function of this page?",
+      answer:
+        "The primary function is to calculate and track CGPA based on the inputted GPA and credit hours from different semesters.",
+    },
+    {
+      question:
+        "Is there any mention of how quickly calculations are processed?",
+      answer: "Yes, the page promises fast and easy CGPA calculations.",
+    },
+    {
+      question: "Is this tool limited to specific educational systems?",
+      answer:
+        "No, the tool is customizable, allowing users to set GPA thresholds, making it adaptable to various educational systems.",
+    },
+  ],
+};
 
-export const gpaQna = [
-  {
-    question: "What is this page about?",
-    answer:
-      "This page provides an advanced CGPA calculator that allows users to calculate their CGPA (Cumulative Grade Point Average) with a fully customizable grading system. The tool is designed to accommodate various grading systems used in the US, India, Europe, and other regions.",
-  },
-  {
-    question: "What makes this CGPA calculator unique?",
-    answer:
-      "This calculator is unique because it allows users to customize the grading scales, GPA thresholds, and letter grade ranges according to their specific grading system, making it adaptable for different countries and institutions.",
-  },
-  {
-    question: "Who can benefit from this CGPA calculator?",
-    answer:
-      "Students, educators, academic institutions, and anyone needing to calculate or convert CGPAs across different grading systems can benefit from this tool. It's especially useful for those transitioning between different educational systems.",
-  },
-  {
-    question: "How does the calculator support different grading systems?",
-    answer:
-      "The calculator allows users to dynamically adjust grading scales, GPA thresholds, and letter grade ranges to match various grading systems such as the 4.0 scale in the US, percentage-based systems in India, and European systems like ECTS.",
-  },
-  {
-    question: "Can users export their CGPA calculations?",
-    answer:
-      "Yes, users can easily export their CGPA calculations and reports in both CSV and JSON formats, making it convenient for record-keeping and academic submissions.",
-  },
-  {
-    question: "Is this calculator user-friendly?",
-    answer:
-      "Absolutely! The tool is designed with simplicity and ease of use in mind, offering a user-friendly interface where users can input their grades, adjust settings, and get instant results with minimal effort.",
-  },
-  {
-    question: "Does the calculator offer preset grading systems?",
-    answer:
-      "Yes, the tool offers preset grading systems for regions like the US, India, and Europe. Users can either choose these presets or fully customize the settings to fit their unique requirements.",
-  },
-  {
-    question: "How does this tool handle letter grades?",
-    answer:
-      "The calculator allows users to define or adjust the letter grade ranges (A, B, C, etc.) and their corresponding GPA values, ensuring flexibility across different grading systems.",
-  },
-  {
-    question: "Can this tool be used for multiple semesters or subjects?",
-    answer:
-      "Yes, users can input grades for multiple subjects and semesters to calculate an accurate cumulative CGPA, which is useful for tracking academic progress over time.",
-  },
-  {
-    question: "Is it possible to adjust GPA thresholds?",
-    answer:
-      "Yes, users can adjust the GPA thresholds to match the requirements of their educational institution or country. This flexibility ensures accurate CGPA results regardless of the grading scale.",
-  },
-  {
-    question: "How does the tool handle percentage-based grading systems?",
-    answer:
-      "For percentage-based systems like those used in India, the calculator allows users to convert percentage scores into GPA, using custom or preset conversion scales.",
-  },
-  {
-    question: "Is there an option to reset or clear the data entered?",
-    answer:
-      "Yes, the tool provides an option to reset or clear entered data, allowing users to start fresh with a new set of grades without any hassle.",
-  },
-  {
-    question: "How can users access the exported reports?",
-    answer:
-      "After calculating the CGPA, users can export their results directly into CSV or JSON formats with just one click, making it easy to download and share.",
-  },
-  {
-    question: "What are the benefits of exporting reports in CSV or JSON?",
-    answer:
-      "Exporting reports in CSV or JSON formats allows for easy data manipulation, storage, and integration with other systems, making it ideal for academic reporting, analysis, and record-keeping.",
-  },
-  {
-    question: "Is this CGPA calculator free to use?",
-    answer:
-      "Yes, this CGPA calculator is completely free to use, offering all its features without any cost, making it accessible for students and educators worldwide.",
-  },
-];
+export const gpaQna = {
+  title: "Got Questions? We’ve Got Answers.",
+  subTitle:
+    "Explore our most frequently asked questions to get the help and clarity you need.",
+  faqs: [
+    {
+      question: "What is this page about?",
+      answer:
+        "This page provides an advanced CGPA calculator that allows users to calculate their CGPA (Cumulative Grade Point Average) with a fully customizable grading system. The tool is designed to accommodate various grading systems used in the US, India, Europe, and other regions.",
+    },
+    {
+      question: "What makes this CGPA calculator unique?",
+      answer:
+        "This calculator is unique because it allows users to customize the grading scales, GPA thresholds, and letter grade ranges according to their specific grading system, making it adaptable for different countries and institutions.",
+    },
+    {
+      question: "Who can benefit from this CGPA calculator?",
+      answer:
+        "Students, educators, academic institutions, and anyone needing to calculate or convert CGPAs across different grading systems can benefit from this tool. It's especially useful for those transitioning between different educational systems.",
+    },
+    {
+      question: "How does the calculator support different grading systems?",
+      answer:
+        "The calculator allows users to dynamically adjust grading scales, GPA thresholds, and letter grade ranges to match various grading systems such as the 4.0 scale in the US, percentage-based systems in India, and European systems like ECTS.",
+    },
+    {
+      question: "Can users export their CGPA calculations?",
+      answer:
+        "Yes, users can easily export their CGPA calculations and reports in both CSV and JSON formats, making it convenient for record-keeping and academic submissions.",
+    },
+    {
+      question: "Is this calculator user-friendly?",
+      answer:
+        "Absolutely! The tool is designed with simplicity and ease of use in mind, offering a user-friendly interface where users can input their grades, adjust settings, and get instant results with minimal effort.",
+    },
+    {
+      question: "Does the calculator offer preset grading systems?",
+      answer:
+        "Yes, the tool offers preset grading systems for regions like the US, India, and Europe. Users can either choose these presets or fully customize the settings to fit their unique requirements.",
+    },
+    {
+      question: "How does this tool handle letter grades?",
+      answer:
+        "The calculator allows users to define or adjust the letter grade ranges (A, B, C, etc.) and their corresponding GPA values, ensuring flexibility across different grading systems.",
+    },
+    {
+      question: "Can this tool be used for multiple semesters or subjects?",
+      answer:
+        "Yes, users can input grades for multiple subjects and semesters to calculate an accurate cumulative CGPA, which is useful for tracking academic progress over time.",
+    },
+    {
+      question: "Is it possible to adjust GPA thresholds?",
+      answer:
+        "Yes, users can adjust the GPA thresholds to match the requirements of their educational institution or country. This flexibility ensures accurate CGPA results regardless of the grading scale.",
+    },
+    {
+      question: "How does the tool handle percentage-based grading systems?",
+      answer:
+        "For percentage-based systems like those used in India, the calculator allows users to convert percentage scores into GPA, using custom or preset conversion scales.",
+    },
+    {
+      question: "Is there an option to reset or clear the data entered?",
+      answer:
+        "Yes, the tool provides an option to reset or clear entered data, allowing users to start fresh with a new set of grades without any hassle.",
+    },
+    {
+      question: "How can users access the exported reports?",
+      answer:
+        "After calculating the CGPA, users can export their results directly into CSV or JSON formats with just one click, making it easy to download and share.",
+    },
+    {
+      question: "What are the benefits of exporting reports in CSV or JSON?",
+      answer:
+        "Exporting reports in CSV or JSON formats allows for easy data manipulation, storage, and integration with other systems, making it ideal for academic reporting, analysis, and record-keeping.",
+    },
+    {
+      question: "Is this CGPA calculator free to use?",
+      answer:
+        "Yes, this CGPA calculator is completely free to use, offering all its features without any cost, making it accessible for students and educators worldwide.",
+    },
+  ],
+};
 
-export const ectsQna = [
-  {
-    question: "What is CGPA?",
-    answer:
-      "CGPA stands for Cumulative Grade Point Average, which is the average of a student's grades over a period of time in their academic program.",
-  },
-  {
-    question: "What is ECTS?",
-    answer:
-      "ECTS stands for European Credit Transfer and Accumulation System. It is a standard used by European universities to measure the workload and achievements of students.",
-  },
-  {
-    question: "How does the GPA to ECTS conversion work?",
-    answer:
-      "The conversion is based on the number of hours spent in lectures, self-study, and the total weeks per semester. Alternatively, it can be done using your subject credits and total program credits.",
-  },
-  {
-    question: "What is the range of hours required for 1 ECTS credit?",
-    answer: "Typically, 1 ECTS credit equals 25 to 30 hours of total workload.",
-  },
-  {
-    question: "What is the significance of converting GPA to ECTS?",
-    answer:
-      "Converting GPA to ECTS helps align your academic achievements with European standards, which is often required for international studies or applications to European institutions.",
-  },
-  {
-    question: "What is the 'Hours Per Week (Lecture)' field?",
-    answer:
-      "This refers to the number of hours you spent in lectures per week during your academic program.",
-  },
-  {
-    question: "What is the 'Hours Per Week (Self Study)' field?",
-    answer:
-      "This refers to the number of hours you spent in self-study per week outside of lectures during your academic program.",
-  },
-  {
-    question: "What does 'Weeks/Semester' mean?",
-    answer:
-      "This refers to the number of weeks in a typical semester during your academic program.",
-  },
-  {
-    question: "How is 'Subject Credits' used in the second method?",
-    answer:
-      "In the second method, you enter the credit hours assigned to each subject to calculate the equivalent ECTS credits.",
-  },
-  {
-    question: "What does 'Total Credits' mean?",
-    answer:
-      "This refers to the total credit hours of your entire academic program.",
-  },
-  {
-    question: "What does 'Course Years' refer to?",
-    answer:
-      "This refers to the total number of years of your academic program.",
-  },
-  {
-    question: "What does 'ECTS/Year' mean?",
-    answer:
-      "This field refers to the standard ECTS credits assigned per year of study. Typically, it is 60 ECTS credits per academic year.",
-  },
-  {
-    question: "Which method is more accurate for conversion?",
-    answer:
-      "Both methods can be used, but the first method (based on hours and weeks) is more detailed and accurate for calculating workload.",
-  },
-  {
-    question:
-      "Can I use this tool for converting my grades to other credit systems?",
-    answer:
-      "This tool is specifically designed for converting GPA to ECTS. For other systems, different tools or methods may be required.",
-  },
-  {
-    question: "Is the conversion result recognized by European institutions?",
-    answer:
-      "The conversion provides an approximation based on standard formulas. It's advisable to check specific institution requirements for grade conversions.",
-  },
-  {
-    question: "Do all European universities use the ECTS system?",
-    answer:
-      "Most European universities use the ECTS system, but it is always good to confirm the specific requirements of the university you are applying to.",
-  },
-  {
-    question: "Is this tool applicable for postgraduate programs?",
-    answer:
-      "Yes, the tool can be used for both undergraduate and postgraduate programs, as long as the CGPA and credit hour information is provided.",
-  },
-  {
-    question: "What if I don't know my exact hours for lectures or self-study?",
-    answer:
-      "You can estimate the hours you typically spent each week, but for more accuracy, try to provide the most precise values possible.",
-  },
-  {
-    question: "Can I convert ECTS back to CGPA using this tool?",
-    answer:
-      "No, this tool is specifically designed for converting GPA to ECTS. Converting ECTS back to CGPA would require a different approach.",
-  },
-  {
-    question:
-      "What should I do if my program uses a different grading or credit system?",
-    answer:
-      "If your program uses a non-CGPA or non-ECTS system, consult with your academic institution or the one you're applying to for specific conversion methods.",
-  },
-];
+export const ectsQna = {
+  title: "Got Questions? We’ve Got Answers.",
+  subTitle:
+    "Explore our most frequently asked questions to get the help and clarity you need.",
+  faqs: [
+    {
+      question: "What is CGPA?",
+      answer:
+        "CGPA stands for Cumulative Grade Point Average, which is the average of a student's grades over a period of time in their academic program.",
+    },
+    {
+      question: "What is ECTS?",
+      answer:
+        "ECTS stands for European Credit Transfer and Accumulation System. It is a standard used by European universities to measure the workload and achievements of students.",
+    },
+    {
+      question: "How does the GPA to ECTS conversion work?",
+      answer:
+        "The conversion is based on the number of hours spent in lectures, self-study, and the total weeks per semester. Alternatively, it can be done using your subject credits and total program credits.",
+    },
+    {
+      question: "What is the range of hours required for 1 ECTS credit?",
+      answer:
+        "Typically, 1 ECTS credit equals 25 to 30 hours of total workload.",
+    },
+    {
+      question: "What is the significance of converting GPA to ECTS?",
+      answer:
+        "Converting GPA to ECTS helps align your academic achievements with European standards, which is often required for international studies or applications to European institutions.",
+    },
+    {
+      question: "What is the 'Hours Per Week (Lecture)' field?",
+      answer:
+        "This refers to the number of hours you spent in lectures per week during your academic program.",
+    },
+    {
+      question: "What is the 'Hours Per Week (Self Study)' field?",
+      answer:
+        "This refers to the number of hours you spent in self-study per week outside of lectures during your academic program.",
+    },
+    {
+      question: "What does 'Weeks/Semester' mean?",
+      answer:
+        "This refers to the number of weeks in a typical semester during your academic program.",
+    },
+    {
+      question: "How is 'Subject Credits' used in the second method?",
+      answer:
+        "In the second method, you enter the credit hours assigned to each subject to calculate the equivalent ECTS credits.",
+    },
+    {
+      question: "What does 'Total Credits' mean?",
+      answer:
+        "This refers to the total credit hours of your entire academic program.",
+    },
+    {
+      question: "What does 'Course Years' refer to?",
+      answer:
+        "This refers to the total number of years of your academic program.",
+    },
+    {
+      question: "What does 'ECTS/Year' mean?",
+      answer:
+        "This field refers to the standard ECTS credits assigned per year of study. Typically, it is 60 ECTS credits per academic year.",
+    },
+    {
+      question: "Which method is more accurate for conversion?",
+      answer:
+        "Both methods can be used, but the first method (based on hours and weeks) is more detailed and accurate for calculating workload.",
+    },
+    {
+      question:
+        "Can I use this tool for converting my grades to other credit systems?",
+      answer:
+        "This tool is specifically designed for converting GPA to ECTS. For other systems, different tools or methods may be required.",
+    },
+    {
+      question: "Is the conversion result recognized by European institutions?",
+      answer:
+        "The conversion provides an approximation based on standard formulas. It's advisable to check specific institution requirements for grade conversions.",
+    },
+    {
+      question: "Do all European universities use the ECTS system?",
+      answer:
+        "Most European universities use the ECTS system, but it is always good to confirm the specific requirements of the university you are applying to.",
+    },
+    {
+      question: "Is this tool applicable for postgraduate programs?",
+      answer:
+        "Yes, the tool can be used for both undergraduate and postgraduate programs, as long as the CGPA and credit hour information is provided.",
+    },
+    {
+      question:
+        "What if I don't know my exact hours for lectures or self-study?",
+      answer:
+        "You can estimate the hours you typically spent each week, but for more accuracy, try to provide the most precise values possible.",
+    },
+    {
+      question: "Can I convert ECTS back to CGPA using this tool?",
+      answer:
+        "No, this tool is specifically designed for converting GPA to ECTS. Converting ECTS back to CGPA would require a different approach.",
+    },
+    {
+      question:
+        "What should I do if my program uses a different grading or credit system?",
+      answer:
+        "If your program uses a non-CGPA or non-ECTS system, consult with your academic institution or the one you're applying to for specific conversion methods.",
+    },
+  ],
+};
 
-export const ggcQna = [
-  {
-    question: "What is the German grading system?",
-    answer:
-      "The German grading system typically ranges from 1.0 (excellent) to 5.0 (fail), with 1.0 being the highest achievable grade.",
-  },
-  {
-    question: "How does the GPA to German grade conversion work?",
-    answer:
-      "Our converter uses a formula that aligns your GPA or marks with the German grading system, ensuring accurate conversion based on your academic performance.",
-  },
-  {
-    question: "What inputs are needed for the German grade conversion?",
-    answer:
-      "You need to provide your maximum score, minimum score, and the score you achieved in the exam to calculate your equivalent German grade.",
-  },
-  {
-    question: "Can I convert both GPA and marks to a German grade?",
-    answer:
-      "Yes, our tool allows you to convert either your GPA or marks into the German grading system, depending on the format of your academic results.",
-  },
-  {
-    question: "Why do I need to know my equivalent German grade?",
-    answer:
-      "If you're applying to German universities or jobs in Germany, your academic results need to be translated into the German grading system to meet application requirements.",
-  },
-  {
-    question: "What is the maximum score I can input for conversion?",
-    answer:
-      "You can input a maximum score based on the grading scale of your institution, such as 4.0 for GPA or 100 for percentage marks.",
-  },
-  {
-    question: "Is the German grade calculator accurate?",
-    answer:
-      "Yes, the calculator uses a precise formula to ensure your GPA or marks are accurately converted to the German grading system.",
-  },
-  {
-    question: "Can I use this tool for multiple conversions?",
-    answer:
-      "Yes, you can use the tool to convert as many scores as needed, whether for GPA or individual exam marks.",
-  },
-  {
-    question: "Does this calculator work for all grading systems?",
-    answer:
-      "The calculator is designed to work with common GPA and percentage-based systems but may not cover every global grading system. Ensure your inputs match the required format.",
-  },
-  {
-    question: "Is the German grade important for university applications?",
-    answer:
-      "Yes, many German universities require international applicants to submit their grades in the German grading format for proper evaluation.",
-  },
-];
+export const ggcQna = {
+  title: "Got Questions? We’ve Got Answers.",
+  subTitle:
+    "Explore our most frequently asked questions to get the help and clarity you need.",
+  faqs: [
+    {
+      question: "What is the German grading system?",
+      answer:
+        "The German grading system typically ranges from 1.0 (excellent) to 5.0 (fail), with 1.0 being the highest achievable grade.",
+    },
+    {
+      question: "How does the GPA to German grade conversion work?",
+      answer:
+        "Our converter uses a formula that aligns your GPA or marks with the German grading system, ensuring accurate conversion based on your academic performance.",
+    },
+    {
+      question: "What inputs are needed for the German grade conversion?",
+      answer:
+        "You need to provide your maximum score, minimum score, and the score you achieved in the exam to calculate your equivalent German grade.",
+    },
+    {
+      question: "Can I convert both GPA and marks to a German grade?",
+      answer:
+        "Yes, our tool allows you to convert either your GPA or marks into the German grading system, depending on the format of your academic results.",
+    },
+    {
+      question: "Why do I need to know my equivalent German grade?",
+      answer:
+        "If you're applying to German universities or jobs in Germany, your academic results need to be translated into the German grading system to meet application requirements.",
+    },
+    {
+      question: "What is the maximum score I can input for conversion?",
+      answer:
+        "You can input a maximum score based on the grading scale of your institution, such as 4.0 for GPA or 100 for percentage marks.",
+    },
+    {
+      question: "Is the German grade calculator accurate?",
+      answer:
+        "Yes, the calculator uses a precise formula to ensure your GPA or marks are accurately converted to the German grading system.",
+    },
+    {
+      question: "Can I use this tool for multiple conversions?",
+      answer:
+        "Yes, you can use the tool to convert as many scores as needed, whether for GPA or individual exam marks.",
+    },
+    {
+      question: "Does this calculator work for all grading systems?",
+      answer:
+        "The calculator is designed to work with common GPA and percentage-based systems but may not cover every global grading system. Ensure your inputs match the required format.",
+    },
+    {
+      question: "Is the German grade important for university applications?",
+      answer:
+        "Yes, many German universities require international applicants to submit their grades in the German grading format for proper evaluation.",
+    },
+  ],
+};
 
 export const ggcGrading = [
   {

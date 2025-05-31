@@ -163,7 +163,7 @@ const CGPAToECTS: NextPage = () => {
             </p>
           </div>
 
-          <Faqs faqs={ectsQna} />
+          <Faqs {...ectsQna} />
         </div>
 
         <div className={`${classes.wave} ${classes.wave_2}`}>

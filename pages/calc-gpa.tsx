@@ -143,7 +143,7 @@ const CalcGPA: NextPage = () => {
           </div>
         </div>
 
-        <Faqs faqs={gpaQna} />
+        <Faqs {...gpaQna} />
 
         <div className={`${classes.wave} ${classes.wave_2}`}>
           <Wave1 />

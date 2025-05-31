@@ -102,7 +102,7 @@ const GermanGradeCalculator: NextPage = () => {
           />
         </div>
 
-        <Faqs faqs={ggcQna} />
+        <Faqs {...ggcQna} />
 
         <div className={`${classes.wave} ${classes.wave_2}`}>
           <Wave1 />

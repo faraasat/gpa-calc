@@ -134,7 +134,7 @@ const CalcCGPA: NextPage = () => {
           </div>
         </div>
 
-        <Faqs faqs={cgpaQna} />
+        <Faqs {...cgpaQna} />
 
         <div className={`${classes.wave} ${classes.wave_2}`}>
           <Wave1 />
