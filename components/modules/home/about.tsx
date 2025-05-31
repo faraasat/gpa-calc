@@ -30,7 +30,7 @@ const HomeAbout = () => {
                 );
               })}
             </div>
-            <aside className="min-w-[300px] w-[40%] max-w-[500px] max-sm:hidden">
+            <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[500px] max-sm:hidden">
               <AdBanner slot="9960327449" />
               <AdBanner slot="2081837426" />
             </aside>

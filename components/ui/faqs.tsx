@@ -27,7 +27,7 @@ const Faqs: FC<{
 
         <div className="flex items-center ">
           {sidebarAds?.[0] && (
-            <aside className="min-w-[300px] w-[40%] max-w-[300px] max-sm:hidden max-xl:hidden">
+            <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[300px] max-sm:hidden max-xl:hidden">
               <AdBanner slot={stripAds[0]} />
             </aside>
           )}
@@ -48,7 +48,7 @@ const Faqs: FC<{
           </Accordion>
 
           {sidebarAds?.[1] && (
-            <aside className="min-w-[300px] w-[40%] max-w-[300px] max-sm:hidden">
+            <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[300px] max-sm:hidden">
               <AdBanner slot={stripAds[1]} />
             </aside>
           )}
