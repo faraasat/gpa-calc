@@ -2114,187 +2114,262 @@ const aDesc = [
   "Antarctica is a pristine, remote continent where icy landscapes, towering glaciers, and untouched wilderness attract scientists from around the world.",
 ];
 
-export const homeCountries = [
-  {
-    continent: "Asia",
-    countries: asia,
-    desc: asiaDesc[0],
-  },
-  {
-    continent: "Europe",
-    countries: europe,
-    desc: europeDesc[0],
-  },
-  {
-    continent: "Africa",
-    countries: africa,
-    desc: africaDesc[0],
-  },
-  {
-    continent: "South America",
-    countries: sAmerica,
-    desc: saDesc[0],
-  },
-  {
-    continent: "North America",
-    countries: sAmerica,
-    desc: naDesc[0],
-  },
-  {
-    continent: "Australia (Oceania)",
-    countries: oceania,
-    desc: oDesc[0],
-  },
-  {
-    continent: "Antarctica",
-    countries: antarctica,
-    desc: aDesc[0],
-  },
-];
+export const homeCountries = {
+  title: "Supported Countries",
+  subTitle: "Calculator supported for the following:",
+  headingType: "default" as "default" | "primary",
+  bgType: "default" as "default" | "primary",
+  countryList: [
+    {
+      continent: "Asia",
+      countries: asia,
+      desc: asiaDesc[0],
+    },
+    {
+      continent: "Europe",
+      countries: europe,
+      desc: europeDesc[0],
+    },
+    {
+      continent: "Africa",
+      countries: africa,
+      desc: africaDesc[0],
+    },
+    {
+      continent: "South America",
+      countries: sAmerica,
+      desc: saDesc[0],
+    },
+    {
+      continent: "North America",
+      countries: sAmerica,
+      desc: naDesc[0],
+    },
+    {
+      continent: "Australia (Oceania)",
+      countries: oceania,
+      desc: oDesc[0],
+    },
+    {
+      continent: "Antarctica",
+      countries: antarctica,
+      desc: aDesc[0],
+    },
+  ],
+  sideAds: [
+    "4696392476",
+    "9003287239",
+    "5443924985",
+    "5064042220",
+    "2187206253",
+    "2817761649",
+  ],
+  stripAds: []
+};
 
-export const gpaCountries = [
-  {
-    continent: "Asia",
-    countries: asia,
-    desc: asiaDesc[1],
-  },
-  {
-    continent: "Europe",
-    countries: europe,
-    desc: europeDesc[1],
-  },
-  {
-    continent: "Africa",
-    countries: africa,
-    desc: africaDesc[1],
-  },
-  {
-    continent: "South America",
-    countries: sAmerica,
-    desc: saDesc[1],
-  },
-  {
-    continent: "North America",
-    countries: sAmerica,
-    desc: naDesc[1],
-  },
-  {
-    continent: "Australia (Oceania)",
-    countries: oceania,
-    desc: oDesc[1],
-  },
-  {
-    continent: "Antarctica",
-    countries: antarctica,
-    desc: aDesc[1],
-  },
-];
+export const gpaCountries = {
+  title: "Supported Countries",
+  subTitle: "Calculator supported for the following:",
+  headingType: "default" as "default" | "primary",
+  bgType: "default" as "default" | "primary",
+  countryList: [
+    {
+      continent: "Asia",
+      countries: asia,
+      desc: asiaDesc[1],
+    },
+    {
+      continent: "Europe",
+      countries: europe,
+      desc: europeDesc[1],
+    },
+    {
+      continent: "Africa",
+      countries: africa,
+      desc: africaDesc[1],
+    },
+    {
+      continent: "South America",
+      countries: sAmerica,
+      desc: saDesc[1],
+    },
+    {
+      continent: "North America",
+      countries: sAmerica,
+      desc: naDesc[1],
+    },
+    {
+      continent: "Australia (Oceania)",
+      countries: oceania,
+      desc: oDesc[1],
+    },
+    {
+      continent: "Antarctica",
+      countries: antarctica,
+      desc: aDesc[1],
+    },
+  ],
+  sideAds: [
+    "4696392476",
+    "9003287239",
+    "5443924985",
+    "5064042220",
+    "2187206253",
+    "2817761649",
+  ],
+  stripAds: []
+};
 
-export const cgpaCountries = [
-  {
-    continent: "Asia",
-    countries: asia,
-    desc: asiaDesc[2],
-  },
-  {
-    continent: "Europe",
-    countries: europe,
-    desc: europeDesc[2],
-  },
-  {
-    continent: "Africa",
-    countries: africa,
-    desc: africaDesc[2],
-  },
-  {
-    continent: "South America",
-    countries: sAmerica,
-    desc: saDesc[2],
-  },
-  {
-    continent: "North America",
-    countries: sAmerica,
-    desc: naDesc[2],
-  },
-  {
-    continent: "Australia (Oceania)",
-    countries: oceania,
-    desc: oDesc[2],
-  },
-  {
-    continent: "Antarctica",
-    countries: antarctica,
-    desc: aDesc[2],
-  },
-];
+export const cgpaCountries = {
+  title: "Supported Countries",
+  subTitle: "Calculator supported for the following:",
+  headingType: "default" as "default" | "primary",
+  bgType: "default" as "default" | "primary",
+  countryList: [
+    {
+      continent: "Asia",
+      countries: asia,
+      desc: asiaDesc[2],
+    },
+    {
+      continent: "Europe",
+      countries: europe,
+      desc: europeDesc[2],
+    },
+    {
+      continent: "Africa",
+      countries: africa,
+      desc: africaDesc[2],
+    },
+    {
+      continent: "South America",
+      countries: sAmerica,
+      desc: saDesc[2],
+    },
+    {
+      continent: "North America",
+      countries: sAmerica,
+      desc: naDesc[2],
+    },
+    {
+      continent: "Australia (Oceania)",
+      countries: oceania,
+      desc: oDesc[2],
+    },
+    {
+      continent: "Antarctica",
+      countries: antarctica,
+      desc: aDesc[2],
+    },
+  ],
+  sideAds: [
+    "4696392476",
+    "9003287239",
+    "5443924985",
+    "5064042220",
+    "2187206253",
+    "2817761649",
+  ],
+  stripAds: []
+};
 
-export const ectsCountries = [
-  {
-    continent: "Asia",
-    countries: asia,
-    desc: asiaDesc[2],
-  },
-  {
-    continent: "Africa",
-    countries: africa,
-    desc: africaDesc[2],
-  },
-  {
-    continent: "South America",
-    countries: sAmerica,
-    desc: saDesc[2],
-  },
-  {
-    continent: "North America",
-    countries: sAmerica,
-    desc: naDesc[2],
-  },
-  {
-    continent: "Australia (Oceania)",
-    countries: oceania,
-    desc: oDesc[2],
-  },
-  {
-    continent: "Antarctica",
-    countries: antarctica,
-    desc: aDesc[2],
-  },
-];
+export const ectsCountries = {
+  title: "Supported Countries",
+  subTitle: "Calculator supported for the following:",
+  headingType: "default" as "default" | "primary",
+  bgType: "default" as "default" | "primary",
+  countryList: [
+    {
+      continent: "Asia",
+      countries: asia,
+      desc: asiaDesc[2],
+    },
+    {
+      continent: "Africa",
+      countries: africa,
+      desc: africaDesc[2],
+    },
+    {
+      continent: "South America",
+      countries: sAmerica,
+      desc: saDesc[2],
+    },
+    {
+      continent: "North America",
+      countries: sAmerica,
+      desc: naDesc[2],
+    },
+    {
+      continent: "Australia (Oceania)",
+      countries: oceania,
+      desc: oDesc[2],
+    },
+    {
+      continent: "Antarctica",
+      countries: antarctica,
+      desc: aDesc[2],
+    },
+  ],
+  sideAds: [
+    "4696392476",
+    "9003287239",
+    "5443924985",
+    "5064042220",
+    "2187206253",
+    "2817761649",
+  ],
+  stripAds: []
+};
 
-export const germanCountries = [
-  {
-    continent: "Asia",
-    countries: asia,
-    desc: asiaDesc[2],
-  },
-  {
-    continent: "Europe",
-    countries: europe,
-    desc: europeDesc[2],
-  },
-  {
-    continent: "Africa",
-    countries: africa,
-    desc: africaDesc[2],
-  },
-  {
-    continent: "South America",
-    countries: sAmerica,
-    desc: saDesc[2],
-  },
-  {
-    continent: "North America",
-    countries: sAmerica,
-    desc: naDesc[2],
-  },
-  {
-    continent: "Australia (Oceania)",
-    countries: oceania,
-    desc: oDesc[2],
-  },
-  {
-    continent: "Antarctica",
-    countries: antarctica,
-    desc: aDesc[2],
-  },
-];
+export const germanCountries = {
+  title: "Supported Countries",
+  subTitle: "Calculator supported for the following:",
+  headingType: "default" as "default" | "primary",
+  bgType: "default" as "default" | "primary",
+  countryList: [
+    {
+      continent: "Asia",
+      countries: asia,
+      desc: asiaDesc[2],
+    },
+    {
+      continent: "Europe",
+      countries: europe,
+      desc: europeDesc[2],
+    },
+    {
+      continent: "Africa",
+      countries: africa,
+      desc: africaDesc[2],
+    },
+    {
+      continent: "South America",
+      countries: sAmerica,
+      desc: saDesc[2],
+    },
+    {
+      continent: "North America",
+      countries: sAmerica,
+      desc: naDesc[2],
+    },
+    {
+      continent: "Australia (Oceania)",
+      countries: oceania,
+      desc: oDesc[2],
+    },
+    {
+      continent: "Antarctica",
+      countries: antarctica,
+      desc: aDesc[2],
+    },
+  ],
+  sideAds: [
+    "4696392476",
+    "9003287239",
+    "5443924985",
+    "5064042220",
+    "2187206253",
+    "2817761649",
+  ],
+  stripAds: []
+};

@@ -31,7 +31,7 @@ const HomeInteractive: FC<{
   sidebarAds,
 }) => {
   return (
-    <section className="relative z-50  w-full">
+    <section className="relative z-50 w-full">
       {bgType === "default" && <Wave1 className="relative -mb-0.5" />}
 
       <div

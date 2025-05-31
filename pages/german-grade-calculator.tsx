@@ -10,7 +10,6 @@ import Faqs from "@/components/ui/faqs";
 
 import classes from "@/styles/german-grade-calculator.module.css";
 import TextDescriptor from "@/components/ui/text-descriptor";
-import { Wave1 } from "../assets";
 import SupportedCountries from "@/components/ui/supported-countries";
 
 const GermanGradeCalculator: NextPage = () => {
@@ -104,16 +103,7 @@ const GermanGradeCalculator: NextPage = () => {
 
         <Faqs {...ggcQna} />
 
-        <div className={`${classes.wave} ${classes.wave_2}`}>
-          <Wave1 />
-        </div>
-        <SupportedCountries
-          title="German Grade Supported Countries"
-          subTitle="We support the following countries for German Grade"
-          headingType="default"
-          bgType="default"
-          countryList={germanCountries}
-        />
+        <SupportedCountries {...germanCountries} />
       </section>
     </>
   );

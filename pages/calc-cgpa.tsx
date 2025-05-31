@@ -10,7 +10,6 @@ import { CgpaCalculatorInputs } from "@/components/index";
 import { calCgpa, cgpaCountries, cgpaQna } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
 import PageHeading from "@/components/ui/page-heading";
-import { Wave1 } from "../assets";
 import SupportedCountries from "@/components/ui/supported-countries";
 
 import classes from "@/styles/calc-cgpa.module.css";
@@ -136,16 +135,7 @@ const CalcCGPA: NextPage = () => {
 
         <Faqs {...cgpaQna} />
 
-        <div className={`${classes.wave} ${classes.wave_2}`}>
-          <Wave1 />
-        </div>
-        <SupportedCountries
-          title="CGPA Supported Countries"
-          subTitle="We support the following countries for CGPA"
-          headingType="default"
-          bgType="default"
-          countryList={cgpaCountries}
-        />
+        <SupportedCountries {...cgpaCountries} />
       </section>
     </>
   );

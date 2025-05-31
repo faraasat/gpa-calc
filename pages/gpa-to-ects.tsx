@@ -8,7 +8,6 @@ import PageHeading from "@/components/ui/page-heading";
 import DetailedInput from "@/components/ui/detailed-input";
 import SupportedCountries from "@/components/ui/supported-countries";
 import Faqs from "@/components/ui/faqs";
-import { Wave1 } from "../assets";
 
 import classes from "@/styles/gpa-to-ects.module.css";
 
@@ -166,16 +165,7 @@ const CGPAToECTS: NextPage = () => {
           <Faqs {...ectsQna} />
         </div>
 
-        <div className={`${classes.wave} ${classes.wave_2}`}>
-          <Wave1 />
-        </div>
-        <SupportedCountries
-          title="ECTS Supported Countries"
-          subTitle="We support the following countries for ECTS"
-          headingType="default"
-          bgType="default"
-          countryList={ectsCountries}
-        />
+        <SupportedCountries {...ectsCountries} />
       </section>
     </>
   );

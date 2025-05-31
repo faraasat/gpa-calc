@@ -9,10 +9,8 @@ import {
   HomeHero,
   HomeInteractive,
 } from "@/components/index";
-import { Wave1 } from "@/assets/index";
-
-import classes from "@/styles/index.module.css";
 import SupportedCountries from "@/components/ui/supported-countries";
+
 import { homeCountries, homeInteractiveData } from "../data";
 
 const Home: NextPage = () => {
@@ -31,16 +29,7 @@ const Home: NextPage = () => {
         return <HomeInteractive key={i} {...hid} />;
       })}
       <HomeFAQs />
-      <div className={`${classes.wave} ${classes.wave_2}`}>
-        <Wave1 />
-      </div>
-      <SupportedCountries
-        title="Supported Countries"
-        subTitle="Calculator supported for the following:"
-        headingType="default"
-        bgType="default"
-        countryList={homeCountries}
-      />
+      <SupportedCountries {...homeCountries} />
     </>
   );
 };
