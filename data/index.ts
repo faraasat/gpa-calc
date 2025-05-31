@@ -420,6 +420,8 @@ export const cgpaQna = {
   title: "Got Questions? We’ve Got Answers.",
   subTitle:
     "Explore our most frequently asked questions to get the help and clarity you need.",
+  stripAds: ["8284283698"],
+  sidebarAds: ["3729945104", "2416863431"],
   faqs: [
     {
       question: "What is the purpose of this page?",
@@ -500,6 +502,8 @@ export const gpaQna = {
   title: "Got Questions? We’ve Got Answers.",
   subTitle:
     "Explore our most frequently asked questions to get the help and clarity you need.",
+  stripAds: ["6318022953"],
+  sidebarAds: ["1910447037", "9597365367"],
   faqs: [
     {
       question: "What is this page about?",
@@ -583,6 +587,8 @@ export const ectsQna = {
   title: "Got Questions? We’ve Got Answers.",
   subTitle:
     "Explore our most frequently asked questions to get the help and clarity you need.",
+  stripAds: ["5658120356"],
+  sidebarAds: ["4684768276", "5004941289"],
   faqs: [
     {
       question: "What is CGPA?",
@@ -694,6 +700,8 @@ export const ggcQna = {
   title: "Got Questions? We’ve Got Answers.",
   subTitle:
     "Explore our most frequently asked questions to get the help and clarity you need.",
+  stripAds: ["9871863389"],
+  sidebarAds: ["7286046738", "1523434228"],
   faqs: [
     {
       question: "What is the German grading system?",
