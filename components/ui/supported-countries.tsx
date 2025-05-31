@@ -13,7 +13,7 @@ const SupportedCountries: FC<{
   headingType: "default" | "primary";
   bgType: "default" | "primary";
   countryList: Array<FlattenT<typeof homeCountries>>;
-}> = ({ title, subTitle, headingType, bgType, countryList }) => {
+}> = ({ title, subTitle, bgType, countryList }) => {
   return (
     <section
       className={`${classes.wrapper} ${
@@ -22,7 +22,7 @@ const SupportedCountries: FC<{
       style={{ padding: "30px 0" }}
     >
       <div className={`${classes.section} container`}>
-        <Heading title={title} subTitle={subTitle} styleType={headingType} />
+        <Heading title={title} subTitle={subTitle} />
 
         <div className={classes.countries}>
           {countryList.map((country, index) => {

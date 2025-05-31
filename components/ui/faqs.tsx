@@ -19,7 +19,6 @@ const Faqs: FC<{
         <Heading
           title="The FAQs"
           subTitle="Know What it Does!"
-          styleType="primary"
         />
         <div className={classes.faqs_wrapper}>
           <Accordion className={classes.faqs}>
