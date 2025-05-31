@@ -94,7 +94,7 @@ const CalcGPA: NextPage = () => {
         return {
           credits: data.credits,
           grade: data.grade,
-          gradeAlpha: grade?.text!,
+          gradeAlpha: grade!.text!,
         };
       }),
       marksObtained: +details.obtained.toFixed(2),

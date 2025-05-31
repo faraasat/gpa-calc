@@ -48,8 +48,6 @@ const HomeFeatures = () => {
           })}
         </div>
 
-        {/* <AdBanner slot="8593774450" /> */}
-
         <div className="flex items-center justify-center gap-3 flex-wrap">
           {navLinks.map((n, i) => {
             return (
