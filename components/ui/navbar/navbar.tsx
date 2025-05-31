@@ -47,7 +47,7 @@ const NavbarComponent: NextComponentType = () => {
           <Link href="/" className="font-potta text-2xl text-shadow-md">
             GPA CALCULATOR
           </Link>
-          <nav className="flex items-center justify-center gap-4 max-xl:hidden" style={{wordSpacing: "-2.5px"}}>
+          <nav className="flex items-center justify-center gap-4 max-xl:hidden" style={{wordSpacing: "0px"}}>
             {navigationData.map((link) => (
               <NavLinks key={link.name} link={link} router={router} />
             ))}
