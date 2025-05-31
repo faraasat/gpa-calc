@@ -17,7 +17,7 @@ const HomeAbout = () => {
           <Heading title={title} subTitle={subTitle} />
 
           <div className="flex items-center justify-center gap-6">
-            <div className="w-auto flex flex-col">
+            <div className="w-auto flex flex-col gap-3">
               {paras.map((pa, i) => {
                 return (
                   <Fragment key={i}>
