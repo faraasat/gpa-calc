@@ -275,10 +275,13 @@ footer {
 }
 
 .gg-ads-c {
-  width: 100%;
-  height: 100%;
-  z-index: 30;
+  width: 100% !important;
+  height: auto !important;
+  z-index: 80;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .ad-banner-div {
