@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { useAptabase } from "@aptabase/react";
 
-import { calcCTE, ectsCountries, ectsQna } from "../data";
+import { calcCTE, ectsCountries, ectsQna, pageMultiplex } from "../data";
 import MetaHead from "@/components/ui/meta-head";
 import PageHeading from "@/components/ui/page-heading";
 import DetailedInput from "@/components/ui/detailed-input";
@@ -10,6 +10,7 @@ import SupportedCountries from "@/components/ui/supported-countries";
 import Faqs from "@/components/ui/faqs";
 
 import classes from "@/styles/gpa-to-ects.module.css";
+import AdBanner from "@/components/ui/ads";
 
 const CGPAToECTS: NextPage = () => {
   const { trackEvent } = useAptabase();
@@ -165,6 +166,8 @@ const CGPAToECTS: NextPage = () => {
               </span>
             </p>
           </div>
+
+          {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[0]} />}
 
           <Faqs {...ectsQna} />
         </div>

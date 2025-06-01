@@ -2,7 +2,13 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { useAptabase } from "@aptabase/react";
 
-import { calGGC, germanCountries, ggcGrading, ggcQna } from "../data";
+import {
+  calGGC,
+  germanCountries,
+  ggcGrading,
+  ggcQna,
+  pageMultiplex,
+} from "../data";
 import MetaHead from "@/components/ui/meta-head";
 import PageHeading from "@/components/ui/page-heading";
 import DetailedInput from "@/components/ui/detailed-input";
@@ -11,6 +17,7 @@ import Faqs from "@/components/ui/faqs";
 import classes from "@/styles/german-grade-calculator.module.css";
 import TextDescriptor from "@/components/ui/text-descriptor";
 import SupportedCountries from "@/components/ui/supported-countries";
+import AdBanner from "@/components/ui/ads";
 
 const GermanGradeCalculator: NextPage = () => {
   const { trackEvent } = useAptabase();
@@ -104,6 +111,8 @@ const GermanGradeCalculator: NextPage = () => {
             data={ggcGrading}
           />
         </div>
+
+        {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[0]} />}
 
         <Faqs {...ggcQna} />
 
