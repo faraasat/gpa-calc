@@ -5,7 +5,8 @@ import AdBanner from "@/components/ui/ads";
 import { homeFeaturesData } from "@/data/index";
 
 const HomeFeatures = () => {
-  const { title, subTitle, featuresList, adsList, navLinks } = homeFeaturesData;
+  const { title, subTitle, featuresList, adsList, navLinks, stripAds } =
+    homeFeaturesData;
 
   return (
     <section className="relative flex justify-center w-full z-50 pt-24 pb-12">
@@ -62,7 +63,7 @@ const HomeFeatures = () => {
           })}
         </div>
 
-        <AdBanner slot="4854674141" />
+        {stripAds?.[0] && <AdBanner slot={stripAds[0]} />}
       </div>
     </section>
   );

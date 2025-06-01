@@ -46,6 +46,7 @@ export const homeHeroData = {
         name: navLinksTitle2[i],
       };
     }),
+  sideAds: ["6835946019"],
 };
 
 const navLinksTitle3 = [
@@ -76,6 +77,7 @@ export const homeAboutData = {
       };
     }),
   sideAds: ["9960327449", "2081837426", "5725629036"],
+  stripAds: ["9605697125"],
 };
 
 const navLinksTitle4 = [
@@ -138,6 +140,7 @@ export const homeFeaturesData = {
       slot: "5931968008",
     },
   ],
+  stripAds: ["4854674141"],
   navLinks: navLinks
     .filter((x) => x !== "/")
     .map((nl, i) => {

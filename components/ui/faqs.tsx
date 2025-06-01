@@ -26,11 +26,11 @@ const Faqs: FC<{
         />
 
         <div className="flex items-center gap-3">
-          {sidebarAds?.[0] && (
+          {/* {sidebarAds?.[0] && (
             <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[300px] max-sm:hidden max-xl:hidden">
               <AdBanner slot={sidebarAds[0]} />
             </aside>
-          )}
+          )} */}
 
           <Accordion className="w-full">
             {faqs.map((faq, index) => {

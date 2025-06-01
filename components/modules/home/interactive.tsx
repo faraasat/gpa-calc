@@ -46,14 +46,14 @@ const HomeInteractive: FC<{
           subTitleClass={`${bgType === "default" ? "" : "text-secondary-c"}`}
         />
 
-        <div className="flex items-center justify-center gap-5 container">
-          {sidebarAds?.[0] && (
+        <div className="flex items-center justify-between gap-1 container">
+          {/* {sidebarAds?.[0] && (
             <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[300px] max-sm:hidden max-xl:hidden">
               <AdBanner slot={sidebarAds[0]} />
             </aside>
-          )}
+          )} */}
 
-          <div className="flex flex-col items-center justify-center gap-9">
+          <div className="flex flex-col items-center justify-center gap-9 max-w-[750px]">
             <div
               className={`relative flex items-center justify-center w-full aspect-video rounded-lg border-2 ${
                 bgType === "default" ? "border-white" : "border-primary-c"
@@ -70,7 +70,7 @@ const HomeInteractive: FC<{
                 <source src={videoUrl} type="video/webm" />
               </video>
             </div>
-            <p className="text-xl text-center w-[105%]">{para}</p>
+            <p className="text-xl text-justify w-[105%] max-md:text-sm">{para}</p>
             <div className={classes.about_para__btn}>
               <LinkButton
                 href={link}

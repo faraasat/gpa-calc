@@ -41,7 +41,12 @@ const HomeHero = () => {
           </div>
         </div>
       </div>
-      <AdBanner slot="6835946019" className="lg:-mt-8 max-lg:-mt-16" />
+      {homeHeroData.sideAds?.[0] && (
+        <AdBanner
+          slot={homeHeroData.sideAds[0]}
+          className="lg:-mt-8 max-lg:-mt-16"
+        />
+      )}
     </section>
   );
 };
