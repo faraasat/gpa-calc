@@ -75,6 +75,7 @@ export const homeAboutData = {
         name: navLinksTitle3[i],
       };
     }),
+  sideAds: ["9960327449", "2081837426", "5725629036"],
 };
 
 const navLinksTitle4 = [

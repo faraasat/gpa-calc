@@ -275,8 +275,8 @@ footer {
 
 .gg-ads-c {
   width: 100% !important;
-  height: auto !important;
-  z-index: 80;
+  /* height: auto !important; */
+  z-index: 100 !important;
   position: relative;
   display: flex;
   align-items: center;

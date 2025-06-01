@@ -7,7 +7,7 @@ import AdBanner from "@/components/ui/ads";
 import LinkButton from "@/components/ui/link-button";
 
 const HomeAbout = () => {
-  const { title, subTitle, paras, navLinks } = homeAboutData;
+  const { title, subTitle, paras, navLinks, sideAds } = homeAboutData;
 
   return (
     <section className={"relative flex flex-col w-full z-50 mt-1 text-white"}>
@@ -30,10 +30,14 @@ const HomeAbout = () => {
                 );
               })}
             </div>
-            <aside className="min-w-[300px] h-full flex item-center justify-center z-80 relative w-[40%] max-w-[500px] max-sm:hidden">
-              <AdBanner slot="9960327449" />
-              <AdBanner slot="2081837426" />
-            </aside>
+            {sideAds && sideAds.length > 0 && (
+              <aside className="min-w-[300px] flex flex-col items-start self-start gap-2 z-80 relative w-[40%] max-w-[500px] max-sm:hidden">
+                {sideAds.map((sa) => (
+                  <AdBanner slot={sa} key={sa} />
+                ))}
+                <AdBanner slot="2081837426" />
+              </aside>
+            )}
           </div>
 
           <div className="flex items-center justify-center gap-3 flex-wrap">
