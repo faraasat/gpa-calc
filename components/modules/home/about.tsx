@@ -31,7 +31,7 @@ const HomeAbout = () => {
               })}
             </div>
             {sideAds && sideAds.length > 0 && (
-              <aside className="min-w-[300px] flex flex-col items-start self-start gap-2 z-80 relative w-[40%] max-w-[500px] max-sm:hidden">
+              <aside className="min-w-[300px] flex flex-col h-full items-start self-start gap-2 z-80 relative w-[40%] max-w-[500px] max-sm:hidden">
                 {sideAds.map((sa) => (
                   <AdBanner slot={sa} key={sa} />
                 ))}
