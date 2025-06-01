@@ -7,12 +7,13 @@ import MetaHead from "@/components/ui/meta-head";
 import ResultPane from "@/components/ui/result-pane";
 import Threshold from "@/components/ui/threshold";
 import { CgpaCalculatorInputs } from "@/components/index";
-import { calCgpa, cgpaCountries, cgpaQna } from "@/data/index";
+import { calCgpa, cgpaCountries, cgpaQna, pageMultiplex } from "@/data/index";
 import Faqs from "@/components/ui/faqs";
 import PageHeading from "@/components/ui/page-heading";
 import SupportedCountries from "@/components/ui/supported-countries";
 
 import classes from "@/styles/calc-cgpa.module.css";
+import AdBanner from "@/components/ui/ads";
 
 const CalcCGPA: NextPage = () => {
   const [gradeThreshold, setGradeThreshold] = useState<number>(4);
@@ -132,6 +133,8 @@ const CalcCGPA: NextPage = () => {
             />
           </div>
         </div>
+
+        {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[0]} />}
 
         <Faqs {...cgpaQna} />
 

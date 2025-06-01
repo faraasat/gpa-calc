@@ -5,9 +5,9 @@ import { SiPlatformdotsh } from "react-icons/si";
 
 const navLinks = [
   "/",
-  "/calc-gpa",
-  "/calc-cgpa",
-  "/gpa-to-ects",
+  "/calculate-gpa-grade-point-average",
+  "/calculate-cgpa-cumulative-grade-point-average",
+  "/gpa-to-ects-european-credit-transfer-system",
   "/german-grade-calculator",
 ];
 
@@ -155,7 +155,7 @@ export const homeInteractiveData = [
       "This quick tutorial will show you exactly how to calculate and track your GPA without confusion.",
     para: "Our interactive GPA & CGPA demo lets you experience the ease of calculating your academic performance in real-time. Input your grades, course credits, and see your GPA instantly adjust. With a user-friendly interface and dynamic calculations, you can quickly experiment with different academic scenarios to plan your future performance. This feature empowers students to understand the impact of their grades and credit hours on their overall GPA and CGPA, giving a clear picture of where they stand academically.",
     linkText: "Checkout GPA Calculator",
-    link: "/calc-gpa",
+    link: "/calculate-gpa-grade-point-average",
     videoUrl: "calc.webm",
     bgType: "default" as "default" | "primary",
     stripAds: ["8593774450"],
@@ -167,7 +167,7 @@ export const homeInteractiveData = [
       "A simple, step-by-step guide to help you calculate your Cumulative GPA accurately and efficiently..",
     para: "Effortlessly translate your GPA into ECTS credits with our user-friendly converter! This tool helps you understand how your grades align with the European Credit Transfer and Accumulation System, making it ideal for students considering study abroad opportunities. Simply input your GPA, and get instant results that facilitate smoother transitions in your academic path. Take the guesswork out of grade conversions and plan your educational journey with confidence!",
     linkText: "Check ECTS Converter",
-    link: "/gpa-to-ects",
+    link: "/gpa-to-ects-european-credit-transfer-system",
     videoUrl: "gpa-to-ects.webm",
     bgType: "primary" as "default" | "primary",
     stripAds: ["7589314976"],
@@ -279,7 +279,7 @@ export const calcGpa = {
           links: [
             {
               text: "You can calculate for ECTS...",
-              link: "/gpa-to-ects",
+              link: "/gpa-to-ects-european-credit-transfer-system",
             },
             {
               text: "You can convert to german grade from GPA...",
@@ -356,7 +356,7 @@ export const calCgpa = {
           links: [
             {
               text: "You can calculate for ECTS...",
-              link: "/gpa-to-ects",
+              link: "/gpa-to-ects-european-credit-transfer-system",
             },
             {
               text: "You can convert to german grade from GPA...",
@@ -569,7 +569,7 @@ export const calGGC = {
           links: [
             {
               text: "Go to ECTS Calculator",
-              link: "/gpa-to-ects",
+              link: "/gpa-to-ects-european-credit-transfer-system",
             },
           ],
         },

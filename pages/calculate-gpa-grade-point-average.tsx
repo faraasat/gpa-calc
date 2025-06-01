@@ -144,7 +144,7 @@ const CalcGPA: NextPage = () => {
           </div>
         </div>
 
-        {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[1]} />}
+        {pageMultiplex?.[0] && <AdBanner slot={pageMultiplex[0]} />}
 
         <Faqs {...gpaQna} />
 
