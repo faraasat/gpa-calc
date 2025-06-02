@@ -44,6 +44,7 @@
     "next": "15.3.3",
     "next-optimized-classnames": "^1.0.2",
     "react": "19.1.0",
+    "react-consent-management-banner": "1.0.12",
     "react-dom": "19.1.0",
     "react-feather": "^2.0.10",
     "react-icons": "^5.5.0",

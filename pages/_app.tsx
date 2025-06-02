@@ -11,7 +11,7 @@ import Navbar from "@/components/ui/navbar/navbar";
 import OverlayComponent from "@/components/ui/overlay/overlay";
 import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 import Footer from "@/components/ui/footer";
-// import SocialSide from "@/components/ui/social-side";
+import { CookieConsent } from "react-consent-management-banner";
 
 import "@/styles/globals.css";
 
@@ -26,12 +26,6 @@ const cabin = Cabin({
   variable: "--font-cabin",
   subsets: ["latin"],
 });
-
-// const lobster = Satisfy({
-//   weight: "400",
-//   variable: "--font-lobster",
-//   subsets: ["latin"],
-// });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -95,6 +89,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <Footer />
       </AppContextProvider>
+
+      <CookieConsent />
 
       {/* ANALYTICS AND SCRIPTS */}
       <GoogleAnalytics
