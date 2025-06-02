@@ -13,6 +13,8 @@ import GradeSettingComponent from "@/components/ui/grade-setting/grade-setting";
 import Footer from "@/components/ui/footer";
 import { CookieConsent } from "react-consent-management-banner";
 
+import "react-consent-management-banner/dist/style.css";
+
 import "@/styles/globals.css";
 
 const potta_one = Lilita_One({
