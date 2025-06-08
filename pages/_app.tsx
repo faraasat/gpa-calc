@@ -92,7 +92,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Footer />
       </AppContextProvider>
 
-      <CookieConsent />
+      <CookieConsent GA_TRACKING_ID={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID!} />
 
       {/* ANALYTICS AND SCRIPTS */}
       <GoogleAnalytics

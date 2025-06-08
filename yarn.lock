@@ -6186,7 +6186,7 @@ __metadata:
     next-sitemap: "npm:^4.2.3"
     postcss: "npm:^8.5.4"
     react: "npm:19.1.0"
-    react-consent-management-banner: "npm:^1.1.4"
+    react-consent-management-banner: "npm:^1.1.7"
     react-dom: "npm:19.1.0"
     react-feather: "npm:^2.0.10"
     react-icons: "npm:^5.5.0"
@@ -8452,12 +8452,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-consent-management-banner@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "react-consent-management-banner@npm:1.1.4"
+"react-consent-management-banner@npm:^1.1.7":
+  version: 1.1.7
+  resolution: "react-consent-management-banner@npm:1.1.7"
   peerDependencies:
     react: ">=17.0.0"
-  checksum: 10c0/e6905f0dd881a1b5e87c87fe1fced8b234d8c2f2f52c1a6196055d227fbbf2ed129a71d63a000a9d89a318c6894df83a613ce504652f86a0efa9f09e7a76cd0b
+  checksum: 10c0/7d721356cc6e68a7a8b8e1e947dd3d58b05ae5f36dd48869e71c7c8d1439ba88525fc5f581e4c6f5bea1fe1dc21d8344a2ffbeda58addb63ee7adf22aa4d4ab4
   languageName: node
   linkType: hard
 
