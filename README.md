@@ -49,7 +49,7 @@ Manually calculating GPA and CGPA presents significant challenges for students. 
 
 One major issue is the diversity in grading systems. Different institutions may use various grading scales (letter grades, percentage scores, or point systems), making it difficult to apply a universal formula. Additionally, the manual calculation process can be tedious and requires careful attention, often leading to multiple recalculations for accuracy.
 
-Students managing academic records, especially those handling grades from multiple courses over several semesters, may find it difficult to maintain consistent calculations. This highlights the need for an efficient, user-friendly solution that can handle various grading systems and deliver accurate results quickly. A web-based tool that automates these calculations can significantly reduce student burden and help them maintain accurate academic records.
+Students managing academic records, especially those handling grades from multiple courses over several semesters, may find it difficult to maintain consistent calculations. This highlights the need for an efficient, user-friendly solution that can handle various grading systems and deliver accurate results quickly. A web-based tool that automates these calculations can significantly reduce student burden and help them maintains accurate academic records.
 
 ---
 
